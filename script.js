@@ -3,7 +3,7 @@
 */
 hexagrams = [
    {
-        title: "Testando 123..",
+        title: "",
         lines: [
             true, 
             false, 
@@ -15,7 +15,7 @@ hexagrams = [
         ]
    },
    {
-        title: "Titulo2",
+        title: "",
         lines: [
             false, 
             false, 
@@ -32,8 +32,25 @@ hexagrams = [
 upperTrigram = '';
 bottomTrigram = '';
 
+/*
+let clickPressed = false;
+let canChange = true;
+document.addEventListener('mousedown', () => {
+    clickPressed = true;
+    lineChange()
+    
+})
+
+document.addEventListener('mouseup', () => {
+    clickPressed = false;
+    canChange = false;
+})
+*/
+
 document.querySelectorAll('.lineArea').forEach(line => {
+
     line.addEventListener('click', lineChange);
+    
 });
 
 updateHexagram()
@@ -41,13 +58,15 @@ updateHexagram()
 
 function lineChange(e) {
     pos = (e.currentTarget.getAttribute('data-pos')) - 1;
-    if(hexagrams[0].lines[pos] == true) {
-        hexagrams[0].lines[pos] = false
-    } else {
-        hexagrams[0].lines[pos] = true
-    }
 
-    updateHexagram()
+            if(hexagrams[0].lines[pos] == true) {
+                hexagrams[0].lines[pos] = false;
+            } else {
+                hexagrams[0].lines[pos] = true;
+            }
+        
+        
+        updateHexagram();
 }
 
 
@@ -55,14 +74,13 @@ function updateHexagram() {
     document.querySelectorAll('.lineArea').forEach(line => {
         pos = (line.getAttribute('data-pos')) - 1;
         if(hexagrams[0].lines[pos] == true) {
-            line.innerHTML = '<div class="line"></div>'
+           line.innerHTML = '<div class="line"></div>'
         } else {
             line.innerHTML = '<div class="line"></div><div class="line">'
         }
     });
 
     getInfo();
-
 }
 
 function getInfo() {
@@ -120,4 +138,30 @@ function getHexagram() {
         }
     })
     return title;
+}
+
+// Invert Functions
+function invertLines() {
+    let inversedLines = []
+    hexagrams[0].lines.forEach(l => {
+         l = !l;
+         inversedLines.push(l)
+    })
+
+    hexagrams[0].lines = inversedLines;
+
+    updateHexagram();
+}
+
+function invertTrigrams() {
+    hexagrams[0].lines.push(hexagrams[0].lines.shift());
+    hexagrams[0].lines.push(hexagrams[0].lines.shift());
+    hexagrams[0].lines.push(hexagrams[0].lines.shift());
+
+    updateHexagram();
+}
+
+function invertPositions() {
+    hexagrams[0].lines.reverse();
+    updateHexagram();
 }
