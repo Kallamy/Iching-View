@@ -3,17 +3,30 @@ body {
     background-color: darkred;
     margin-top: 100px;
 }
-
+* {
+    box-sizing: content-box;
+}
 html {
-    height: 70%;
+ 
 }
 
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}
+  
+
 .frame {
+    position: relative;
     margin: auto;
     width: 300px;
     height: 300px;
-    background-color:beige;
-    border: 10px gold double;
+    background-image: url("assets/images/paperBG.jpg");
+    border: 10px gold  inset; 
     padding: 10px;
    
 }
@@ -28,6 +41,30 @@ html {
     gap: 0px;
 
 }
+
+.yinyangArea {
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    /*transition: opacity  linear 1s;*/
+    opacity: 0%;
+
+}
+
+.yinyangArea.show {
+    display: block;
+    opacity: 90%;
+    
+    
+}
+
+.yinyangArea img {
+    width: 100%;
+    animation: rotation 1s infinite linear;
+
+}
+
 
 .hexagramArea {
     background:transparent;
@@ -54,8 +91,6 @@ html {
     background:black;
     width: 100%;
     height: 100%;
-    draggable:
-    
 }
 
 .lineArea:hover .line{
@@ -75,7 +110,7 @@ html {
 }
 
 .hexagramTitle {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-top: 40px;
     background:transparent;
     height: 50px;
@@ -122,4 +157,16 @@ html {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+}
+
+.buttonsArea button {
+    background-color: crimson;
+    border: 2px outset yellow;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+
+.buttonsArea button:hover {
+    border: 4px groove yellow; 
 }

@@ -32,6 +32,8 @@ hexagrams = [
 upperTrigram = '';
 bottomTrigram = '';
 
+const yinyangDuration = 2000;
+
 /*
 let clickPressed = false;
 let canChange = true;
@@ -150,7 +152,11 @@ function invertLines() {
 
     hexagrams[0].lines = inversedLines;
 
-    updateHexagram();
+    YingYangShow();
+
+    setTimeout(()=>{
+        updateHexagram();
+    }, 500)
 }
 
 function invertTrigrams() {
@@ -158,10 +164,30 @@ function invertTrigrams() {
     hexagrams[0].lines.push(hexagrams[0].lines.shift());
     hexagrams[0].lines.push(hexagrams[0].lines.shift());
 
-    updateHexagram();
+
+    YingYangShow();
+
+    setTimeout(()=>{
+        updateHexagram();
+    }, (yinyangDuration / 2))
 }
 
 function invertPositions() {
     hexagrams[0].lines.reverse();
-    updateHexagram();
+
+    YingYangShow();
+
+    setTimeout(()=>{
+        updateHexagram();
+    }, 500)
+}
+
+function YingYangShow() {
+    
+    document.querySelector(".yinyangArea").classList.add("show");
+    setTimeout(()=>{
+        document.querySelector(".yinyangArea").classList.remove("show");
+
+    }, yinyangDuration)
+    
 }
