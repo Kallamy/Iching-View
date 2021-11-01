@@ -6,9 +6,10 @@ body {
 * {
     box-sizing: content-box;
 }
-html {
- 
+:root {
+  transform-origin: center;
 }
+
 
 @keyframes rotation {
     from {
@@ -23,11 +24,12 @@ html {
 .frame {
     position: relative;
     margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     background-image: url("assets/images/paperBG.jpg");
     border: 10px gold  inset; 
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
    
 }
 
@@ -44,11 +46,11 @@ html {
 
 .yinyangArea {
     display: none;
-    position: absolute;
-    top: 95px;
-    left: 100px;
-    /*transition: opacity  linear 1s;*/
+   
+    width: 100%;
     opacity: 0%;
+
+    
 
 }
 
@@ -60,15 +62,27 @@ html {
 }
 
 .yinyangArea img {
+    margin-top: -86%;
     width: 100%;
     animation: rotation 1s infinite linear;
 
+
+}
+
+.yinyangIcon {
+   visibility: hidden;
+   margin-left: 10px;
+
+   transform: rotate(90deg);
+
+   opacity: 0;
+   transition: opacity .6s ease-in-out;
 }
 
 
 .hexagramArea {
     background:transparent;
-    /* margin-top: 200px; */
+    
     background: transparent;
     width: 200px;
     padding: 10px;
@@ -76,6 +90,10 @@ html {
     padding-left: 0px;
     
     
+}
+.linesArea {
+    width: 100%;
+
 }
 .lineArea {
     background: transparent;
@@ -133,6 +151,7 @@ html {
     display: block;
     text-align: center;
     margin-top: 43px;
+    margin-left: 10px;
 }
 
 #info .ut {
@@ -167,6 +186,121 @@ html {
     font-weight: bold;
 }
 
+
 .buttonsArea button:hover {
     border: 4px groove yellow; 
+}
+
+.buttonsArea button:hover + .yinyangIcon {
+    visibility: visible;
+    opacity: 100;
+}
+
+.buttonsArea button:not( :hover ) + .yinyangIcon {
+    visibility: visible;
+    opacity: 0;
+    transition: opacity .9s ease-in-out;
+}
+
+.gameArea {
+    display: none;
+}
+.tableArea {
+    width: 310px;
+    height: 100px;
+    margin: 0 auto;
+
+    background-color:burlywood;
+    border: 3px solid rosybrown;
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.coin {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transform-style: preserve-3d;
+    
+}
+
+.yinFace, .yangFace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.yinFace {
+    background: black;
+    
+}
+.yangFace {
+    backface-visibility: hidden;
+    background: white;
+}
+
+.coin.yin {
+    animation: coinFlipYin 1.7s  forwards;
+}
+.coin.yang {
+    animation: coinFlipYang 1.7s  forwards;
+}
+
+@keyframes coinFlipYang {
+    0%  {transform: rotateX(0deg);}
+    5%  {transform: rotateX(calc(0deg * 4));}
+    10% {transform: rotateX(calc(0deg * 4)); width: 40px; height: 40px}
+    15% {transform: rotateX(calc(54deg * 4)); margin-bottom: 0px;}
+    20% {transform: rotateX(calc(72deg * 4));}
+    25% {transform: rotateX(calc(90deg * 4));}
+    30% {transform: rotateX(calc(108deg * 4)); width: 50px; height: 50px;}
+    35% {transform: rotateX(calc(126deg * 4));}
+    40% {transform: rotateX(calc(144deg * 4));}
+    45% {transform: rotateX(calc(162deg * 4));}
+    50% {transform: rotateX(calc(180deg * 4)); width: 36px; height: 36px;}
+    55% {transform: rotateX(calc(198deg * 4));} 
+    60% {transform: rotateX(calc(216deg * 4));  width: 39px; height: 39px;}
+    65% {transform: rotateX(calc(234deg * 2)); transform: rotateY(-60deg);}
+    70% {transform: rotateX(calc(252deg * 4));}
+    75% {transform: rotateX(calc(270deg * 2)); transform: rotateY(10deg);}
+    80% {transform: rotateX(calc(288deg * 4)); margin-bottom: 70px; transform: rotateY(5deg);}
+    90% {transform: rotateX(calc(306deg * 4));  width: 45px; height: 45px;}
+    95% {transform: rotateX(calc(324deg * 4)); width: 38px; height: 38px;}
+    100% {transform: rotateX(calc(360deg * 4)); margin-bottom: 70px;}
+}
+
+@keyframes coinFlipYin {
+    0%  {transform: rotateX(0deg);}
+    5%  {transform: rotateX(calc(0deg * 4));}
+    10% {transform: rotateX(calc(0deg * 4)); width: 40px; height: 40px}
+    15% {transform: rotateX(calc(54deg * 4)); margin-bottom: 0px;}
+    20% {transform: rotateX(calc(72deg * 4));}
+    25% {transform: rotateX(calc(90deg * 4));}
+    30% {transform: rotateX(calc(108deg * 4)); width: 50px; height: 50px;}
+    35% {transform: rotateX(calc(126deg * 4));}
+    40% {transform: rotateX(calc(144deg * 4));}
+    45% {transform: rotateX(calc(162deg * 4));}
+    50% {transform: rotateX(calc(180deg * 4)); width: 36px; height: 36px;}
+    55% {transform: rotateX(calc(198deg * 4));} 
+    60% {transform: rotateX(calc(216deg * 4));  width: 39px; height: 39px;}
+    65% {transform: rotateX(calc(234deg * 2)); transform: rotateY(-60deg);}
+    70% {transform: rotateX(calc(252deg * 4));}
+    75% {transform: rotateX(calc(270deg * 2)); transform: rotateY(10deg);}
+    80% {transform: rotateX(calc(288deg * 4)); margin-bottom: 70px; transform: rotateY(5deg);}
+    90% {transform: rotateX(calc(306deg * 4));  width: 45px; height: 45px;}
+    95% {transform: rotateX(calc(324deg * 4)); width: 38px; height: 38px;}
+    100% {transform: rotateX(180deg); margin-bottom: 70px;}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: chartreuse;
+    }
 }

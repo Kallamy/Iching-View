@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Visualizador IChing</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,50 +17,81 @@
                 <span>sobre</span>
                 <div class="bt">trigrama2</div>
             </div>
-            <div class="yinyangArea">
-                <img src="assets/images/yinyang.png">
-            </div>
+            
             <div class="hexagramArea">
-                <div class="lineNumber">6</div>
-                <div class="lineArea" data-pos="6">
-                
-                </div>
-                <div class="lineNumber">5</div>
-                <div class="lineArea" data-pos="5">
+                <div class="linesArea">
+                    <div class="lineNumber">6</div>
+                    <div class="lineArea" data-pos="6">
+                    
+                    </div>
+                    <div class="lineNumber">5</div>
+                    <div class="lineArea" data-pos="5">
 
+                    </div>
+                    <div class="lineNumber">4</div>
+                    <div class="lineArea" data-pos="4">
+                        
+                    </div>
+                    <div class="lineNumber">3</div>
+                    <div class="lineArea" data-pos="3">
+                        
+                    </div>
+                    <div class="lineNumber">2</div>
+                    <div class="lineArea" data-pos="2">
+                        
+                    </div>
+                    <div class="lineNumber">1</div>
+                    <div class="lineArea" data-pos="1">
                 </div>
-                <div class="lineNumber">4</div>
-                <div class="lineArea" data-pos="4">
-                    
+                <div class="yinyangArea">
+                    <img src="assets/images/yinyang.png">
                 </div>
-                <div class="lineNumber">3</div>
-                <div class="lineArea" data-pos="3">
-                    
-                </div>
-                <div class="lineNumber">2</div>
-                <div class="lineArea" data-pos="2">
-                    
-                </div>
-                <div class="lineNumber">1</div>
-                <div class="lineArea" data-pos="1">
+               
             </div>
             
         </div>
         
         <div class="buttonsArea">
-        <button onClick="invertLines()">Inverter Linhas</button>
-        <button onClick="invertTrigrams()">Inverter Trigramas</button>
-        <button onClick="invertPositions()">Inverter Posições</button>
+            <div class="buttonArea">
+                <button onClick="invertLines()">Inverter Linhas</button>
+                <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
+            </div>
+            <div class="buttonArea">
+                <button onClick="invertTrigrams()">Inverter Trigramas</button>
+                <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
+            </div>
+            <div class="buttonArea">
+                <button onClick="invertPositions()">Inverter Posições</button>
+                <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
+            </div>
+        </div>
+
+        
     </div>
+</div>
+    <button onClick="showGame()">Consultar com moedas</button>
+    <div class="gameArea">
+        <div class="tableArea">
+            <div class="coin">
+                <div class="yinFace"></div>
+                <div class="yangFace"></div>
+            </div>
+            <div class="coin" >
+                <div class="yinFace"></div>
+                <div class="yangFace"></div>
+            </div>
+            <div class="coin">
+                <div class="yinFace"></div>
+                <div class="yangFace"></div>
+            </div>
+        </div>
+        <button onClick="flipCoins()">Jogar Moedas</button>
     </div>
-    
-    </div>
-    
-    
 
     </div>
     
-    <script src="pairs.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/scripts/pairs.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/game.js"></script>
 </body>
 </html>

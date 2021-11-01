@@ -90,8 +90,10 @@ function getInfo() {
     upperTrigram = getTrigram(4,5,6);
     bottomTrigram = getTrigram(1,2,3);
     hexagrams[0].title = getHexagram();
-
-    document.querySelector('.hexagramTitle').classList.add('fade');
+    
+    if(document.querySelector('.hexagramTitle').innerHTML != hexagrams[0].title) {
+        document.querySelector('.hexagramTitle').classList.add('fade');
+    }
     if(document.querySelector('#info .ut').innerHTML != upperTrigram) {
         document.querySelector('#info .ut').classList.add('fade'); 
     }
@@ -191,3 +193,5 @@ function YingYangShow() {
     }, yinyangDuration)
     
 }
+
+
