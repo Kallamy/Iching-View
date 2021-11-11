@@ -1,6 +1,7 @@
 /* linha yang = true
    linha yin = false 
 */
+
 hexagrams = [
    {
         title: "",
@@ -27,6 +28,7 @@ hexagrams = [
    },
 
 ]
+
 
 
 upperTrigram = '';

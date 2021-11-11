@@ -1,99 +1,76 @@
-body {
-
-    background-color: darkred;
-    margin-top: 100px;
-}
 * {
     box-sizing: content-box;
 }
-:root {
-  transform-origin: center;
+body {
+    background-color: darkred;
+    margin-top: 100px;
 }
 
-
-@keyframes rotation {
-    from {
-            transform: rotate(0deg);
-    }
-    to {
-            transform: rotate(359deg);
-    }
+.frameArea 
+{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-  
-
 .frame {
-    position: relative;
     margin: auto;
     width: 310px;
     height: 310px;
     background-image: url("assets/images/paperBG.jpg");
     border: 10px gold  inset; 
-    padding: 20px;
-    margin-bottom: 30px;
-   
+    margin-bottom: 30px
+}
+
+.slidesArea {
+    width: 620px;
+    height: 100%;
+    background-color: transparent;
+    
+}
+.slide {
+    display: inline-block;
+    width: 310px;
+    height: 310px;
+    background-color: transparent;
+    float: left;
 }
 
 .infoArea {
     width: 700px;
-    height: 200px;
+    height: 20px;
     display: flex;
     margin-top: 10px;
-    padding-left: 0px;
     background: transparent;
     gap: 0px;
-
 }
 
 .yinyangArea {
     display: none;
-   
     width: 100%;
-    opacity: 0%;
-
-    
-
+    opacity: 0;
 }
-
 .yinyangArea.show {
     display: block;
     opacity: 90%;
-    
-    
 }
-
 .yinyangArea img {
     margin-top: -86%;
     width: 100%;
     animation: rotation 1s infinite linear;
-
-
 }
-
-.yinyangIcon {
-   visibility: hidden;
-   margin-left: 10px;
-
-   transform: rotate(90deg);
-
-   opacity: 0;
-   transition: opacity .6s ease-in-out;
-}
-
 
 .hexagramArea {
-    background:transparent;
-    
     background: transparent;
     width: 200px;
     padding: 10px;
-    margin-left: 0px;
-    padding-left: 0px;
-    
     
 }
+
 .linesArea {
     width: 100%;
-
+    
 }
 .lineArea {
     background: transparent;
@@ -104,37 +81,27 @@ body {
     display: flex;
     gap: 2rem;
 }
-
 .line {
     background:black;
     width: 100%;
     height: 100%;
 }
-
 .lineArea:hover .line{
     background: darkslategrey;
     cursor: pointer;
 }
-
 .lineArea:hover > .lineNumber {
     display: block;
     color: chocolate;
 }
 
-.lineNumber {
-    position: absolute;
-    margin-top: 7px;
-    display: none;
-}
-
 .hexagramTitle {
     margin-bottom: 15px;
     margin-top: 40px;
-    background:transparent;
+    background: transparent;
     height: 50px;
     text-align: center;
-    line-height: 30px;
-    background:transparent;
+    line-height:  30px;
     font-size: 20px;
     font-family: cursive;
     transition: opacity  ease-in-out 0.8s;
@@ -145,25 +112,20 @@ body {
 }
 
 #info {
-    background: transparent;
     width: 100px;
-    padding: 0px;
+    padding: 0;
     display: block;
     text-align: center;
     margin-top: 43px;
     margin-left: 10px;
 }
-
 #info .ut {
-    background: transparent;
     font-size: 20px;
     margin-bottom: 20px;
     transition: opacity  ease-in-out 1s;
     text-align: center;
 }
-
 #info .bt {
-    background: transparent;
     font-size: 20px;
     margin-top: 16px;
     transition: opacity  ease-in-out 1s;
@@ -171,24 +133,24 @@ body {
 }
 
 .buttonsArea {
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-right: 60px;
 }
-
 .buttonsArea button {
     background-color: crimson;
     border: 2px outset yellow;
     border-radius: 5px;
     padding: 10px 5px;
     font-weight: bold;
+    z-index: 999;
+    
 }
-
-
 .buttonsArea button:hover {
-    border: 4px groove yellow; 
+    filter: brightness(120%)
 }
 
 .buttonsArea button:hover + .yinyangIcon {
@@ -201,7 +163,6 @@ body {
     opacity: 0;
     transition: opacity .9s ease-in-out;
 }
-
 .gameArea {
     display: none;
 }
@@ -297,10 +258,11 @@ body {
 }
 
 
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: chartreuse;
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
     }
 }
