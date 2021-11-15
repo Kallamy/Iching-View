@@ -1,14 +1,22 @@
 * {
     box-sizing: content-box;
+    user-select: none;
 }
 body {
     background-color: darkred;
     margin-top: 100px;
 }
 
+@font-face {
+    font-family: 'chinese1';
+    src: url(assets/fonts/chinese1.ttf);
+    font-family: 'chinese2';
+    src: url(assets/fonts/chinese2.ttf);
+}
+
 .frameArea 
 {
-    width: 600px;
+    width: 728px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -16,25 +24,62 @@ body {
 }
 .frame {
     margin: auto;
-    width: 310px;
-    height: 310px;
+    overflow: hidden;
+    width: 369px;
+    height: 369px;
     background-image: url("assets/images/paperBG.jpg");
     border: 10px gold  inset; 
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    
 }
 
 .slidesArea {
-    width: 620px;
+    width: 800px;
     height: 100%;
     background-color: transparent;
-    
+    position: absolute;
+    transition: margin-left .6s ease-in-out;
 }
 .slide {
     display: inline-block;
-    width: 310px;
-    height: 310px;
+    width: 369px;
+    height: 369px;
     background-color: transparent;
     float: left;
+}
+
+.controllers {
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+.nextHexagram,
+.prevHexagram
+{
+    position: relative;
+    left: 230px;
+    top: 310px;
+    cursor: pointer;
+    font-family: cursive;
+    background: #DDD;
+    text-align: left;
+
+}
+.prevHexagram {
+    left: 20px;
+}
+.prevArrrow {
+
+}
+.nextHexagram {
+    
+}
+.nextArrow {
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .infoArea {
@@ -46,16 +91,19 @@ body {
     gap: 0px;
 }
 
-.yinyangArea {
+.yinyangArea1,
+.yinyangArea2{
     display: none;
     width: 100%;
     opacity: 0;
 }
-.yinyangArea.show {
+.yinyangArea1.show,
+.yinyangArea2.show{
     display: block;
     opacity: 90%;
 }
-.yinyangArea img {
+.yinyangArea1 img,
+.yinyangArea2 img {
     margin-top: -86%;
     width: 100%;
     animation: rotation 1s infinite linear;
@@ -95,9 +143,10 @@ body {
     color: chocolate;
 }
 
-.hexagramTitle {
-    margin-bottom: 15px;
-    margin-top: 40px;
+.hexagramTitle1,
+.hexagramTitle2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
     background: transparent;
     height: 50px;
     text-align: center;
@@ -105,6 +154,15 @@ body {
     font-size: 20px;
     font-family: cursive;
     transition: opacity  ease-in-out 0.8s;
+}
+.charactere1,
+.charactere2
+ {
+    font-size: 36px;
+    font-family: chinese2;
+    text-align: center;
+    margin-top: 5px;
+    transition: opacity  ease-in-out 1s;
 }
 
 .fade {
@@ -119,13 +177,17 @@ body {
     margin-top: 43px;
     margin-left: 10px;
 }
-#info .ut {
+#info .ut1,
+#info .ut2
+{
     font-size: 20px;
     margin-bottom: 20px;
     transition: opacity  ease-in-out 1s;
     text-align: center;
 }
-#info .bt {
+#info .bt1,
+#info .bt2
+{
     font-size: 20px;
     margin-top: 16px;
     transition: opacity  ease-in-out 1s;

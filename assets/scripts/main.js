@@ -5,6 +5,9 @@
 hexagrams = [
    {
         title: "",
+        charactere: "",
+        upperTrigram: "",
+        bottomTrigram: "",
         lines: [
             true, 
             false, 
@@ -17,25 +20,24 @@ hexagrams = [
    },
    {
         title: "",
+        charactere: "",
+        upperTrigram: "",
+        bottomTrigram: "",
         lines: [
             false, 
-            false, 
+            true, 
             true, 
             false, 
-            false, 
-            true
+            true, 
+            false
         ]
    },
 
 ]
 
-
-
-upperTrigram = '';
-bottomTrigram = '';
-
 const yinyangDuration = 2000;
-
+const slidesArea = document.querySelector(".slidesArea");
+let currentHexagram = 1;
 /*
 let clickPressed = false;
 let canChange = true;
@@ -61,12 +63,13 @@ updateHexagram()
 
 
 function lineChange(e) {
+    const index = e.currentTarget.parentElement.parentElement.getAttribute('data-index');
     pos = (e.currentTarget.getAttribute('data-pos')) - 1;
 
-            if(hexagrams[0].lines[pos] == true) {
-                hexagrams[0].lines[pos] = false;
+            if(hexagrams[index].lines[pos] == true) {
+                hexagrams[index].lines[pos] = false;
             } else {
-                hexagrams[0].lines[pos] = true;
+                hexagrams[index].lines[pos] = true;
             }
         
         
@@ -76,85 +79,131 @@ function lineChange(e) {
 
 function updateHexagram() {
     document.querySelectorAll('.lineArea').forEach(line => {
-        pos = (line.getAttribute('data-pos')) - 1;
-        if(hexagrams[0].lines[pos] == true) {
-           line.innerHTML = '<div class="line"></div>'
-        } else {
-            line.innerHTML = '<div class="line"></div><div class="line">'
-        }
+            const index = line.parentElement.parentElement.getAttribute('data-index');
+            const pos = (line.getAttribute('data-pos')) - 1;
+            if(hexagrams[index].lines[pos] == true) {
+            line.innerHTML = '<div class="line"></div>'
+            } else {
+                line.innerHTML = '<div class="line"></div><div class="line">'
+            }
     });
-
+    
     getInfo();
 }
 
 function getInfo() {
+    for( let i = 0; i < 2; i++ ) {
     
-    upperTrigram = getTrigram(4,5,6);
-    bottomTrigram = getTrigram(1,2,3);
-    hexagrams[0].title = getHexagram();
+        hexagrams[i].upperTrigram = getTrigram(4,5,6, i);
+        hexagrams[i].bottomTrigram = getTrigram(1,2,3, i);
+        hexagrams[i].title = getHexagram(i);
+        hexagrams[i].charactere = getCharactere(i);
+
+    }
     
-    if(document.querySelector('.hexagramTitle').innerHTML != hexagrams[0].title) {
-        document.querySelector('.hexagramTitle').classList.add('fade');
-    }
-    if(document.querySelector('#info .ut').innerHTML != upperTrigram) {
-        document.querySelector('#info .ut').classList.add('fade'); 
-    }
-    if(document.querySelector('#info .bt').innerHTML != bottomTrigram) {
-        document.querySelector('#info .bt').classList.add('fade');
-    }
-    setTimeout(()=>{
-        document.querySelector('.hexagramTitle').innerHTML = hexagrams[0].title;
-        document.querySelector('.hexagramTitle').classList.remove('fade');
-        document.querySelector('#info .ut').innerHTML = upperTrigram;
-        document.querySelector('#info .bt').innerHTML = bottomTrigram;
-        document.querySelector('#info .ut').classList.remove('fade');
-        document.querySelector('#info .bt').classList.remove('fade');
-    }, 800)
+
+        if(document.querySelector('.hexagramTitle1').innerHTML != hexagrams[0].title) {
+            document.querySelector('.hexagramTitle1').classList.add('fade');
+        }
+        if(document.querySelector('.hexagramTitle2').innerHTML != hexagrams[1].title) {
+            document.querySelector('.hexagramTitle2').classList.add('fade');
+        }
+        if(document.querySelector('.charactere1').innerHTML != hexagrams[0].charactere) {
+            document.querySelector('.charactere1').classList.add('fade');
+        }
+        if(document.querySelector('.charactere2').innerHTML != hexagrams[1].charactere) {
+            document.querySelector('.charactere2').classList.add('fade');
+        }
+        if(document.querySelector('#info .ut1').innerHTML != hexagrams[0].upperTrigram) {
+            document.querySelector('#info .ut1').classList.add('fade'); 
+        }
+        if(document.querySelector('#info .ut2').innerHTML != hexagrams[1].upperTrigram) {
+            document.querySelector('#info .ut2').classList.add('fade'); 
+        }
+        if(document.querySelector('#info .bt1').innerHTML != hexagrams[0].bottomTrigram) {
+            document.querySelector('#info .bt1').classList.add('fade');
+        }
+        if(document.querySelector('#info .bt2').innerHTML != hexagrams[1].bottomTrigram) {
+            document.querySelector('#info .bt2').classList.add('fade');
+        }
+        setTimeout(()=>{
+            console.log(document.querySelector('.hexagramTitle1'))
+            document.querySelector('.hexagramTitle1').innerHTML = hexagrams[0].title;
+            document.querySelector('.hexagramTitle2').innerHTML = hexagrams[1].title;
+            document.querySelector('.charactere1').innerHTML = hexagrams[0].charactere;
+            document.querySelector('.charactere2').innerHTML = hexagrams[1].charactere;
+            document.querySelector('#info .ut1').innerHTML = hexagrams[0].upperTrigram;
+            document.querySelector('#info .bt1').innerHTML = hexagrams[0].bottomTrigram;
+            document.querySelector('#info .ut2').innerHTML = hexagrams[1].upperTrigram;
+            document.querySelector('#info .bt2').innerHTML = hexagrams[1].bottomTrigram;
+            document.querySelector('#info .ut1').classList.remove('fade');
+            document.querySelector('#info .bt1').classList.remove('fade');
+            document.querySelector('#info .ut2').classList.remove('fade');
+            document.querySelector('#info .bt2').classList.remove('fade');
+            document.querySelector('.hexagramTitle1').classList.remove('fade');
+            document.querySelector('.hexagramTitle2').classList.remove('fade');
+            document.querySelector('.charactere1').classList.remove('fade');
+            document.querySelector('.charactere2').classList.remove('fade');
+
+            document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + " >";
+            document.querySelector('.prevHexagram').innerHTML = "< " + cutTitle(hexagrams[0].title);
+        }, 800)
+    
     
 
     
     
 }
 
-function getTrigram(p1 ,p2, p3) {
-    if(hexagrams[0].lines[p1 - 1] == true && hexagrams[0].lines[p2  -1] == true && hexagrams[0].lines[p3 - 1] == true) {
+function getTrigram(p1 ,p2, p3, hexIndex) {
+    if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  -1] == true && hexagrams[hexIndex].lines[p3 - 1] == true) {
         return 'céu'
-    } else if(hexagrams[0].lines[p1 - 1] == false && hexagrams[0].lines[p2 - 1] == false && hexagrams[0].lines[p3 - 1] == false){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2 - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == false){
         return 'terra'
-    } else if(hexagrams[0].lines[p1 - 1] == true && hexagrams[0].lines[p2  - 1] == false && hexagrams[0].lines[p3 - 1] == false){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == false){
         return 'trovão'
-    } else if(hexagrams[0].lines[p1 - 1] == false && hexagrams[0].lines[p2 - 1] == true && hexagrams[0].lines[p3 - 1] == false){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2 - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == false){
         return 'água'
-    } else if(hexagrams[0].lines[p1 - 1] == false && hexagrams[0].lines[p2  - 1] == false && hexagrams[0].lines[p3 - 1] == true){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == true){
         return 'montanha'
-    } else if(hexagrams[0].lines[p1 - 1] == false && hexagrams[0].lines[p2  - 1] == true && hexagrams[0].lines[p3 - 1] == true){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2  - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == true){
         return 'madeira'
-    } else if(hexagrams[0].lines[p1 - 1] == true && hexagrams[0].lines[p2  - 1] == false && hexagrams[0].lines[p3 - 1] == true){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == true){
         return 'fogo'
-    } else if(hexagrams[0].lines[p1 - 1] == true && hexagrams[0].lines[p2  - 1] == true && hexagrams[0].lines[p3 - 1] == false ){
+    } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == false ){
         return 'lago'
     }
 } 
 
-function getHexagram() {
+function getHexagram(hexIndex) {
     title = ""
     pairs.forEach(p => {
-        if(upperTrigram == p[0] && bottomTrigram == p[1]) {
+        if(hexagrams[hexIndex].upperTrigram == p[0] && hexagrams[hexIndex].bottomTrigram == p[1]) {
             title = p[2];
         }
     })
     return title;
 }
 
+function getCharactere(hexIndex) {
+    charactere = ""
+    pairs.forEach(p => {
+        if(hexagrams[hexIndex].title == p[2]) {
+            charactere = p[3]
+        }
+    })
+    return charactere;
+}
+
 // Invert Functions
 function invertLines() {
     let inversedLines = []
-    hexagrams[0].lines.forEach(l => {
+    hexagrams[currentHexagram - 1].lines.forEach(l => {
          l = !l;
          inversedLines.push(l)
     })
 
-    hexagrams[0].lines = inversedLines;
+    hexagrams[currentHexagram - 1].lines = inversedLines;
 
     YingYangShow();
 
@@ -164,9 +213,9 @@ function invertLines() {
 }
 
 function invertTrigrams() {
-    hexagrams[0].lines.push(hexagrams[0].lines.shift());
-    hexagrams[0].lines.push(hexagrams[0].lines.shift());
-    hexagrams[0].lines.push(hexagrams[0].lines.shift());
+    hexagrams[currentHexagram - 1].lines.push(hexagrams[currentHexagram - 1].lines.shift());
+    hexagrams[currentHexagram - 1].lines.push(hexagrams[currentHexagram - 1].lines.shift());
+    hexagrams[currentHexagram - 1].lines.push(hexagrams[currentHexagram - 1].lines.shift());
 
 
     YingYangShow();
@@ -177,7 +226,7 @@ function invertTrigrams() {
 }
 
 function invertPositions() {
-    hexagrams[0].lines.reverse();
+    hexagrams[currentHexagram - 1].lines.reverse();
 
     YingYangShow();
 
@@ -188,12 +237,43 @@ function invertPositions() {
 
 function YingYangShow() {
     
-    document.querySelector(".yinyangArea").classList.add("show");
-    setTimeout(()=>{
-        document.querySelector(".yinyangArea").classList.remove("show");
-
-    }, yinyangDuration)
+    if(currentHexagram == 1) {
+        document.querySelector(".yinyangArea1").classList.add("show");
+            setTimeout(()=>{
+            document.querySelector(".yinyangArea1").classList.remove("show");
+        }, yinyangDuration)
+    } else if(currentHexagram == 2) {
+        document.querySelector(".yinyangArea2").classList.add("show");
+            setTimeout(()=>{
+            document.querySelector(".yinyangArea2").classList.remove("show");
+        }, yinyangDuration)
+    }
     
 }
 
+function goToSecondHexagram() {
+    slidesArea.style.marginLeft = "-379px"
+    currentHexagram = 2;
+    setControlls();
+}
 
+function goToFirstHexagram() {
+    slidesArea.style.marginLeft = "0px"
+    currentHexagram = 1;
+    setControlls();
+}
+
+function setControlls() {
+    if(currentHexagram == 1) {
+        document.querySelector('.prevHexagram').style.display = 'none';
+        document.querySelector('.nextHexagram').style.display = 'block';
+    } else if(currentHexagram == 2) {
+        document.querySelector('.prevHexagram').style.display = 'block';
+        document.querySelector('.nextHexagram').style.display = 'none';
+    }
+}
+
+function cutTitle(title) {
+    cuttedTitle = title.split(' - ');
+    return cuttedTitle[1];
+}
