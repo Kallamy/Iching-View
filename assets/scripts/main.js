@@ -265,11 +265,11 @@ function goToFirstHexagram() {
 
 function setControlls() {
     if(currentHexagram == 1) {
-        document.querySelector('.prevHexagram').style.display = 'none';
-        document.querySelector('.nextHexagram').style.display = 'block';
+        document.querySelector('.prevHexagram').style.opacity = 0;
+        document.querySelector('.nextHexagram').style.opacity = 1;
     } else if(currentHexagram == 2) {
-        document.querySelector('.prevHexagram').style.display = 'block';
-        document.querySelector('.nextHexagram').style.display = 'none';
+        document.querySelector('.prevHexagram').style.opacity = 1;
+        document.querySelector('.nextHexagram').style.opacity = 0;
     }
 }
 
