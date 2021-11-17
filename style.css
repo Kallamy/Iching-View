@@ -32,7 +32,7 @@ body {
     border: 10px gold  ridge; 
     margin-bottom: 30px;
     position: relative;
-    padding: 20px;
+    
     
 }
 
@@ -232,6 +232,22 @@ body {
     visibility: visible;
     opacity: 0;
     transition: opacity .9s ease-in-out;
+}
+
+.templateArea {
+    position: absolute;
+    background-color: aliceblue;
+    transform: rotate(180deg);
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.templateArea img {
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
 }
 .gameArea {
     display: none;

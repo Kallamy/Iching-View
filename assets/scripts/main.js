@@ -24,11 +24,11 @@ hexagrams = [
         upperTrigram: "",
         bottomTrigram: "",
         lines: [
+            true, 
+            true, 
+            true, 
             false, 
-            true, 
-            true, 
             false, 
-            true, 
             false
         ]
    },
@@ -60,6 +60,8 @@ document.querySelectorAll('.lineArea').forEach(line => {
 });
 
 updateHexagram()
+setControlls();
+drawTemplate();
 
 
 function lineChange(e) {
@@ -89,6 +91,7 @@ function updateHexagram() {
     });
     
     getInfo();
+    drawTemplate();
 }
 
 function getInfo() {
@@ -252,7 +255,7 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-379px"
+    slidesArea.style.marginLeft = "-369px"
     currentHexagram = 2;
     setControlls();
 }
@@ -276,4 +279,25 @@ function setControlls() {
 function cutTitle(title) {
     cuttedTitle = title.split(' - ');
     return cuttedTitle[1];
+}
+
+function drawTemplate() {
+    templateLines = document.querySelectorAll(".templateLine");
+
+    for(let i = 0; i < templateLines.length; i++) {
+        if(hexagrams[0].lines[i] == false && hexagrams[1].lines[i] == false) {
+            templateLines[i].innerHTML = '<img src="assets/images/yinLine.png">'
+        }
+        if(hexagrams[0].lines[i] == true && hexagrams[1].lines[i] == true) {
+            templateLines[i].innerHTML = '<img src="assets/images/yangLine.png">'
+        }
+        if(hexagrams[0].lines[i] == true && hexagrams[1].lines[i] == false) {
+            templateLines[i].innerHTML = '<img src="assets/images/oLine.png">'
+        }
+        if(hexagrams[0].lines[i] == false && hexagrams[1].lines[i] == true) {
+            templateLines[i].innerHTML = '<img src="assets/images/xLine.png">'
+        }
+    }
+
+
 }
