@@ -14,7 +14,7 @@
 <body>
     <div class="frameArea">
         <div class="frame">
-            <div class="slidesArea">
+            <div class="slidesArea smooth">
                 <div class="slide">
                     <div class="charactere1">乾</div>
                     <div class="hexagramTitle1">Nome do hexagrama</div>
@@ -53,11 +53,17 @@
     
                         <div class="hexagramArea" data-index="1">
                             <div class="linesArea">
+                                
                                 <div class="lineArea" data-pos="6"></div>
+                                
                                 <div class="lineArea" data-pos="5"></div>
+                                
                                 <div class="lineArea" data-pos="4"></div>
+                               
                                 <div class="lineArea" data-pos="3"></div>
+                           
                                 <div class="lineArea" data-pos="2"></div>
+                
                                 <div class="lineArea" data-pos="1"></div>
                             </div>
                             <div class="yinyangArea2">
@@ -85,40 +91,50 @@
 
         </div>
         <div class="buttonsArea">
-    
             <div class="buttonArea">
-                <button onClick="invertLines()">Inverter Linhas</button>
+                <div class="changeSelector">
+                    <input type="checkbox" name="changeHexagram" id="changeSelector">
+                    <label for="changeSelector">Mudar Hexagrama</label>
+                </div>
+                <button class="invertButton" onClick="invertLines()">Inverter Linhas</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button onClick="invertTrigrams()">Inverter Trigramas</button>
+                <button class="invertButton" onClick="invertTrigrams()">Inverter Trigramas</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button onClick="invertPositions()">Inverter Posições</button>
+                <button class="invertButton" onClick="invertPositions()">Inverter Posições</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
-        
+            
+            <button class="consultButton"  onClick="showGame()">Consultar com moedas</button>
         </div>
     </div>
+    <div class="consultArea">
+        <span class="consultMessage">Pense na sua pergunta e jogue as moedas seis vezes</span>
 
-    <button onClick="showGame()">Consultar com moedas</button>
-    <div class="gameArea">
-        <div class="tableArea">
-            <div class="coin">
-                <div class="yinFace"></div>
-                <div class="yangFace"></div>
+        <div class="gameArea">
+            <div class="tableArea">
+                <div class="coin">
+                    <div class="yinFace"></div>
+                    <div class="yangFace"></div>
+                </div>
+                <div class="coin" >
+                    <div class="yinFace"></div>
+                    <div class="yangFace"></div>
+                </div>
+                <div class="coin">
+                    <div class="yinFace"></div>
+                    <div class="yangFace"></div>
+                </div>
             </div>
-            <div class="coin" >
-                <div class="yinFace"></div>
-                <div class="yangFace"></div>
-            </div>
-            <div class="coin">
-                <div class="yinFace"></div>
-                <div class="yangFace"></div>
-            </div>
+            <button class="coinsButton" onClick="flipCoins()">Jogar Moedas</button>
         </div>
-        <button onClick="flipCoins()">Jogar Moedas</button>
+        <div class="conclusionArea">
+            <button class="consultButton"  onClick="showGame()">Consultar novamente</button>
+            <button class="exitButton"  onClick="exitGame()">Sair</button>
+        </div>
     </div>
 
     <script src="assets/scripts/pairs.js"></script>
