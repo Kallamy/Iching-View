@@ -5,6 +5,7 @@
 let hexagrams = [
    {
         title: "",
+        number: 0,
         charactere: "",
         upperTrigram: "",
         bottomTrigram: "",
@@ -19,6 +20,7 @@ let hexagrams = [
    },
    {
         title: "",
+        number: 0,
         charactere: "",
         upperTrigram: "",
         bottomTrigram: "",
@@ -103,7 +105,7 @@ function updateHexagram() {
             if(hexagrams[index].lines[pos] === true) {
             line.innerHTML = `<div class="line"><span class="lineNumber">${pos + 1}</span>`
             } else {
-                line.innerHTML = `<div class="line"></div><div class="line"><span class="lineNumber">${pos + 1}</span>`
+                line.innerHTML = `<div class="line"><span class="lineNumber">${pos + 1}</span></div><div class="line"></div>`
             }
             
             for( let i = 0; i < 2; i++ ) {
@@ -150,10 +152,16 @@ function getInfo() {
         hexagrams[i].bottomTrigram = getTrigram(1,2,3, i);
         hexagrams[i].title = getHexagram(i);
         hexagrams[i].charactere = getCharactere(i);
+        hexagrams[i].number = getNumber(i);
 
     }
     
-
+        if(document.querySelector('.hexagramNumber1').innerHTML != hexagrams[0].number) {
+            document.querySelector('.hexagramNumber1').classList.add('fade');
+        }
+        if(document.querySelector('.hexagramNumber2').innerHTML != hexagrams[1].number) {
+            document.querySelector('.hexagramNumber2').classList.add('fade');
+        }
         if(document.querySelector('.hexagramTitle1').innerHTML != hexagrams[0].title) {
             document.querySelector('.hexagramTitle1').classList.add('fade');
         }
@@ -179,7 +187,8 @@ function getInfo() {
             document.querySelector('#info .bt2').classList.add('fade');
         }
         setTimeout(()=>{
-            console.log(document.querySelector('.hexagramTitle1'))
+            document.querySelector('.hexagramNumber1').innerHTML = hexagrams[0].number;
+            document.querySelector('.hexagramNumber2').innerHTML = hexagrams[1].number;
             document.querySelector('.hexagramTitle1').innerHTML = hexagrams[0].title;
             document.querySelector('.hexagramTitle2').innerHTML = hexagrams[1].title;
             document.querySelector('.charactere1').innerHTML = hexagrams[0].charactere;
@@ -196,6 +205,8 @@ function getInfo() {
             document.querySelector('.hexagramTitle2').classList.remove('fade');
             document.querySelector('.charactere1').classList.remove('fade');
             document.querySelector('.charactere2').classList.remove('fade');
+            document.querySelector('.hexagramNumber1').classList.remove('fade');
+            document.querySelector('.hexagramNumber2').classList.remove('fade');
 
             document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + " >";
             document.querySelector('.prevHexagram').innerHTML = "< " + cutTitle(hexagrams[0].title);
@@ -245,6 +256,16 @@ function getCharactere(hexIndex) {
         }
     })
     return charactere;
+}
+
+function getNumber(hexIndex) {
+    number = 0;
+    pairs.forEach(p => {
+        if(hexagrams[hexIndex].title == p[2]) {
+            number = p[4]
+        }
+    })
+    return number;
 }
 
 // Invert Functions
