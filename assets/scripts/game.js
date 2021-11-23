@@ -49,7 +49,7 @@ function flipCoins() {
         successSound.play();
         
         if(hasTwoHexgrams) {
-            consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em> <br> Boa sorte na sua caminhada!`
+            consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em>. <br> Boa sorte na sua caminhada!`
         } else {
             consultMessage.innerHTML = `Você tirou o hexagrama: <em>${hexagrams[0].title}</em> <br> Boa sorte na sua caminhada!`
         }

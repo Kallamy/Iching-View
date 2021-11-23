@@ -5,7 +5,7 @@
 let hexagrams = [
    {
         title: "",
-        number: 0,
+        number: null,
         charactere: "",
         upperTrigram: "",
         bottomTrigram: "",
@@ -20,7 +20,7 @@ let hexagrams = [
    },
    {
         title: "",
-        number: 0,
+        number: null,
         charactere: "",
         upperTrigram: "",
         bottomTrigram: "",
@@ -43,11 +43,13 @@ let hasTwoHexgrams = true;
 let templateLines = document.querySelectorAll(".templateLine");
 let changeSelector = document.querySelector("#changeSelector");
 
-/*
+
 let clickPressed = false;
 let canChange = true;
+let firstClick = false;
 document.addEventListener('mousedown', () => {
     clickPressed = true;
+    firstClick = true;
     lineChange()
     
 })
@@ -55,13 +57,35 @@ document.addEventListener('mousedown', () => {
 document.addEventListener('mouseup', () => {
     clickPressed = false;
     canChange = false;
+    firstClick = false;
 })
-*/
+
 
 document.querySelectorAll('.lineArea').forEach(line => {
 
     line.addEventListener('click', lineChange);
     
+    line.addEventListener('mouseenter', (e) => {
+        
+        if(clickPressed) {
+           
+            if(canChange) {
+                lineChange(e);
+                canChange = false;
+            }
+        }
+    
+    });
+    line.addEventListener('mouseout', (e) => {
+        if(firstClick) {
+            lineChange(e);
+        }
+        canChange = true;
+        firstClick = false;
+    
+    });
+
+
 });
 
 updateHexagram()
@@ -207,9 +231,9 @@ function getInfo() {
             document.querySelector('.charactere2').classList.remove('fade');
             document.querySelector('.hexagramNumber1').classList.remove('fade');
             document.querySelector('.hexagramNumber2').classList.remove('fade');
-
-            document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + " >";
-            document.querySelector('.prevHexagram').innerHTML = "< " + cutTitle(hexagrams[0].title);
+            
+            document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
+            document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
         }, 800)
 }
 
