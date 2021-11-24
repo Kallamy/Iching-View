@@ -127,7 +127,7 @@ function updateHexagram() {
             const index = line.parentElement.parentElement.getAttribute('data-index');
             const pos = (line.getAttribute('data-pos')) - 1;
             if(hexagrams[index].lines[pos] === true) {
-            line.innerHTML = `<div class="line"><span class="lineNumber">${pos + 1}</span>`
+            line.innerHTML = `<div class="line"><span class="lineNumber">${pos + 1}</span></div>`
             } else {
                 line.innerHTML = `<div class="line"><span class="lineNumber">${pos + 1}</span></div><div class="line"></div>`
             }
@@ -151,6 +151,7 @@ function updateHexagram() {
         hasTwoHexgrams = false;
         document.querySelector('.prevHexagram').style.opacity = 0;
         document.querySelector('.nextHexagram').style.opacity = 0;
+        changeSelector.checked = false;
     
         
     } else {
@@ -237,9 +238,6 @@ function getInfo() {
         }, 800)
 }
 
-function clearHexagram() {
-    alert('Limpou!');
-}
 function getTrigram(p1 ,p2, p3, hexIndex) {
     if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  -1] == true && hexagrams[hexIndex].lines[p3 - 1] == true) {
         return 'céu'
@@ -424,6 +422,40 @@ function drawTemplate() {
             templateLines[i].innerHTML = '<img src="assets/images/xLine.png">'
         }
     }
+}
+
+function getAbout(hexIndex) {
+    aboutArea = document.querySelector(".aboutArea")
 
 
+    sentence = "";
+    general = "";
+    love = "";
+    business = "";
+    personal  = "";
+    overview = "";
+
+    about.forEach(a => {
+        if(hexagrams[hexIndex].number == a.id) {
+            sentence = a.sentence;
+            general = a.general;
+            love = a.love;
+            business = a.business;
+            personal  = a.personal;
+            overview = a.overview;
+        }
+    })
+
+    document.querySelector("#aboutQuote").innerHTML = sentence;
+    document.querySelector("#aboutTrigrams").innerHTML = `<p class="about-title">Formed by the trigrams:</p><p class="about-content">${hexagrams[currentHexagram].upperTrigram + " over " + hexagrams[currentHexagram].bottomTrigram}</p>`
+    document.querySelector("#aboutGeneral").innerHTML = `<p class="about-title">General:</p><p class="about-content">${general}</p>`
+    document.querySelector("#aboutLove").innerHTML = `<p class="about-title">Love:</p><p class="about-content">${love}</p>`
+    document.querySelector("#aboutBusiness").innerHTML = `<p class="about-title">Business:</p><p class="about-content">${business}</p>`
+    document.querySelector("#aboutPersonal").innerHTML = `<p class="about-title">Personal:</p><p class="about-content">${personal}</p>` 
+    document.querySelector("#aboutOverview").innerHTML = `<p class="about-title">Overview:</p><p class="about-content">${overview}</p>`
+
+    aboutArea.style.display = 'block';
+    aboutArea.addEventListener('click', () => {
+        aboutArea.style.display = 'none';
+    });
 }
