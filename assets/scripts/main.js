@@ -12,7 +12,7 @@ let hexagrams = [
         lines: [
             true, 
             false, 
-            true, 
+            false, 
             false, 
             true, 
             false

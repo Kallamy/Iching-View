@@ -2,10 +2,11 @@
 * {
     box-sizing: content-box;
     user-select: none;
+    margin: 0;
+    padding: 0;
 }
 body {
-    background-color: darkred;
-    margin-top: 40px;
+    background-color: darkkhaki;
 }
 
 @font-face {
@@ -15,6 +16,48 @@ body {
     src: url(assets/fonts/chinese2.ttf);
 }
 
+.header {
+    width: 100%;
+    height: 70px;
+    background: black;
+    border-bottom: 5px solid white;
+}
+.logoArea {
+    margin-left: 50px;
+    padding-top: 5px;
+}
+.logo {
+    margin: auto;
+    font-size: 40px;
+    color:darkgrey ;
+    font-family: Kaushan Script;
+    font-weight: bold;
+}
+.logo span {
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+.container {
+    background-color: grey;
+    max-width: 900px;
+    height: 100vh;
+    margin: auto;
+    padding: 36px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-top: 5px solid black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+
+}
 .frameArea 
 {
     width: 728px;
@@ -29,7 +72,7 @@ body {
     width: 369px;
     height: 369px;
     background-image: url("assets/images/paperBG.jpg");
-    border: 15px gold  ridge; 
+    border: 15px darkred groove; 
     margin-bottom: 10px;
     position: relative;
     
@@ -37,7 +80,6 @@ body {
 }
 
 .slidesArea {
-    background-image: url("assets/images/paperBG.jpg");
     display: none;
     width: 800px;
     height: 100%;
@@ -45,7 +87,7 @@ body {
     position: absolute;
 }
 .smooth {
-    transition: margin-left .7s ease-in-out;
+    transition: margin-left .9s ease-in-out;
 }
 .slide {
     display: inline-block;
@@ -72,16 +114,18 @@ body {
     cursor: pointer;
     font-family: cursive;
     width: 7000px;
-    background: #DDD;
+    background: rgba(255, 255, 255, 0.4);
     text-align: right;
-    padding: 0 5px;
+    padding: 10 5px;
     text-decoration: underline;
     box-shadow: 0px 0px 5px;
+    margin-right: 10px;
 
 }
 .prevHexagram {
     left: 20px;
     text-align: left;
+    margin-left: 10px;
 }
 .arrow {
     font-size: 40px;
@@ -193,7 +237,7 @@ body {
     text-align: center;
     line-height:  30px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: Kaushan Script;
     transition: opacity  ease-in-out 0.8s;
 }
 .charactere1,
@@ -230,6 +274,8 @@ body {
     margin-bottom: 20px;
     transition: opacity  ease-in-out 1s;
     text-align: center;
+    font-family: Simonetta;
+    font-weight: bold;
 }
 #info .bt1,
 #info .bt2
@@ -238,6 +284,8 @@ body {
     margin-top: 16px;
     transition: opacity  ease-in-out 1s;
     text-align: center;
+    font-family: Simonetta;
+    font-weight: bold;
 }
 
 .buttonsArea {
@@ -295,6 +343,8 @@ body {
     top: 30px;
     background-color: lightskyblue;
     color: azure;
+    width: 20px;
+    height: 20px;
     font-weight: bold;
     font-size: 20px;
 
@@ -307,7 +357,7 @@ body {
     display: none;
     position: absolute;
     overflow-y: scroll;
-    background-color: brown;
+    background-color: darkslateblue;
     border-top: 5px solid black;
     padding: 10px;
     z-index: 100;
@@ -347,7 +397,7 @@ body {
     margin-right: 300px;
     font-size: 30px;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     max-width: 900px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -369,7 +419,7 @@ body {
 }
 .gameArea {
     background-color: chartreuse;
-    width: 400px;
+    width: 300px;
    
     margin: auto;
     margin-top: 20px;
@@ -377,8 +427,8 @@ body {
     
 }
 .tableArea {
-    width: 310px;
-    height: 100px;
+    width: 210px;
+    height: 60px;
     margin: 0 auto;
     
     background-color:burlywood;
@@ -408,8 +458,8 @@ body {
     border: 3px solid  darkgoldenrod;
 }
 .coin {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     position: relative;
     transform-style: preserve-3d;
 
@@ -424,12 +474,13 @@ body {
 }
 
 .yinFace {
-    background: black;
-    
+    background-image: url(./assets/coins/yinCoin.png);
+    background-size: cover;
 }
 .yangFace {
     backface-visibility: hidden;
-    background: white;
+    background-image: url(./assets/coins/yangCoin.png);
+    background-size: cover;
 }
 
 .coin.yin {
