@@ -458,4 +458,7 @@ function getAbout(hexIndex) {
     aboutArea.addEventListener('click', () => {
         aboutArea.style.display = 'none';
     });
+
+    console.log(`Até o momento eu já escrevi ${about.length} hexagramas` )
+    
 }

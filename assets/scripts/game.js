@@ -27,25 +27,49 @@ function flipCoins() {
     coinsResult[1] = Math.random() < 0.5 ? 0 :1;
     coinsResult[2] = Math.random() < 0.5 ? 0 :1;
     
+    marginRange = 30;
+    leftM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+    rightM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+    topM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+    bottomM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+
+    angleValue = [(Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361))];
+
     resetCoins();
     for( let i = 0; i < coins.length; i++ ) {
         if (coinsResult[i] == 0) {
             coins[i].classList.add('yin');
+            coins[i].style.transform = `rotate(${angleValue[i]}deg) rotateY(180deg)`;
         } else {
             coins[i].classList.add('yang');
+            coins[i].style.transform = `rotate(${angleValue[i]}deg)`;
         }
+        coins[i].style.marginLeft = `${leftM[i]}px`;
+        coins[i].style.marginRight = `${rightM[i]}px`;
+        coins[i].style.marginTop = `${topM[i]}px`;
+        coins[i].style.marginBottom = `${bottomM[i]}px`;
         
     }
     
     if(playCount <= 6) {
+
+        coinsSound.play();
         getResult();
         console.log(result)
-        coinsSound.play();
+        for( let i = 0; i < coins.length; i++ ) {
+            coins[i].style.opacity = '0';
+        }
+        setTimeout(()=>{
+            for( let i = 0; i < coins.length; i++ ) {
+                coins[i].style.opacity = '1';
+            }
+        }, 400)
+        
     } else {
         // alert('Você tirou o hexagrama: '+ hexagrams[0].title)
     }
     playCount ++;
-    if(playCount == 7) {
+    if(playCount == 8) {
         successSound.play();
         
         if(hasTwoHexgrams) {
