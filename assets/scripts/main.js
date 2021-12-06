@@ -47,6 +47,8 @@ let changeSelector = document.querySelector("#changeSelector");
 let clickPressed = false;
 let canChange = true;
 let firstClick = false;
+
+let isConsulting = false;
 document.addEventListener('mousedown', () => {
     clickPressed = true;
     firstClick = true;
@@ -226,15 +228,22 @@ function getInfo() {
             document.querySelector('#info .bt1').classList.remove('fade');
             document.querySelector('#info .ut2').classList.remove('fade');
             document.querySelector('#info .bt2').classList.remove('fade');
-            document.querySelector('.hexagramTitle1').classList.remove('fade');
-            document.querySelector('.hexagramTitle2').classList.remove('fade');
-            document.querySelector('.charactere1').classList.remove('fade');
-            document.querySelector('.charactere2').classList.remove('fade');
-            document.querySelector('.hexagramNumber1').classList.remove('fade');
-            document.querySelector('.hexagramNumber2').classList.remove('fade');
+            if(isConsulting == false) {
+                document.querySelector('.hexagramTitle1').classList.remove('fade');
+                document.querySelector('.hexagramTitle2').classList.remove('fade');
+                document.querySelector('.charactere1').classList.remove('fade');
+                document.querySelector('.charactere2').classList.remove('fade');
+                document.querySelector('.hexagramNumber1').classList.remove('fade');
+                document.querySelector('.hexagramNumber2').classList.remove('fade');
+            }
             
-            document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
-            document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
+            if(isConsulting) {
+                document.querySelector('.nextHexagram').innerHTML = "undefined >";
+                document.querySelector('.prevHexagram').innerHTML = "< undefined";
+            } else {
+                document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
+                document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
+            }
         }, 800)
 }
 
@@ -398,7 +407,6 @@ function setControlls() {
             document.querySelector('.nextHexagram').style.opacity = 0;
         }
     }
-   
 }
 
 function cutTitle(title) {

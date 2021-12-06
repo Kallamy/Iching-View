@@ -9,6 +9,7 @@ let consultMessage = document.querySelector(".consultMessage");
 function showGame() {
     document.querySelector('.consultArea').style.display = 'block';
     clearTemplate();
+    isConsulting = true;
     for( let i = 0; i < 2; i++ ) {
         hexagrams[i].lines = [null, null, null, null, null, null];
         updateHexagram();
@@ -27,7 +28,7 @@ function flipCoins() {
     coinsResult[1] = Math.random() < 0.5 ? 0 :1;
     coinsResult[2] = Math.random() < 0.5 ? 0 :1;
     
-    marginRange = 30;
+    marginRange = 25;
     leftM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
     rightM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
     topM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
@@ -70,6 +71,7 @@ function flipCoins() {
     }
     playCount ++;
     if(playCount == 8) {
+        
         successSound.play();
         
         if(hasTwoHexgrams) {
@@ -79,6 +81,21 @@ function flipCoins() {
         }
         document.querySelector(".gameArea").style.display = "none";
         document.querySelector(".conclusionArea").style.display = "flex";
+
+        isConsulting = false;
+        document.querySelector('.hexagramTitle1').classList.remove('fade');
+        document.querySelector('.hexagramTitle2').classList.remove('fade');
+        document.querySelector('.charactere1').classList.remove('fade');
+        document.querySelector('.charactere2').classList.remove('fade');
+        document.querySelector('.hexagramNumber1').classList.remove('fade');
+        document.querySelector('.hexagramNumber2').classList.remove('fade');
+
+        document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
+        document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
+        
+    }
+    if(playCount == 9) {
+        
     }
     
     
