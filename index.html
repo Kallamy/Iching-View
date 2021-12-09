@@ -18,6 +18,11 @@
         <div class="logoArea">
             <div class="logo">I Ching<span>view</span></div>
         </div>
+        <div class="flagsArea">
+            <img src="./assets/images/us.png" class="flag" onClick="setLanguage('en')">
+            <img src="./assets/images/br.png" class="flag" onClick="setLanguage('pt-br')">
+            
+        </div>
         
     </div>
     <div class="container">
@@ -124,21 +129,22 @@
             <div class="buttonArea">
                 <div class="changeSelector">
                     <input type="checkbox" name="changeHexagram" id="changeSelector">
-                    <label for="changeSelector">Mudar Hexagrama</label>
+                    <label for="changeSelector">Change Hexagram</label>
                 </div>
-                <button class="invertButton" onClick="invertLines()">Inverter Linhas</button>
+                <hr>
+                <button class="invertButton" onClick="invertLines()">Invert Lines</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button class="invertButton" onClick="invertTrigrams()">Inverter Trigramas</button>
+                <button class="invertButton" onClick="invertTrigrams()">Invert Trigrams</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button class="invertButton" onClick="invertPositions()">Inverter Posições</button>
+                <button class="invertButton" onClick="invertPositions()">Invert Positions</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             
-            <button class="consultButton"  onClick="showGame()">Consultar com moedas</button>
+            <button class="consultButton"  onClick="showGame()">Consult with coins</button>
         </div>
     </div>
     <div class="consultArea">
@@ -172,6 +178,7 @@
         <p>Texts about the hexagrams taken from the iching free app of Estudio Nemo.</p>
         2022, made by Yuri Mallak.
     </div>
+
     <script src="assets/scripts/pairs.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/game.js"></script> 

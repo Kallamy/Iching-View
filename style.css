@@ -1,7 +1,7 @@
 
 * {
     box-sizing: content-box;
-    user-select: none;
+    user-select: none; 
     margin: 0;
     padding: 0;
 }
@@ -17,10 +17,12 @@ body {
 }
 
 .header {
+    display: flex;
     width: 100%;
     height: 70px;
     background: black;
     border-bottom: 5px solid white;
+    justify-content: space-between;
 }
 .logoArea {
     margin-left: 50px;
@@ -38,6 +40,19 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
+}
+.flagsArea {
+    margin-right: 50px;
+}
+.flag {
+    margin-top: 20px;
+    margin-right: 10px;
+    -webkit-user-drag: none; 
+    width: 45px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .container {
     background-color: grey;
@@ -181,7 +196,7 @@ body {
     height: 1rem;
     margin-top: 0.6rem;
     display: flex;
-    gap: 2.9rem;
+    gap: 2.6rem;
 }
 .line {
     background:black;
@@ -298,22 +313,31 @@ body {
 .buttonsArea {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-right: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 130px;
+}
+.changeSelector {
+    font-family: Arial, Helvetica, sans-serif;
 }
 .invertButton {
+    width: 40px;
+    height: 40px;
     background-color: crimson;
     border: 2px outset yellow;
-    border-radius: 5px;
-    padding: 10px 5px;
+    font-size: 10px;
     font-weight: bold;
+    color: honeydew;
+    border-radius: 5px;
+    padding: 5px 5px;
     z-index: 999;
     
 }
 .invertButton:hover {
-    filter: brightness(120%)
+    filter: brightness(120%);
+    font-weight: bold;
+    border: 3px outset yellow;
 }
 
 .invertButton:hover + .yinyangIcon {
@@ -324,7 +348,7 @@ body {
 .invertButton:not( :hover ) + .yinyangIcon {
     visibility: visible;
     opacity: 0;
-    transition: opacity .9s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 
 .templateArea {
@@ -339,6 +363,7 @@ body {
     box-shadow: 0px 0px 5px;
 }
 .templateArea img {
+    -webkit-user-drag: none; 
     display: block;
     width: 100%;
     margin-bottom: 3px;
@@ -363,18 +388,19 @@ body {
 .aboutArea {
     display: none;
     position: absolute;
-    overflow-y: scroll;
+    
     text-align: justify;
     background-color: darkslateblue;
     color: mediumturquoise;
     padding: 5px;
+    padding-right: 20px;
     z-index: 100;
-    width: 100%;
+    width: 96%;
     height: 100%;
     
 }
 #aboutQuote {
-    margin: 10px;
+    margin: 7px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: white;
@@ -414,11 +440,15 @@ body {
 }
 .consultButton {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-right: 90px;
     display: flex;
+    width: 70px;
+    height: 50px;
     padding: 10px;
     background-color: darkviolet;
     color: white;
+    text-align: center;
     font-weight: bold;
     border: 2px dashed darkkhaki;
 }
@@ -426,8 +456,8 @@ body {
     filter: brightness(120%)
 }
 .gameArea {
-    background-color: chartreuse;
-    width: 300px;
+    
+    width: 400px;
    
     margin: auto;
     margin-top: 20px;
@@ -460,7 +490,10 @@ body {
 }
 
 .coinsButton {
+    width: 240px;
+    margin-left: 10px;
     background-color: gold;
+    padding: 15px;
     font-size: 20px;
     font-weight: bold;
     border: 3px solid  darkgoldenrod;

@@ -1,54 +1,73 @@
-/* linha yang = true
-   linha yin = false 
-*/
+//let lang = "pt-br";
+let lang = "en";
 
-let hexagrams = [
-   {
-        title: "",
-        number: null,
-        charactere: "",
-        upperTrigram: "",
-        bottomTrigram: "",
-        lines: [
-            true, 
-            false, 
-            false, 
-            false, 
-            true, 
-            false
-        ]
-   },
-   {
-        title: "",
-        number: null,
-        charactere: "",
-        upperTrigram: "",
-        bottomTrigram: "",
-        lines: [
-            true, 
-            false, 
-            false, 
-            false, 
-            true, 
-            false
-        ]
-   },
+console.log()
+init();
+function init() {
+    /* linha yang = true
+       linha yin = false 
+    */
 
-]
+    hexagrams = [
+        {
+                title: "",
+                number: null,
+                charactere: "",
+                upperTrigram: "",
+                bottomTrigram: "",
+                lines: [
+                    true, 
+                    false, 
+                    false, 
+                    false, 
+                    true, 
+                    false
+                ]
+        },
+        {
+                title: "",
+                number: null,
+                charactere: "",
+                upperTrigram: "",
+                bottomTrigram: "",
+                lines: [
+                    true, 
+                    false, 
+                    false, 
+                    false, 
+                    true, 
+                    false
+                ]
+        },
+    ];
+    
+    document.querySelector('.slidesArea').style.visibility = "hidden";
+    document.querySelector('.templateArea').style.visibility = "hidden";
 
-const yinyangDuration = 2000;
-const slidesArea = document.querySelector(".slidesArea");
-let currentHexagram = 0;
-let hasTwoHexgrams = true;
-let templateLines = document.querySelectorAll(".templateLine");
-let changeSelector = document.querySelector("#changeSelector");
+    yinyangDuration = 2000;
+    hasTwoHexgrams = true;
+    currentHexagram = 0;     
+    
+    clickPressed = false;
+    canChange = true;
+    firstClick = false;
+    
+    isConsulting = false;
+    
+    slidesArea = document.querySelector(".slidesArea");
+    templateLines = document.querySelectorAll(".templateLine");
+    changeSelector = document.querySelector("#changeSelector");
+
+    setTimeout(()=>{
+        document.querySelector('.slidesArea').style.visibility = "visible";
+        document.querySelector('.templateArea').style.visibility = "visible";
+
+    }, 1500)
+}
 
 
-let clickPressed = false;
-let canChange = true;
-let firstClick = false;
 
-let isConsulting = false;
+
 document.addEventListener('mousedown', () => {
     clickPressed = true;
     firstClick = true;
@@ -101,19 +120,20 @@ function lineChange(e) {
     const index = e.currentTarget.parentElement.parentElement.getAttribute('data-index');
     pos = (e.currentTarget.getAttribute('data-pos')) - 1;
     
-
-    if(changeSelector.checked === true) {
-        if(hexagrams[index].lines[pos] == true) {
-            hexagrams[index].lines[pos] = false;
-        } else {
-            hexagrams[index].lines[pos] = true;
-        }
-    } else {
-        for( let i = 0; i < 2; i++ ) {
-            if(hexagrams[i].lines[pos] == true) {
-                hexagrams[i].lines[pos] = false;
+    if(!isConsulting) {
+        if(changeSelector.checked === true) {
+            if(hexagrams[index].lines[pos] == true) {
+                hexagrams[index].lines[pos] = false;
             } else {
-                hexagrams[i].lines[pos] = true;
+                hexagrams[index].lines[pos] = true;
+            }
+        } else {
+            for( let i = 0; i < 2; i++ ) {
+                if(hexagrams[i].lines[pos] == true) {
+                    hexagrams[i].lines[pos] = false;
+                } else {
+                    hexagrams[i].lines[pos] = true;
+                }
             }
         }
     }
@@ -249,21 +269,21 @@ function getInfo() {
 
 function getTrigram(p1 ,p2, p3, hexIndex) {
     if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  -1] == true && hexagrams[hexIndex].lines[p3 - 1] == true) {
-        return 'céu'
+        return (lang == "pt-br") ? ("céu") : ((lang == "en") ? ("heaven") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2 - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == false){
-        return 'terra'
+        return (lang == "pt-br") ? ("terra") : ((lang == "en") ? ("earth") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == false){
-        return 'trovão'
+        return (lang == "pt-br") ? ("trovão") : ((lang == "en") ? ("thunder") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2 - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == false){
-        return 'água'
+        return (lang == "pt-br") ? ("água") : ((lang == "en") ? ("water") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == true){
-        return 'montanha'
+        return (lang == "pt-br") ? ("montanha") : ((lang == "en") ? ("mountain") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == false && hexagrams[hexIndex].lines[p2  - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == true){
-        return 'madeira'
+        return (lang == "pt-br") ? ("madeira") : ((lang == "en") ? ("wind") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == false && hexagrams[hexIndex].lines[p3 - 1] == true){
-        return 'fogo'
+        return (lang == "pt-br") ? ("fogo") : ((lang == "en") ? ("fire") : (""))
     } else if(hexagrams[hexIndex].lines[p1 - 1] == true && hexagrams[hexIndex].lines[p2  - 1] == true && hexagrams[hexIndex].lines[p3 - 1] == false ){
-        return 'lago'
+        return (lang == "pt-br") ? ("lago") : ((lang == "en") ? ("lake") : (""))
     } else {
         return '???'
     }
@@ -443,7 +463,7 @@ function getAbout(hexIndex) {
     personal  = "";
     overview = "";
 
-    about.forEach(a => {
+    about.en.forEach(a => {
         if(hexagrams[hexIndex].number == a.id) {
             sentence = a.sentence;
             general = a.general;
@@ -468,5 +488,30 @@ function getAbout(hexIndex) {
     });
 
     console.log(`Até o momento eu já escrevi ${about.length} hexagramas` )
+}
+
+function setLanguage(l) {
+    
+    
+    lang = l;
+    init();
+
+    infoSpan = document.querySelectorAll("#info span");
+    if(lang == "en") {
+        infoSpan[0].innerText = "over";
+        infoSpan[1].innerText = "over";
+        document.querySelector(".changeSelector label").innerText = "Change Hexagram";
+        document.querySelector(".consultButton"). innerText = "Consult with coins";
+    }
+    else if(lang == "pt-br") {
+        infoSpan[0].innerText = "sobre";
+        infoSpan[1].innerText = "sobre";
+        document.querySelector(".changeSelector label").innerText = "Mudar Hexagrama";
+        document.querySelector(".consultButton"). innerText = "Consultar com moedas";
+    }
+
+    updateHexagram();
+    exitGame();
+
     
 }

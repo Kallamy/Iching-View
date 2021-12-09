@@ -8,16 +8,31 @@ var successSound = new Audio("./assets/sounds/success.mp3");
 let consultMessage = document.querySelector(".consultMessage");
 function showGame() {
     document.querySelector('.consultArea').style.display = 'block';
+    document.querySelector('.buttonsArea').style.visibility = 'hidden';
+    document.querySelector('.consultButton').style.visibility = 'hidden';
+
     clearTemplate();
     isConsulting = true;
     for( let i = 0; i < 2; i++ ) {
         hexagrams[i].lines = [null, null, null, null, null, null];
         updateHexagram();
     }
-    consultMessage.innerHTML = "Concentre-se na sua pergunta e jogue as moedas seis vezes"
+
+    if(lang == "en") {
+        consultMessage.innerHTML = "Concentrate on your question and toss the coins six times";
+    } else if(lang == "pt-br") {
+        consultMessage.innerHTML = "Concentre-se na sua pergunta e jogue as moedas seis vezes";
+        
+    }
     document.querySelector(".conclusionArea").style.display = "none";
     document.querySelector(".gameArea").style.display = "flex";
     playCount = 1;
+
+    if(lang == "en") {
+        document.querySelector('.coinsButton').innerText = "Toss coins";
+    } else if(lang == "pt-br") {
+        document.querySelector('.coinsButton').innerText = "Jogar moedas";
+    }
 }
 
 function flipCoins() {
@@ -67,18 +82,48 @@ function flipCoins() {
         }, 400)
         
     } else {
-        // alert('Você tirou o hexagrama: '+ hexagrams[0].title)
+        //alert('Você tirou o hexagrama: '+ hexagrams[0].title)
     }
     playCount ++;
+    if(playCount == 7) {
+        if(lang == "en") {
+            document.querySelector('.coinsButton').innerText = "Reveal";
+        } else if(lang == "pt-br") {
+            document.querySelector('.coinsButton').innerText = "Revelar";
+        }
+    } else {
+        if(lang == "en") {
+            document.querySelector('.coinsButton').innerText = "Toss coins";
+        } else if(lang == "pt-br") {
+            document.querySelector('.coinsButton').innerText = "Jogar moedas";
+        }
+    }
     if(playCount == 8) {
+        
         
         successSound.play();
         
+        consultButton = document.querySelectorAll(".consultButton");
+    
         if(hasTwoHexgrams) {
-            consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em>. <br> Boa sorte na sua caminhada!`
+            if(lang == "en") {
+                consultMessage.innerHTML = `You get the hexagrams: <em>${hexagrams[0].title}</em> and <em>${hexagrams[1].title}</em>. <br> Good luck!`
+                consultButton[1]. innerText = "Consult Again";
+
+            } else if(lang == "pt-br") {
+                consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em>. <br> Boa sorte na sua caminhada!`
+                consultButton[1]. innerText = "Consultar novamente";
+            }
         } else {
-            consultMessage.innerHTML = `Você tirou o hexagrama: <em>${hexagrams[0].title}</em> <br> Boa sorte na sua caminhada!`
-        }
+            if(lang == "en") {
+                consultMessage.innerHTML = `You get the hexagram: <em>${hexagrams[0].title}</em> <br> Good luck!`
+                consultButton[1]. innerText = "Consult Again";
+
+            } else if(lang == "pt-br") {
+                consultMessage.innerHTML = `Você tirou o hexagrama: <em>${hexagrams[0].title}</em> <br> Boa sorte na sua caminhada!`
+                consultButton[1]. innerText = "Consultar novamente";
+            }
+        }   
         document.querySelector(".gameArea").style.display = "none";
         document.querySelector(".conclusionArea").style.display = "flex";
 
@@ -92,14 +137,17 @@ function flipCoins() {
 
         document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
         document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
+
+        document.querySelector('.buttonsArea').style.visibility = 'visible';
+        document.querySelector('.consultButton').style.visibility = 'hidden';
         
     }
     if(playCount == 9) {
         
     }
-    
-    
 }
+    
+
 
 function getResult() {
     let resultSum = coinsResult.reduce((a,b)=>a+b);
@@ -156,4 +204,6 @@ function clearTemplate() {
 
 function exitGame() {
     document.querySelector('.consultArea').style.display = 'none';
+    document.querySelector('.buttonsArea').style.visibility = 'visible';
+    document.querySelector('.consultButton').style.visibility = 'visible';
 }
