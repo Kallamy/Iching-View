@@ -10,12 +10,18 @@ function showGame() {
     document.querySelector('.consultArea').style.display = 'block';
     document.querySelector('.buttonsArea').style.visibility = 'hidden';
     document.querySelector('.consultButton').style.visibility = 'hidden';
+    document.querySelector('.aboutArea').style.display = 'none';
+    document.querySelector('.about-button').style.display ='none';
+    document.querySelector('.about-button#second').style.display ='none';
 
     clearTemplate();
     isConsulting = true;
     for( let i = 0; i < 2; i++ ) {
         hexagrams[i].lines = [null, null, null, null, null, null];
         updateHexagram();
+    }
+    for( let i = 0; i < coins.length; i++ ) {
+        coins[i].style.opacity = '0';
     }
 
     if(lang == "en") {
@@ -69,9 +75,9 @@ function flipCoins() {
     
     if(playCount <= 6) {
 
+        
         coinsSound.play();
-        getResult();
-        console.log(result)
+
         for( let i = 0; i < coins.length; i++ ) {
             coins[i].style.opacity = '0';
         }
@@ -79,18 +85,22 @@ function flipCoins() {
             for( let i = 0; i < coins.length; i++ ) {
                 coins[i].style.opacity = '1';
             }
-        }, 400)
+            getResult();
+            playCount ++;
+        }, 400);
         
     } else {
         //alert('Você tirou o hexagrama: '+ hexagrams[0].title)
     }
-    playCount ++;
-    if(playCount == 7) {
-        if(lang == "en") {
-            document.querySelector('.coinsButton').innerText = "Reveal";
-        } else if(lang == "pt-br") {
-            document.querySelector('.coinsButton').innerText = "Revelar";
-        }
+    if(playCount == 6) {
+        setTimeout(()=>{
+            if(lang == "en") {
+                document.querySelector('.coinsButton').innerText = "Reveal";
+            } else if(lang == "pt-br") {
+                document.querySelector('.coinsButton').innerText = "Revelar";
+            }
+        }, 700);
+        
     } else {
         if(lang == "en") {
             document.querySelector('.coinsButton').innerText = "Toss coins";
@@ -98,9 +108,9 @@ function flipCoins() {
             document.querySelector('.coinsButton').innerText = "Jogar moedas";
         }
     }
-    if(playCount == 8) {
+    if(playCount >= 7) {
         
-        
+        successSound.currentTime = 0;
         successSound.play();
         
         consultButton = document.querySelectorAll(".consultButton");
@@ -140,9 +150,9 @@ function flipCoins() {
 
         document.querySelector('.buttonsArea').style.visibility = 'visible';
         document.querySelector('.consultButton').style.visibility = 'hidden';
-        
-    }
-    if(playCount == 9) {
+
+        document.querySelector('.about-button').style.display ='block';
+        document.querySelector('.about-button#second').style.display ='block';
         
     }
 }
@@ -206,4 +216,6 @@ function exitGame() {
     document.querySelector('.consultArea').style.display = 'none';
     document.querySelector('.buttonsArea').style.visibility = 'visible';
     document.querySelector('.consultButton').style.visibility = 'visible';
+    document.querySelector('.about-button').style.display ='block';
+    document.querySelector('.about-button#second').style.display ='block';
 }

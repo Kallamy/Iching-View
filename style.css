@@ -1,4 +1,14 @@
-
+:root {
+    --bg1: #d7aa2e;
+    --bg2: #f3c34e;
+    --darkred: #9f0102;
+    --red: #ff0114;
+    --cleargreen: #9ce0bb;
+    --green: #068b76;
+    --clearblue: #05b5c3;
+    --blue: #1381bf;
+    --yellow: #f7c118;
+  }
 * {
     box-sizing: content-box;
     user-select: none; 
@@ -6,7 +16,8 @@
     padding: 0;
 }
 body {
-    background-color: darkkhaki;
+    background-color: var(--bg2);
+    overflow: hidden;
 }
 
 @font-face {
@@ -31,16 +42,19 @@ body {
 .logo {
     margin: auto;
     font-size: 40px;
-    color:darkgrey;
+    color: var(--red);
     font-family: Kaushan Script;
     font-weight: bold;
+    text-shadow: 5px 1px 7px;
 }
 .logo span {
     font-size: 30px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
+    text-shadow: 1px 1px 2px;
 }
+
 .flagsArea {
     margin-right: 50px;
 }
@@ -55,7 +69,7 @@ body {
     cursor: pointer;
 }
 .container {
-    background-color: grey;
+    background-color: var(--bg1);
     max-width: 900px;
     height: 100vh;
     margin: auto;
@@ -80,6 +94,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: -15px;
+    margin-bottom: 15px;
 }
 .frame {
     margin: auto;
@@ -87,8 +103,8 @@ body {
     width: 369px;
     height: 369px;
     background-image: url("assets/images/paperBG.jpg");
-    border: 15px darkred groove; 
-    margin-bottom: 10px;
+    border: 15px var(--darkred) groove ; 
+    box-shadow: -4px 4px 2px;
     position: relative;
     
     
@@ -320,15 +336,16 @@ body {
 }
 .changeSelector {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 .invertButton {
     width: 40px;
     height: 40px;
-    background-color: crimson;
-    border: 2px outset yellow;
+    background-color: var(--red);
+    border: 2px outset var(--clearblue);
     font-size: 10px;
     font-weight: bold;
-    color: honeydew;
+    color: azure;
     border-radius: 5px;
     padding: 5px 5px;
     z-index: 999;
@@ -337,7 +354,7 @@ body {
 .invertButton:hover {
     filter: brightness(120%);
     font-weight: bold;
-    border: 3px outset yellow;
+    border: 3px outset #068b76;
 }
 
 .invertButton:hover + .yinyangIcon {
@@ -373,7 +390,7 @@ body {
     position: absolute;
     left: 300px;
     top: 30px;
-    background-color: lightskyblue;
+    background-color: var(--blue);
     color: azure;
     width: 20px;
     height: 20px;
@@ -405,12 +422,11 @@ body {
     font-weight: bold;
     color: white;
     font-size: 11px;
-
 }
 .about-title,
 .about-content {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 .about-title {
     margin: 3px;
@@ -419,38 +435,44 @@ body {
     font-size: 10px;
 }
 .about-content {
-    font-size: 10px;
+    text-indent: -6px;
+    font-size: 9.5px;
     margin: 0;
     margin-left: 10px;
+}
+
+.about-content b {
+    font-weight: 900;
 }
 
 
 .consultArea {
     display: none;
     margin: auto;
+    height: 150px;
     margin-right: 300px;
     font-size: 30px;
     text-align: center;
     padding: 5px;
-    max-width: 900px;
+    max-width: 2000px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: dimgray;
+    background-color: #514645;
     
 }
 .consultButton {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 90px;
     display: flex;
     width: 70px;
     height: 50px;
     padding: 10px;
-    background-color: darkviolet;
+    background-color: var(--green);
     color: white;
     text-align: center;
     font-weight: bold;
-    border: 2px dashed darkkhaki;
+    border: 3px dashed var(--cleargreen);
 }
 .consultButton:hover {
     filter: brightness(120%)
@@ -485,18 +507,20 @@ body {
 
 .consultMessage {
     margin: auto;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
 .coinsButton {
     width: 240px;
     margin-left: 10px;
+    color: #9f0102;
     background-color: gold;
     padding: 15px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     border: 3px solid  darkgoldenrod;
+    border-radius: 10px;
 }
 .coin {
     width: 40px;
