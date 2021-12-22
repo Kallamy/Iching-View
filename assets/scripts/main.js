@@ -1,5 +1,5 @@
 //let lang = "pt-br";
-let lang = "pt-br";
+let lang = "en";
 
 console.log()
 init();

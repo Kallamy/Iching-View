@@ -636,7 +636,7 @@ about = {
             love: "Abandone qualquer noção infantil que tenha sobre relacionamentos.",
             business: "Ser ponderado ajudará a fortalecer novas ideias ou procedimentos de negócios.",
             personal: "Recordar o prazer da infância e da juventude e imitá-lo. Pode ser necessário reconhecer quaisquer maus hábitos dessa época.", 
-            overview: "Meng baseia-se no tema da inexperiência vista no hexagrama 3 (Chun). Sugere que a juventude (como o riacho que corre) tem um longo caminho a percorrer antes de se tornar um rio poderoso. Meng trata de ensino, aprendizagem e conhecimento. A ignorância não deve ser punida, mas sim substituída pelo conhecimento. Quando a aprendizagem é divertida, o estudante aprenderá mais. É um lembrete de que um professor deve ser um mentor, preparando o cenário para a forma como o estudante se comportará na vida adulta."
+            overview: "<bMeng></b> baseia-se no tema da inexperiência vista no hexagrama 3 (Chun). Sugere que a juventude (como o riacho que corre) tem um longo caminho a percorrer antes de se tornar um rio poderoso. <b>Meng</b> trata de ensino, aprendizagem e conhecimento. A ignorância não deve ser punida, mas sim substituída pelo conhecimento. Quando a aprendizagem é divertida, o estudante aprenderá mais. É um lembrete de que um professor deve ser um mentor, preparando o cenário para a forma como o estudante se comportará na vida adulta."
         },
         {
             id: 5,
@@ -645,7 +645,7 @@ about = {
             love: "Se estiver numa relação existente, entrará numa fase mais feliz, ou se estiver solteiro, a sua relação chegará a tempo.",
             business: "Comece o seu negócio ou continue-o se já começou, e saiba que terá sucesso.", 
             personal: "Mantenha a sua vida em perspectiva e deixe algumas dessas preocupações irem embora.",
-            overview: "Hsu relaciona-se com paciência e espera. É um aviso para não ser apressado e tomar medidas que mais tarde poderá arrepender-se, em vez disso deve esperar o seu tempo e preparar-se de forma adequada para as mudanças que estão a chegar. Aprimore os seus planos e estratégias. Hsu lembra-nos que os períodos de espera são uma parte necessária da vida e que o tempo não é desperdiçado quando se espera com o conhecimento confiante de que mais cedo ou mais tarde a escassez vai acabar."
+            overview: "<b>Hsu</b> relaciona-se com paciência e espera. É um aviso para não ser apressado e tomar medidas que mais tarde poderá arrepender-se, em vez disso deve esperar o seu tempo e preparar-se de forma adequada para as mudanças que estão a chegar. Aprimore os seus planos e estratégias. <b>Hsu</b> lembra-nos que os períodos de espera são uma parte necessária da vida e que o tempo não é desperdiçado quando se espera com o conhecimento confiante de que mais cedo ou mais tarde a escassez vai acabar."
         },
         {
             id: 6,
@@ -653,7 +653,7 @@ about = {
             general: "O antagonismo e a hostilidade irão aumentar com o espaço que criamos entre nós.",
             love: "A compaixão deve ser usada para curar quaisquer rupturas dentro da sua relação. Escute com muita atenção tudo o que o seu parceiro tem a dizer.",
             personal: "Torne-se mais flexível no seu ponto de vista. Enfrente os seus medos.",
-            overview: "Sung relaciona-se com conflito. Normalmente com aqueles que nos rodeiam, mas muitas vezes dentro de nós mesmos. Fala da necessidade de resolver estes conflitos. Identificar a consciência de si mesmo e lidar com os medos e a confusão que eles indicam é primordial. Isto evitará uma escalada nas hostilidades."
+            overview: "<b>Sung</b> relaciona-se com conflito. Normalmente com aqueles que nos rodeiam, mas muitas vezes dentro de nós mesmos. Fala da necessidade de resolver estes conflitos. Identificar a consciência de si mesmo e lidar com os medos e a confusão que eles indicam é primordial. Isto evitará uma escalada nas hostilidades."
         },
         {
             id: 7,
@@ -662,7 +662,7 @@ about = {
             love: "Conflitos podem ser evitados usando a sua integridade.",
             business: "Manter-se honesto e justo irá ajudar a ganhar o respeito daqueles que trabalham para você.",
             personal: "Disciplina e honestidade devem ser incorporadas na sua forma de abordar a vida.",
-            overview: "Shih relaciona-se com disciplina e integridade dentro de tudo o que fazemos. O IChing compara o Shih a um exército. Um país sem um exército é vulnerável. Um país com um exército ainda é vulnerável se ele for indisciplinado e mal dirigido. O benefício mútuo e não pessoal deveria ser a regra."
+            overview: "<b>Shih</b> relaciona-se com disciplina e integridade dentro de tudo o que fazemos. O IChing compara o <b>Shih</b> a um exército. Um país sem um exército é vulnerável. Um país com um exército ainda é vulnerável se ele for indisciplinado e mal dirigido. O benefício mútuo e não pessoal deveria ser a regra."
         },
         {
             id: 8,
@@ -671,7 +671,7 @@ about = {
             love: "Use a boa vontade e a confiança para alcançar a unidade na sua relação.",
             business: "Fortaleça as relações dentro do seu negócio e estabeleça laços com as redes das quais faz parte o seu negócio.",
             personal: "Formar ou estreitar laços com a família e amigos.",
-            overview: "Pi relaciona-se com a necessidade de unidade para realizar uma mudança positiva. As relações construídas sobre confiança e boa vontade devem ser formadas e mantidas para o benefício de todos - e não apenas para benefício pessoal. Isto aplica-se não só à família e amigos, mas também à comunidade à sua volta em geral e à sua comunidade empresarial também."
+            overview: "<b>Pi</b> relaciona-se com a necessidade de unidade para realizar uma mudança positiva. As relações construídas sobre confiança e boa vontade devem ser formadas e mantidas para o benefício de todos - e não apenas para benefício pessoal. Isto aplica-se não só à família e amigos, mas também à comunidade à sua volta em geral e à sua comunidade empresarial também."
         },
         {
             id: 9,
@@ -680,7 +680,7 @@ about = {
             love: "Desenvolva as suas capacidades de comunicação dentro da sua relação e divirta-se.",
             business: "Avalie o seu negócio para ver se há pequenos assuntos que precisam de ser tratados.",
             personal: "O desenvolvimento das suas capacidades e pontos fortes deve ser o seu foco principal.",
-            overview: "Hsiao Ch'u relaciona-se com a necessidade de prestar atenção aos detalhes. Indica que este não é um momento para empreender grandes mudanças na vida ou nos negócios, mas sim para lidar com os assuntos mais pequenos que possam necessitar de atenção. Examine as suas próprias atitudes e as das pessoas à sua volta para ver como as coisas podem ser melhoradas numa escala mais pequena."
+            overview: "<b>Hsiao Ch'u</b> relaciona-se com a necessidade de prestar atenção aos detalhes. Indica que este não é um momento para empreender grandes mudanças na vida ou nos negócios, mas sim para lidar com os assuntos mais pequenos que possam necessitar de atenção. Examine as suas próprias atitudes e as das pessoas à sua volta para ver como as coisas podem ser melhoradas numa escala mais pequena."
         },
         {
             id: 10,
@@ -689,7 +689,7 @@ about = {
             love: "A boa vontade é a chave para resolver qualquer problema de relacionamento.",
             business: "Alcançar o sucesso nos negócios é o melhor que se consegue tratando os outros com cortesia e respeito.",
             personal: "Concentre-se em livrar-se de qualquer sentimento de inveja ou ciúme.",
-            overview: "Lu relaciona-se com a necessidade de desenvolver as suas capacidades sociais e de se certificar de que são sinceras e não falsas. Indica a necessidade de garantir que os ciúmes e inveja não estejam presentes na sua vida e, se estiverem, de tomar medidas para os resolver. Lu fala sobre a desigualdade e a necessidade de a evitar."
+            overview: "<b>Lu</b> relaciona-se com a necessidade de desenvolver as suas capacidades sociais e de se certificar de que são sinceras e não falsas. Indica a necessidade de garantir que os ciúmes e inveja não estejam presentes na sua vida e, se estiverem, de tomar medidas para os resolver. <b>Lu</b> fala sobre a desigualdade e a necessidade de a evitar."
         },
         {
             id: 11,
@@ -698,7 +698,7 @@ about = {
             love: "A sua relação deve ser tratada com respeito e gentileza.",
             business: "O seu sucesso atual deve ser analisado para que se saiba como surgiu.",
             personal: "Faça uma boa ação.",
-            overview: "T'ai relaciona-se com a harmonia. Tudo deve estar atualmente a correr bem. No entanto, não o tome por garantido. Examine todos os aspectos da sua vida e veja como essa harmonia se realiza. Nada é permanente, claro, e isto não é menos verdade para a T'ai. Desfrute da paz e harmonia que o rodeia. O T'ai é um hexagrama muito positivo e indica uma época de sucesso na vida." ,
+            overview: "<b>T'ai</b> relaciona-se com a harmonia. Tudo deve estar atualmente a correr bem. No entanto, não o tome por garantido. Examine todos os aspectos da sua vida e veja como essa harmonia se realiza. Nada é permanente, claro, e isto não é menos verdade para <b>T'ai<b/>. Desfrute da paz e harmonia que o rodeia. <b>T'ai</b> é um hexagrama muito positivo e indica uma época de sucesso na vida." ,
         }, 
         {
             id: 12,
@@ -707,7 +707,7 @@ about = {
             love: "Um amante ou potencial amante pode não ser o que parece ser. Cuidado ao apaixonar-se.", 
             business: "Novos empreendimentos comerciais podem ser demasiado bons para serem verdadeiros. Examine-os cuidadosamente.",
             personal: "Fortaleça os seus sentidos morais e éticos. Não se desvie.",
-            overview: "Pi relaciona-se com um tempo de estagnação e com a fragilidade da vida. Se as fundações forem fracas ou instáveis, então um edifício acabará por cair. Esta analogia também deve ser aplicada às pessoas. Pi indica frequentemente uma época em que indivíduos arrogantes chegam ao poder ou ocupam posições de autoridade. A sua arrogância acabará por ser a sua ruína. Cuidado com os indivíduos que tentam subverter o seu sentido de ética ou as consequências serão de grande alcance para si."
+            overview: "<b>Pi</b> relaciona-se com um tempo de estagnação e com a fragilidade da vida. Se as fundações forem fracas ou instáveis, então um edifício acabará por cair. Esta analogia também deve ser aplicada às pessoas. <b>Pi</b> indica frequentemente uma época em que indivíduos arrogantes chegam ao poder ou ocupam posições de autoridade. A sua arrogância acabará por ser a sua ruína. Cuidado com os indivíduos que tentam subverter o seu sentido de ética ou as consequências serão de grande alcance para si."
         },
         {
             id: 13,
@@ -716,7 +716,7 @@ about = {
             love: "",
             business: "A comunicação com a sua equipe é a chave para dissipar mal-entendidos.",
             personal: "Desenvolver o espírito comunitário através da organização de seminários, especialmente para projetos.",
-            overview: "Tung Jên relaciona-se com organização e companheirismo. Este hexagrama aparecerá frequentemente quando for necessário organizar indivíduos e/ou grupos desorganizados numa unidade eficaz e coesa. Embora a maioria das pessoas possa ver as vantagens da desconfiança na cooperação, muitas vezes impedirá o progresso. A desconfiança e a agressividade minam o espírito comunitário, pelo que é importante estar aberto. Apelar ao sentido de maior propósito comum das pessoas para superar pequenas diferenças. Uma vez alcançado o fim desejado, as pequenas divergências prevalecentes nas fases iniciais serão esquecidas."
+            overview: "<b>Tung Jên</b> relaciona-se com organização e companheirismo. Este hexagrama aparecerá frequentemente quando for necessário organizar indivíduos e/ou grupos desorganizados numa unidade eficaz e coesa. Embora a maioria das pessoas possa ver as vantagens da desconfiança na cooperação, muitas vezes impedirá o progresso. A desconfiança e a agressividade minam o espírito comunitário, pelo que é importante estar aberto. Apelar ao sentido de maior propósito comum das pessoas para superar pequenas diferenças. Uma vez alcançado o fim desejado, as pequenas divergências prevalecentes nas fases iniciais serão esquecidas."
         },
         {
             id: 14,
@@ -725,7 +725,7 @@ about = {
             love: "Aproveite o atual período harmonioso, mas não se deixe levar pela complacência.",
             business: "As oportunidades de sucesso empresarial existirão se as procurar. No entanto, não se deixe levar pela ganância.",
             personal: "Tire o tempo necessário para desfrutar da clareza mental, mas certifique-se de estar atento a quaisquer sentimentos de orgulho ou arrogância e eliminá-los, se necessário.",
-            overview: "Ta Yu relata um tempo de abundância quando tudo está a correr bem. Embora seja uma época favorável, traz um aviso para não se deixar tornar arrogante ou ganancioso. Todos os obstáculos em todos os aspectos da vida terão desaparecido e a vida deve ser desfrutada. Não cometa o erro de se tornar complacente e acreditar que este período irá durar para sempre. Não vai durar. Nada o faz. Examine as circunstâncias harmoniosas que deram origem ao seu sucesso atual e faça o seu melhor para as preservar. desta forma poderá manter o sucesso o maior tempo possível. Generosidade e humildade são essenciais a este processo."
+            overview: "<b>Ta Yu</b> relata um tempo de abundância quando tudo está a correr bem. Embora seja uma época favorável, traz um aviso para não se deixar tornar arrogante ou ganancioso. Todos os obstáculos em todos os aspectos da vida terão desaparecido e a vida deve ser desfrutada. Não cometa o erro de se tornar complacente e acreditar que este período irá durar para sempre. Não vai durar. Nada o faz. Examine as circunstâncias harmoniosas que deram origem ao seu sucesso atual e faça o seu melhor para as preservar. desta forma poderá manter o sucesso o maior tempo possível. Generosidade e humildade são essenciais a este processo."
         },
         {
             id: 15,
@@ -734,7 +734,7 @@ about = {
             love: "Ajude a tirar o seu parceiro da sua concha.",
             business: "Não ignore a tranquilidade do seu negócio. Seja um membro do pessoal ou uma conta.",
             personal: "Não tome as coisas pelo valor superficial - aprenda a olhar além das aparências.",
-            overview: "Ch'ien está relacionado com orgulho e humildade. Embora o orgulho na realização seja apenas natural (particularmente entre os jovens) não se deve deixar que isso o cegue. Orgulhe-se, mas com moderação. O mais habilidoso em uma área que pode ser totalmente inadequada noutra. Orgulhe-se das suas realizações, mas não pense que uma habilidade o eleva acima do resto do mundo. Aprende que as nossas vidas não são tão comparáveis como você poderia pensar."
+            overview: "<b>Ch'ien</b> está relacionado com orgulho e humildade. Embora o orgulho na realização seja apenas natural (particularmente entre os jovens) não se deve deixar que isso o cegue. Orgulhe-se, mas com moderação. O mais habilidoso em uma área que pode ser totalmente inadequada noutra. Orgulhe-se das suas realizações, mas não pense que uma habilidade o eleva acima do resto do mundo. Aprende que as nossas vidas não são tão comparáveis como você poderia pensar."
         },
         {
             id: 16,
@@ -743,7 +743,7 @@ about = {
             love: "Proporcione ao seu parceiro uma agradável surpresa. Sugira um passeio ou uma viagem.",
             business: "Reserve um tempo para celebrar os sucessos do seu negócio.",
             personal: "Organize uma festa sazonal para celebrar os ciclos da natureza.",
-            overview: "Yu está relacionado com o aumento da energia não só de si próprio mas também daqueles que o rodeiam. Tal como a trovoada Yu sugere que a nossa existência e ambiente podem ser subitamente alterados através da celebração. Use a sua forte liderança para inspirar aqueles que o rodeiam. Não subestime o poder do entusiasmo partilhado. Ajudará a aumentar a confiança com a força de vontade para resistir a quaisquer dificuldades futuras."
+            overview: "<b>Yu</b> está relacionado com o aumento da energia não só de si próprio mas também daqueles que o rodeiam. Tal como a trovoada <b>Yu</b> sugere que a nossa existência e ambiente podem ser subitamente alterados através da celebração. Use a sua forte liderança para inspirar aqueles que o rodeiam. Não subestime o poder do entusiasmo partilhado. Ajudará a aumentar a confiança com a força de vontade para resistir a quaisquer dificuldades futuras."
         },
         {
             id: 17,
@@ -752,7 +752,7 @@ about = {
             love: "Mostre ao seu parceiro o que precisa pelo exemplo em vez de palavras. seja gentil com ele.",
             business: "O trabalho árduo precisa de ser equilibrado pelo descanso.",
             personal: "Planeje o progresso gradual e assegure que o trabalho árduo seja equilibrado pelo descanso.",
-            overview: "Sui indica que se deve dar o exemplo em vez de se dizer a todos o que fazer. Indica um momento em que o progresso gradual deve ser o plano e que o trabalho deve ser equilibrado com um período de descanso. Uma liderança eficaz tem a ver com servir e não com poder e ego. Um líder tem obrigações para com todos aqueles que trabalham para ele e isto não deve ser negligenciado. Aprenda as necessidades daqueles que o seguem e se algumas dessas necessidades precisarem de ser corrigidas, então faça-o por uma persuasão gentil e não por palavras duras." 
+            overview: "<b>Sui</b> indica que se deve dar o exemplo em vez de se dizer a todos o que fazer. Indica um momento em que o progresso gradual deve ser o plano e que o trabalho deve ser equilibrado com um período de descanso. Uma liderança eficaz tem a ver com servir e não com poder e ego. Um líder tem obrigações para com todos aqueles que trabalham para ele e isto não deve ser negligenciado. Aprenda as necessidades daqueles que o seguem e se algumas dessas necessidades precisarem de ser corrigidas, então faça-o por uma persuasão gentil e não por palavras duras." 
         },
         {
             id: 18,
@@ -761,7 +761,7 @@ about = {
             love: "Quaisquer diferenças de opinião com o seu parceiro devem ser resolvidas neste momento.",
             business: "Tire o tempo necessário para avaliar qualquer desmoronamento causado por problemas passados e lide com eles. Fazê-lo agora ajudará a evitar a estagnação no presente e no futuro.",
             personal: "Maus hábitos e/ou fobias podem estar a atrasá-lo. Agora é o momento de os confrontar e superar.",
-            overview: "Ku tende a aparecer quando o progresso está a ser dificultado de alguma forma. Normalmente, isto deve-se a obstáculos ou problemas do passado que não foram resolvidos na altura e que, por isso, continuaram a destruir o seu progresso sem serem controlados.  Ku indica a necessidade de examinar as questões do passado sem culpa ou ressentimento e de lidar com elas para que o progresso futuro não seja impedido da mesma forma. Certifique-se de identificar a causa ou o ciclo destrutivo irá continuar."
+            overview: "<b>Ku</b> tende a aparecer quando o progresso está a ser dificultado de alguma forma. Normalmente, isto deve-se a obstáculos ou problemas do passado que não foram resolvidos na altura e que, por isso, continuaram a destruir o seu progresso sem serem controlados.  <b>Ku</b> indica a necessidade de examinar as questões do passado sem culpa ou ressentimento e de lidar com elas para que o progresso futuro não seja impedido da mesma forma. Certifique-se de identificar a causa ou o ciclo destrutivo irá continuar."
         },
         {
             id: 19,
@@ -770,7 +770,7 @@ about = {
             love: "Tire tempo para explorar as profundezas da sua relação e aprofundar a sua visão da mesma.",
             business: "Este é um momento em que a expansão e o sucesso são possíveis.",
             personal: "Ouça aqueles que têm mais sabedoria e experiência que você.",
-            overview: "Lin indica que você tem a oportunidade de ouvir e de aprender com aqueles com maior sabedoria ou experiência que tem. Esta oportunidade deve ser bem-vinda e aproveitada com gratidão. Como com tudo, as circunstâncias mudarão, é fundamental que as circunstâncias favoráveis atualmente apresentadas sejam aproveitadas ao máximo. É uma boa altura para olhar para quaisquer possíveis dificuldades futuras e tentar lidar com elas de forma preventiva. O sucesso neste momento deve ser partilhado com os que o rodeiam."
+            overview: "<b>Lin</b> indica que você tem a oportunidade de ouvir e de aprender com aqueles com maior sabedoria ou experiência que tem. Esta oportunidade deve ser bem-vinda e aproveitada com gratidão. Como com tudo, as circunstâncias mudarão, é fundamental que as circunstâncias favoráveis atualmente apresentadas sejam aproveitadas ao máximo. É uma boa altura para olhar para quaisquer possíveis dificuldades futuras e tentar lidar com elas de forma preventiva. O sucesso neste momento deve ser partilhado com os que o rodeiam."
         },
         {
             id: 20,
@@ -779,7 +779,7 @@ about = {
             love: "Este pode ser um momento em que se sente isolado. Faça o esforço de sair para a comunidade.",
             business: "Familiarize-se com as necessidades dos seus consumidores e clientes. Saia para a comunidade e encontre-se com eles.",
             personal: "As viagens são uma boa forma de combater qualquer sentimento de isolamento.",
-            overview: "Kuan lembra-lhe que embora seja sempre sensato estar atento aos problemas, é possível ficar um pouco distante da realidade ao fazê-lo. Quando concentrado na exclusão de tudo o resto, existe o perigo de o espírito se tornar subnutrido. A percepção pode ser distorcida e os perigos passam despercebidos. O isolamento (meditativo ou não) deve ser sempre equilibrado, viajando para fora da comunidade. Avaliar o mundo tanto de longe como de perto permitirá uma avaliação precisa. Se este conselho não for seguido, verá apenas uma parte do quadro geral.",
+            overview: "<b>Kuan</b> lembra-lhe que embora seja sempre sensato estar atento aos problemas, é possível ficar um pouco distante da realidade ao fazê-lo. Quando concentrado na exclusão de tudo o resto, existe o perigo de o espírito se tornar subnutrido. A percepção pode ser distorcida e os perigos passam despercebidos. O isolamento (meditativo ou não) deve ser sempre equilibrado, viajando para fora da comunidade. Avaliar o mundo tanto de longe como de perto permitirá uma avaliação precisa. Se este conselho não for seguido, verá apenas uma parte do quadro geral.",
         },
         {
             id: 21,
@@ -788,7 +788,7 @@ about = {
             love: "Não deixe que o tratamento injusto fique sem resposta. Defenda-se a si próprio.",
             business: "Esteja atento às atividades criminosas que estejam a ser conduzidas contra os seus negócios.",
             personal: "As insuficiências complexas podem ser resolvidas recebendo uma visão através da meditação.",
-            overview: "Shih Ho é todo sobre injustiça. Quando isso forma uma barreira entre os indivíduos e a comunidade, devem ser tomadas medidas para a erradicar firmemente. Não devem ser tomadas medidas de forma leviana ou resultará em mais desarmonia. As medidas tomadas devem ser escrupulosamente tomadas e só então serão eficazes. Shih Ho aparece frequentemente quando o crime é a causa raiz do problema, mas nem sempre. A injustiça pode sair por outras vias. Quer seja legal ou moral, o modelo de justiça utilizado deve ser honesto e honroso."
+            overview: "<b>Shih Ho</b> é todo sobre injustiça. Quando isso forma uma barreira entre os indivíduos e a comunidade, devem ser tomadas medidas para a erradicar firmemente. Não devem ser tomadas medidas de forma leviana ou resultará em mais desarmonia. As medidas tomadas devem ser escrupulosamente tomadas e só então serão eficazes. <b>Shih Ho</b> aparece frequentemente quando o crime é a causa raiz do problema, mas nem sempre. A injustiça pode sair por outras vias. Quer seja legal ou moral, o modelo de justiça utilizado deve ser honesto e honroso."
         },
         {
             id: 22,
@@ -797,7 +797,7 @@ about = {
             love: "A beleza é apenas uma casca profunda - não se deixe enganar pelas aparências superficiais. Olhe por baixo da superfície para ver o verdadeiro carácter de uma pessoa.",
             business: "Se uma proposta de negócio parece demasiado boa para ser verdadeira, então provavelmente é. Certifique-se de que é exatamente o que parece ser.",
             personal: "Realce a sua beleza interior.",
-            overview: "Pi consiste em observar a graça natural e permitir que essa observação o inspire a imitá-la na vida. Pi é também um aviso para não ser tomado pela beleza superficial ou pela aparência. Em vez disso, certifique-se de que o que está por baixo da superfície é mais duradouro. Negligenciar fazê-lo pode muito bem levar a erros de julgamento. Lembre-se, a beleza mais duradoura é vista com o coração. Não com os olhos."
+            overview: "<b>Pi</b> consiste em observar a graça natural e permitir que essa observação o inspire a imitá-la na vida. <b>Pi</b> é também um aviso para não ser tomado pela beleza superficial ou pela aparência. Em vez disso, certifique-se de que o que está por baixo da superfície é mais duradouro. Negligenciar fazê-lo pode muito bem levar a erros de julgamento. Lembre-se, a beleza mais duradoura é vista com o coração. Não com os olhos."
         },
         {
             id: 23,
@@ -806,7 +806,7 @@ about = {
             love: "A sua relação atual ou um assunto dentro da sua relação deve ser abandonado.",
             business: "A sua atual direção empresarial tornou-se difícil e deve ser revista no mínimo, ou abandonada se a revisão não for possível.",
             personal: "Deve-se pensar seriamente em afastar-se de quaisquer situações que sejam problemáticas.",
-            overview: "Po é um lembrete de que não importa quão fortemente algo foi originalmente construído, acabará por se desintegrar com o tempo. Uma vez que as 'fundações' tenham sido minadas, só se mantém tenuamente unido. Uma tal situação já não vale a pena tentar salvar. Embora seja sempre difícil desistir de uma situação, não perca tempo na formulação de um novo plano e direção. O desastre implícito por Po não é a situação em si, mas o fracasso em reagir a ela e recuperar o seu equilíbrio e direção."
+            overview: "<b>Po</b> é um lembrete de que não importa quão fortemente algo foi originalmente construído, acabará por se desintegrar com o tempo. Uma vez que as 'fundações' tenham sido minadas, só se mantém tenuamente unido. Uma tal situação já não vale a pena tentar salvar. Embora seja sempre difícil desistir de uma situação, não perca tempo na formulação de um novo plano e direção. O desastre implícito por <b>Po</b> não é a situação em si, mas o fracasso em reagir a ela e recuperar o seu equilíbrio e direção."
         },
         {
             id: 24,
@@ -815,7 +815,7 @@ about = {
             love: "O amor será renovado na sua vida.",
             business: "Os próximos meses irão mostrar uma melhoria constante do seu negócio.",
             personal: "É uma boa época para planejar o futuro.",
-            overview: "Fu relaciona-se com uma melhoria gradual ao longo do tempo. é um progresso muito natural e irá ocorrer sem qualquer esforço da sua parte. Em alguns aspectos, o progresso é imparável. No entanto, não deve fazer qualquer tentativa para forçar a questão e apressá-la. Deixe-o seguir o seu próprio curso e tempo. Trate este novo começo com cuidado e não cometa o erro de lidar com ele de forma grosseira, tentando forçá-lo." 
+            overview: "<b>Fu</b> relaciona-se com uma melhoria gradual ao longo do tempo. é um progresso muito natural e irá ocorrer sem qualquer esforço da sua parte. Em alguns aspectos, o progresso é imparável. No entanto, não deve fazer qualquer tentativa para forçar a questão e apressá-la. Deixe-o seguir o seu próprio curso e tempo. Trate este novo começo com cuidado e não cometa o erro de lidar com ele de forma grosseira, tentando forçá-lo." 
         },
         {
             id: 25,
@@ -824,7 +824,7 @@ about = {
             love: "É tempo de se divertir. Não porque você precisa, mas apenas porque você pode.",
             business: "Verá que a abordagem simples funcionará melhor. Solte as questões complexas.",
             personal: "Aproveite a vida.",
-            overview: "Wu Wang é sobre a inocência e a alegria infantil que lhe está associada. Pare de tentar impressionar os outros a fim de obter a sua aprovação. Em vez de se concentrar neste aspecto da vida que se centra num futuro imaginado, concentre-se e honre cada aspecto da vida ou do trabalho. Desta forma, permanecerá aberto e alerta. Embora o planeamento e o pensamento ainda sejam necessários, Wu Wang é um lembrete de que nunca é possível prever todas as contingências. Aprenda a reagir momento a momento em vez de desperdiçar demasiada energia em coisas que provavelmente nunca irão acontecer. Encontre o equilíbrio necessário entre a confiança infantil e a sabedoria da experiência."
+            overview: "<b>Wu Wang</b> é sobre a inocência e a alegria infantil que lhe está associada. Pare de tentar impressionar os outros a fim de obter a sua aprovação. Em vez de se concentrar neste aspecto da vida que se centra num futuro imaginado, concentre-se e honre cada aspecto da vida ou do trabalho. Desta forma, permanecerá aberto e alerta. Embora o planeamento e o pensamento ainda sejam necessários, <b>Wu Wang</b> é um lembrete de que nunca é possível prever todas as contingências. Aprenda a reagir momento a momento em vez de desperdiçar demasiada energia em coisas que provavelmente nunca irão acontecer. Encontre o equilíbrio necessário entre a confiança infantil e a sabedoria da experiência."
         },
         {
             id: 26,
@@ -833,7 +833,7 @@ about = {
             love: "A sua relação não se beneficiará sendo frívola ou impulsiva.",
             business: "Seja disciplinado na sua abordagem e procure a sabedoria dos que têm mais experiência.",
             personal: "Concentre-se na construção dos seus recursos e forças internos.",
-            overview: "Ta Ch'u é sobre a acumulação de recursos. Não se trata, contudo, de ser mesquinho e acumulador de bens. A sua riqueza deve ser posta a trabalhar para o benefício de todos. Ta Ch'u é também um lembrete de que há pessoas à sua volta com mais sabedoria e experiência e você não deve ter medo, ou encarar isto como um sinal de fraqueza, de procurar os seus conselhos. É também uma questão de moderação. Use os seus recursos mas use-os sabiamente para que possa tomar conta das pessoas à sua volta."
+            overview: "<b>Ta Ch'u</b> é sobre a acumulação de recursos. Não se trata, contudo, de ser mesquinho e acumulador de bens. A sua riqueza deve ser posta a trabalhar para o benefício de todos. <b>Ta Ch'u</b> é também um lembrete de que há pessoas à sua volta com mais sabedoria e experiência e você não deve ter medo, ou encarar isto como um sinal de fraqueza, de procurar os seus conselhos. É também uma questão de moderação. Use os seus recursos mas use-os sabiamente para que possa tomar conta das pessoas à sua volta."
         },
         {
             id: 27,
@@ -842,7 +842,7 @@ about = {
             love: "Escolha os seus pensamentos e palavras sabiamente na sua relação e lembre-se de ser tolerante.",
             business: "Use as palavras certas e ajudará a sustentar e alimentar o seu negócio.",
             personal: "Agora é uma boa época para limpar tudo o que não é digno na sua vida.",
-            overview: "I relaciona-se com a alimentação. Assim como os alimentos são utilizados para alimentar o corpo, I sugere que as palavras e as ideias sejam utilizadas da mesma forma. Adverte que, tal como no caso dos alimentos, as suas palavras devem ser escolhidas cuidadosamente. Tal como a comida má pode perturbá-lo a si ou àqueles que o cercam, as palavras más podem fazer o mesmo. Quando o corpo e o espírito estiverem ambos bem nutridos, então você será mais poderoso e eficaz."
+            overview: "<b>I</b> relaciona-se com a alimentação. Assim como os alimentos são utilizados para alimentar o corpo, I sugere que as palavras e as ideias sejam utilizadas da mesma forma. Adverte que, tal como no caso dos alimentos, as suas palavras devem ser escolhidas cuidadosamente. Tal como a comida má pode perturbá-lo a si ou àqueles que o cercam, as palavras más podem fazer o mesmo. Quando o corpo e o espírito estiverem ambos bem nutridos, então você será mais poderoso e eficaz."
         },
         {
             id: 28,
@@ -851,7 +851,7 @@ about = {
             love: "Um problema não resolvido pode exigir que abandone temporariamente a situação.",
             business: "Poderá ter de se retirar de um empreendimento comercial difícil.",
             personal: "Avalie as suas ambições para o futuro, libertando-se do presente.",
-            overview: "Ta Kuo é um grande aviso. Indica que uma situação atual ultrapassou o seu controle e isto pode significar a retirada total da situação. Se não o fizer, isso significará um desastre. Em alguns casos, a situação pode ainda ser capaz de ser resolvida, mas na maioria dos casos não o será. A destruição já está feita. Por mais perturbador que seja, é tempo de reduzir as suas perdas."
+            overview: "<b>Ta Kuo</b> é um grande aviso. Indica que uma situação atual ultrapassou o seu controle e isto pode significar a retirada total da situação. Se não o fizer, isso significará um desastre. Em alguns casos, a situação pode ainda ser capaz de ser resolvida, mas na maioria dos casos não o será. A destruição já está feita. Por mais perturbador que seja, é tempo de reduzir as suas perdas."
         },
         {
             id: 29,
@@ -860,7 +860,7 @@ about = {
             love: "Não exagere na reação a uma situação. Certifique-se de não permitir que uma discussão se torne violenta ou depressiva. Evite explosões emocionais.", 
             business: "Este é um momento potencialmente perigoso para o seu negócio e uma cabeça calma será necessária para ajudar a resolver os problemas.", 
             personal: "Use a meditação para ajudar a encontrar soluções criativas para os seus problemas atuais.", 
-            overview: "K'an é sobre o perigo e não é considerado de todo positivo. Qualquer situação que tenha potencial para causar danos de alguma forma deve ser cuidadosamente controlada, a fim de minimizar a destruição. Resistir ao pânico e ao desespero e olhar uma ameaça verbal ou escrita como uma ferramenta para aguçar a sua consciência. e prepará-lo para futuros encontros de sucesso. Não se renda a sentimentos ou desamparo, mas cultive antes a calma e uma perspectiva positiva. Pode adaptar-se até ao perigo, se tentar.",
+            overview: "<b>K'an</b> é sobre o perigo e não é considerado de todo positivo. Qualquer situação que tenha potencial para causar danos de alguma forma deve ser cuidadosamente controlada, a fim de minimizar a destruição. Resistir ao pânico e ao desespero e olhar uma ameaça verbal ou escrita como uma ferramenta para aguçar a sua consciência. e prepará-lo para futuros encontros de sucesso. Não se renda a sentimentos ou desamparo, mas cultive antes a calma e uma perspectiva positiva. Pode adaptar-se até ao perigo, se tentar.",
         },
         {
             id: 30,
@@ -869,7 +869,7 @@ about = {
             love: "Seja entusiasmado com o desenvolvimento do seu parceiro e não deixe de desfrutar deste tempo de inspiração.",
             business: "O entusiasmo é a chave para encontrar soluções criativas para os problemas financeiros atuais.",
             personal: "Aumente a sua criatividade pessoal, participando de atividades comunitárias.",
-            overview: "Li trata-se de cuidar dos seus 'fogos interiores' de uma forma apropriada. A chave para os ajudar a arder é alimentá-los constante e cuidadosamente. Trata-se de aprender como melhor alimentá-los e quanto combustível utilizar. Não se quer que se incendeie de forma incontrolável. Também não quer que se torne mais inteligente na ausência. O seu próprio entusiasmo e o dos outros pode ser mutuamente benéfico para todos os envolvidos."
+            overview: "<b>Li</b> trata-se de cuidar dos seus 'fogos interiores' de uma forma apropriada. A chave para os ajudar a arder é alimentá-los constante e cuidadosamente. Trata-se de aprender como melhor alimentá-los e quanto combustível utilizar. Não se quer que se incendeie de forma incontrolável. Também não quer que se torne mais inteligente na ausência. O seu próprio entusiasmo e o dos outros pode ser mutuamente benéfico para todos os envolvidos."
         },
         {
             id: 31,
@@ -878,7 +878,7 @@ about = {
             love: "Se o seu parceiro tem qualidades comuns e complementares, então você está bem acompanhado.",
             business: "Procure um parceiro ou uma parceria que complemente os seus próprios pontos fortes.",
             personal: "Cultive respeito e honra para com aqueles que o cercam.",
-            overview: "Hsien tem a ver com a sua percepção daqueles que o rodeiam, quer sejam familiares, amigos ou parceiros de negócios. Será mais bem sucedido em qualquer área quando as qualidades que possui forem partilhadas e complementares. Se faltar um destes aspectos, a relação será prejudicada. Embora o Hsien apareça mais frequentemente para situações românticas, é também um lembrete de que as mesmas qualidades são necessárias em todos os aspectos da vida para que uma relação funcione."
+            overview: "<b>Hsien</b> tem a ver com a sua percepção daqueles que o rodeiam, quer sejam familiares, amigos ou parceiros de negócios. Será mais bem sucedido em qualquer área quando as qualidades que possui forem partilhadas e complementares. Se faltar um destes aspectos, a relação será prejudicada. Embora o Hsien apareça mais frequentemente para situações românticas, é também um lembrete de que as mesmas qualidades são necessárias em todos os aspectos da vida para que uma relação funcione."
         },
         {
             id: 32,
@@ -887,7 +887,7 @@ about = {
             love: "Para aprofundar o seu relacionamento, deve adaptar-se às mudanças à sua volta.",
             business: "Será recompensado pelo esforço que investiu nos seus empreendimentos.",
             personal: "Concentre-se na auto-renovação e procure evitar a inércia.",
-            overview: "Heng está a dizer-lhe que apenas a mudança é certamente constante na vida. Quando se cometem erros numa determinada estratégia, o mesmo erro é frequentemente repetido. Não mostra força de carácter formular a mesma estratégia (mesmo que tenha funcionado no passado). Pelo contrário, mostra uma fraqueza na sua recusa em adaptar-se e mudar. Haverá sempre obstáculos na vida. Alguns podem ser repetidos com frequência. Se uma estratégia que tenha funcionado várias vezes no passado não funcionar agora, então mude a sua estratégia. Trata-se também de inércia e complacência. Deve sempre concentrar-se na auto-renovação e não se tornar complacente. Evite a estagnação."
+            overview: "<b>Heng</b> está a dizer-lhe que apenas a mudança é certamente constante na vida. Quando se cometem erros numa determinada estratégia, o mesmo erro é frequentemente repetido. Não mostra força de carácter formular a mesma estratégia (mesmo que tenha funcionado no passado). Pelo contrário, mostra uma fraqueza na sua recusa em adaptar-se e mudar. Haverá sempre obstáculos na vida. Alguns podem ser repetidos com frequência. Se uma estratégia que tenha funcionado várias vezes no passado não funcionar agora, então mude a sua estratégia. Trata-se também de inércia e complacência. Deve sempre concentrar-se na auto-renovação e não se tornar complacente. Evite a estagnação."
         },
         {
             id: 33,
@@ -896,7 +896,7 @@ about = {
             love: "Tome o tempo necessário para reforçar a sua posição ao considerar envolver-se numa luta com o seu parceiro.",
             business: "Repense a sua posição e estratégia antes de reingressar nas negociações. Não se comprometa apenas porque é mais rápido fazê-lo.",
             personal: "Não ignore as questões mas formule uma estratégia eficaz antes de tentar lidar com elas. Evite confrontos destrutivos.",
-            overview: "Tun tem tudo a ver com a retirada de confrontos destrutivos e diz-lhe que fazê-lo não é uma admissão de derrota - apenas que é a coisa mais sábia a fazer nas circunstâncias. No entanto, não lhe está a dizer para esquecer ou ignorar a situação. Em vez disso, aconselha-o a formular uma estratégia eficaz antes de reentrar no conflito e lidar com ele. Tun sinaliza que é tempo de um retiro temporário, não que seja tempo de fugir e esconder-se."
+            overview: "<b>Tun</b> tem tudo a ver com a retirada de confrontos destrutivos e diz-lhe que fazê-lo não é uma admissão de derrota - apenas que é a coisa mais sábia a fazer nas circunstâncias. No entanto, não lhe está a dizer para esquecer ou ignorar a situação. Em vez disso, aconselha-o a formular uma estratégia eficaz antes de reentrar no conflito e lidar com ele. Tun sinaliza que é tempo de um retiro temporário, não que seja tempo de fugir e esconder-se."
         },
         {
             id: 34,
@@ -905,7 +905,7 @@ about = {
             love: "Encontrará outros com uma poderosa atração por você - use este poder com sabedoria.",
             business: "Este é um momento favorável para os negócios, mas não tente ir longe. Assegure-se de que se protege a si próprio e às pessoas à sua volta.",
             personal: "As questões problemáticas podem ser positivamente ultrapassadas se forem abordadas com honra e compaixão.",
-            overview: "Ta Chuang relaciona-se com a oportunidade de tirar partido da situação atual. Ao contrário de Tun, que insta a um retiro temporário, Ta Chuan insiste em aproveitá-lo ao máximo. Faz passar o aviso de que o excesso de confiança pode levar a uma derrocada. Não seja precipitado, planeje a sua estratégia com sabedoria e minimize a queda sempre que possível. Sentir-se capacitado é bom, mas não seja narcisista a esse respeito."
+            overview: "<b>Ta Chuang</b> relaciona-se com a oportunidade de tirar partido da situação atual. Ao contrário de Tun, que insta a um retiro temporário, Ta Chuan insiste em aproveitá-lo ao máximo. Faz passar o aviso de que o excesso de confiança pode levar a uma derrocada. Não seja precipitado, planeje a sua estratégia com sabedoria e minimize a queda sempre que possível. Sentir-se capacitado é bom, mas não seja narcisista a esse respeito."
         },
         {
             id: 35,
@@ -914,7 +914,7 @@ about = {
             love: "Não despreze o progresso fácil com a sua vida amorosa. Aprecie-o em vez disso.",
             business: "Seja grato pelo seu sucesso atual.",
             personal: "Reserve algum tempo para consolidar o seu sucesso e partilhá-lo com os que o rodeiam.",
-            overview: "Chin é tudo sobre o progresso. O progresso fácil e a sensação de insatisfação que por vezes pode surgir de tal progresso. Chin encoraja-o a adoptar a mesma atitude na vitória que adotaria na adversidade. Em ambas as situações, é necessário ter a cabeça nivelada. Chin adverte também que não deve tentar tirar partido de uma vitória fácil para ganho pessoal, mas deve partilhar o sucesso com outros."
+            overview: "<b>Chin</b> é tudo sobre o progresso. O progresso fácil e a sensação de insatisfação que por vezes pode surgir de tal progresso. <b>Chin</b> encoraja-o a adoptar a mesma atitude na vitória que adotaria na adversidade. Em ambas as situações, é necessário ter a cabeça nivelada. <b>Chin</b> adverte também que não deve tentar tirar partido de uma vitória fácil para ganho pessoal, mas deve partilhar o sucesso com outros."
         },
         {
             id: 36,
@@ -923,7 +923,7 @@ about = {
             love: "Afaste-se da questão e não revele as suas verdadeiras quedas.",
             business: "Esta não é uma boa ocasião para iniciar quaisquer novos empreendimentos.",
             personal: "Utilize este tempo para trabalhar nas suas forças interiores até que as obstruções atuais sejam ultrapassadas.",
-            overview: "Ming I é sobre a cautela e a necessidade de manter um perfil baixo. É mais difícil viajar de noite do que de dia. Mas também é mais fácil de ser encontrado se mostrar a sua luz. Não tente fazer mais progressos neste momento. Agora não é o momento de lançar um desafio ou de enfrentar alguém. Mantenha-se discreto e aguarde o seu tempo enquanto reforça os seus recursos."
+            overview: "<b>Ming I</b> é sobre a cautela e a necessidade de manter um perfil baixo. É mais difícil viajar de noite do que de dia. Mas também é mais fácil de ser encontrado se mostrar a sua luz. Não tente fazer mais progressos neste momento. Agora não é o momento de lançar um desafio ou de enfrentar alguém. Mantenha-se discreto e aguarde o seu tempo enquanto reforça os seus recursos."
         },
         {
             id: 37,
@@ -932,7 +932,7 @@ about = {
             love: "A comunicação deve ser sincera para beneficiar a sua relação.",
             business: "Evite mal-entendidos dentro do seu negócio, garantindo que cada indivíduo compreenda totalmente o seu papel.",
             personal: "Certifique-se de que se comunica clara e eficazmente com aqueles que são importantes na sua vida.",
-            overview: "Chia Jen é muito sobre comunicação e a sua eficácia dentro de uma equipa de qualquer tipo. Se não comunicar claramente com os que o rodeiam, corre o risco de mal-entendidos, o que pode dificultar o seu progresso. Qualquer que seja o nível em que esta comunicação se processe, é necessário certificar-se de que é respeitoso, sincero, e muito claro no que quer dizer."
+            overview: "<b>Chia Jen</b> é muito sobre comunicação e a sua eficácia dentro de uma equipa de qualquer tipo. Se não comunicar claramente com os que o rodeiam, corre o risco de mal-entendidos, o que pode dificultar o seu progresso. Qualquer que seja o nível em que esta comunicação se processe, é necessário certificar-se de que é respeitoso, sincero, e muito claro no que quer dizer."
         },
         {
             id: 38,
@@ -941,7 +941,7 @@ about = {
             love: "Seja tão cuidadoso quanto necessário para ultrapassar uma questão potencialmente divisória.",
             business: "Pode descobrir que a falta de comunicação, ou a recusa em comunicar, está a causar um período de estagnação. Terá de remediar esta situação antes que seja possível um maior progresso.",
             personal: "Será necessário aprender a respeitar o seu inimigo para resolver qualquer crise em que se encontre atualmente.",
-            overview: "K'uei é sobre comunicação. Ou a falta dela. Ser teimoso ou indiferente a uma situação e não falar sobre ela conduzirá a um impasse no progresso. K'uei diz-lhe que a única forma de avançar é através de uma comunicação e reconciliação eficazes. Poderá ser necessário uma diplomacia extrema e, se assim for, este é o curso que deve adotar. Deve aprender a ignorar a emoção neste momento, por pior que os outros estejam a se comportar. Não se deixe provocar e responder com raiva. Será um erro e perderá a sua credibilidade. O seu comportamento tem de ser exemplar."
+            overview: "<b>K'uei</b> é sobre comunicação. Ou a falta dela. Ser teimoso ou indiferente a uma situação e não falar sobre ela conduzirá a um impasse no progresso. <b>K'uei</b> diz-lhe que a única forma de avançar é através de uma comunicação e reconciliação eficazes. Poderá ser necessário uma diplomacia extrema e, se assim for, este é o curso que deve adotar. Deve aprender a ignorar a emoção neste momento, por pior que os outros estejam a se comportar. Não se deixe provocar e responder com raiva. Será um erro e perderá a sua credibilidade. O seu comportamento tem de ser exemplar."
         },
         { 
             id: 39,
@@ -950,7 +950,7 @@ about = {
             love: "Será necessário se voltar ao interior para procurar pistas de como construir uma relação se o amor se tiver tornado azedo.",
             business: "Não culpe os outros por problemas comerciais atuais.  Em vez disso, consulte-os para ideias e apoio na superação das questões.",
             personal: "Isto é apenas um contratempo temporário. Não comece a sentir pena de si próprio. Não é construtivo.",
-            overview: "Chien tem a ver com obstruções ao progresso. Embora os problemas possam parecer intransponíveis, não são. Embora a ajuda externa possa eventualmente manifestar-se, é necessário usar este tempo para reunir as suas forças e usar a ajuda dos que o rodeiam para tentar resolver os problemas. Trabalhar na resolução de quaisquer falhas ou fraquezas internas. Não se deixe frustrar. Isto é apenas um contratempo temporário. Assim que estes obstáculos tiverem passado, deverá começar a avançar novamente. Mas faça-o com cautela até ter a certeza de que todo o perigo já passou."
+            overview: "<b>Chien</b> tem a ver com obstruções ao progresso. Embora os problemas possam parecer intransponíveis, não são. Embora a ajuda externa possa eventualmente manifestar-se, é necessário usar este tempo para reunir as suas forças e usar a ajuda dos que o rodeiam para tentar resolver os problemas. Trabalhar na resolução de quaisquer falhas ou fraquezas internas. Não se deixe frustrar. Isto é apenas um contratempo temporário. Assim que estes obstáculos tiverem passado, deverá começar a avançar novamente. Mas faça-o com cautela até ter a certeza de que todo o perigo já passou."
         },
         {
             id: 40,
@@ -959,7 +959,7 @@ about = {
             love: "Não permita que a culpa e/ou recriminações se interponham no caminho da sua relação com o seu parceiro.",
             business: "Este é um momento para dar passos muito pequenos para a frente.",
             personal: "As questões do passado devem ser liberadas para que se possa começar a progredir novamente.",
-            overview: "O Hisieh é sobre começar a progredir uma vez mais. As dificuldades recentes deixaram-no num estado enfraquecido e é necessário um período de convalescença. Se um atleta torce um tornozelo na segunda-feira, então seria um erro tentar correr uma maratona na terça-feira.  Adapte-se às suas novas circunstâncias e assegure-se de que os seus problemas e queixas do passado sejam liberados. Quer estes tenham sido auto-infligidos ou culpa de outros - deixe-os ir. Só então poderá começar a dar os pequenos passos necessários para progredir uma vez mais."
+            overview: "<b>Hisieh</b> é sobre começar a progredir uma vez mais. As dificuldades recentes deixaram-no num estado enfraquecido e é necessário um período de convalescença. Se um atleta torce um tornozelo na segunda-feira, então seria um erro tentar correr uma maratona na terça-feira.  Adapte-se às suas novas circunstâncias e assegure-se de que os seus problemas e queixas do passado sejam liberados. Quer estes tenham sido auto-infligidos ou culpa de outros - deixe-os ir. Só então poderá começar a dar os pequenos passos necessários para progredir uma vez mais."
         },
         {
             id: 41,
@@ -977,7 +977,7 @@ about = {
             love: "Não seja mesquinho ao partilhar o seu amor com o seu parceiro.",
             business: "Este é um momento para promover o seu negócio e para recompensar generosamente a sua equipe.",
             personal: "Aproveite a oportunidade para ajudar os outros e alcançará grande sucesso",
-            overview: "Enquanto que Sun se relaciona com a desigualdade e a necessidade de a corrigir, I é o oposto e relaciona-se com o tempo em que as desigualdades foram corrigidas. Para os membros mais ricos da sociedade, isto pode inicialmente significar uma perda, mas a longo prazo eles irão colher os benefícios de uma comunidade reforçada. I diz que este é um momento de oportunidades e que se deve aproveitar. E aproveitar rapidamente, pois nenhuma situação é permanente."
+            overview: "Enquanto que <b>Sun</b> se relaciona com a desigualdade e a necessidade de a corrigir, <b>I</b> é o oposto e relaciona-se com o tempo em que as desigualdades foram corrigidas. Para os membros mais ricos da sociedade, isto pode inicialmente significar uma perda, mas a longo prazo eles irão colher os benefícios de uma comunidade reforçada. <b>I</b> diz que este é um momento de oportunidades e que se deve aproveitar. E aproveitar rapidamente, pois nenhuma situação é permanente."
         },
         {
             id: 43,
@@ -986,7 +986,7 @@ about = {
             love: "Este é um momento em que ocorrerá um avanço na sua relação. Não se esqueça de o tratar respeitosamente.",
             business: "Quando uma oportunidade se apresenta, certifique-se de utilizar estratégias positivas para alcançar o avanço de que necessita.",
             personal: "Qualquer avanço a nível pessoal deve ser tratado de forma ética.",
-            overview: "Kuai tem a ver com oportunidades a serem oferecidas através da fraqueza dos outros e com a necessidade de estar pronto e preparado para agir. Uma vez que esta oportunidade tenha sido apresentada e tenha feito um avanço, deve imediatamente aproveitá-la. É importante para si não deixar que as forças negativas recuperem a vantagem. Kuai também traz um aviso para não recorrer às táticas dos seus adversários e é um lembrete de que o fim não justifica os meios. Substitua a negatividade por uma alternativa positiva.",
+            overview: "<b>Kuai</b> tem a ver com oportunidades a serem oferecidas através da fraqueza dos outros e com a necessidade de estar pronto e preparado para agir. Uma vez que esta oportunidade tenha sido apresentada e tenha feito um avanço, deve imediatamente aproveitá-la. É importante para si não deixar que as forças negativas recuperem a vantagem. Kuai também traz um aviso para não recorrer às táticas dos seus adversários e é um lembrete de que o fim não justifica os meios. Substitua a negatividade por uma alternativa positiva.",
     
         },
         {
@@ -996,7 +996,7 @@ about = {
             love: "Não permita que influências nocivas afetem a sua relação.",
             business: "Proteja o seu negócio da corrupção e de práticas antiéticas. Se não o fizer, o seu negócio será muito prejudicado.",
             personal: "Pessoas inescrupulosas e imorais devem ser evitadas.",
-            overview: "Kou tem a ver com a facilidade com que a virtude pode ser subvertida e com a necessidade de impedir que isso aconteça. Embora as situações com que se depara possam não ter importância no início, se não se precaver contra elas, elas ganharão ímpeto e serão extremamente difíceis de lidar. Não subestime a rapidez com que isto pode acontecer. Se for tentado a encontrar-se com pessoas inescrupulosas, reconheça a sua própria parte neste erro e afaste-se da sua presença e da situação.",
+            overview: "<b>Kou</b> tem a ver com a facilidade com que a virtude pode ser subvertida e com a necessidade de impedir que isso aconteça. Embora as situações com que se depara possam não ter importância no início, se não se precaver contra elas, elas ganharão ímpeto e serão extremamente difíceis de lidar. Não subestime a rapidez com que isto pode acontecer. Se for tentado a encontrar-se com pessoas inescrupulosas, reconheça a sua própria parte neste erro e afaste-se da sua presença e da situação.",
         },
         {
             id: 45,
@@ -1005,7 +1005,7 @@ about = {
             love: "Se ambos trabalharem para um objetivo comum, então a sua relação irá prosperar.",
             business: "Os grandes projetos precisam de ser tratados com cuidado e respeito.",
             personal: "Se estiver envolvido em qualquer projeto que inclua um grande grupo, deve concentrar-se num objetivo comum.",
-            overview: "O I Ching fala frequentemente sobre o poder do grupo e é com isto que Ts'ui se relaciona. Embora grandes coisas possam ser alcançadas quando todos se concentram num objetivo comum, Ts'ui é um lembrete de que haverá sempre alguns que não se interessam pelo bem comum. A arrogância e a ignorância significam que estas pessoas farão as suas orações sobre aqueles que as rodeiam. Ts'ui adverte que um líder em tempos como estes deve estar sempre vigilante e fazer uso da antecipação para que os aspectos mais fracos possam ser controlados."
+            overview: "O I Ching fala frequentemente sobre o poder do grupo e é com isto que <b>Ts'ui</b> se relaciona. Embora grandes coisas possam ser alcançadas quando todos se concentram num objetivo comum, <b>Ts'ui</b> é um lembrete de que haverá sempre alguns que não se interessam pelo bem comum. A arrogância e a ignorância significam que estas pessoas farão as suas orações sobre aqueles que as rodeiam. <b>Ts'ui</b> adverte que um líder em tempos como estes deve estar sempre vigilante e fazer uso da antecipação para que os aspectos mais fracos possam ser controlados."
         },
         {
             id: 46,
@@ -1014,7 +1014,7 @@ about = {
             love: "A paciência e a tranquila nutrição irão ajudar a seu relacionamento a prosperar.",
             business: "Foque no sucesso do seu negócio para ajudar a obter as recompensas antecipadas.",
             personal: "Continue a trabalhar nos seus planos e mantenha a confiança no seu sucesso.",
-            overview: "Chêng é sobre paciência e confiança. É uma fase em que não se pode acelerar as coisas - elas irão acontecer à sua própria velocidade. Este é um momento de desenvolvimento natural. Seja paciente e o crescimento que se espera irá acontecer. O crescimento está assegurado, por isso seja paciente e deixe as coisas acontecerem como elas devem. Não continue a interferir com o que é um progresso muito natural."
+            overview: "<b>Chêng</b> é sobre paciência e confiança. É uma fase em que não se pode acelerar as coisas - elas irão acontecer à sua própria velocidade. Este é um momento de desenvolvimento natural. Seja paciente e o crescimento que se espera irá acontecer. O crescimento está assegurado, por isso seja paciente e deixe as coisas acontecerem como elas devem. Não continue a interferir com o que é um progresso muito natural."
         },
         {
             id: 47,
@@ -1023,7 +1023,7 @@ about = {
             love: "Tome o tempo necessário para ajudar a renovar a sua relação em vez de desesperar por ela.",
             business: "Este não é um momento para tomar decisões empresariais importantes.",
             personal: "Deve concentrar-se no descanso e na recuperação.",
-            overview: "K'un aparece quando os tempos são difíceis no que diz respeito aos seus esforços. É um momento particularmente perigoso, pois corre o risco de cair em desespero ou de ficar deprimido, por mais que anseie pelo sucesso. Isto pode acontecer em qualquer altura e como as questões são difíceis de tratar em tal altura, K'un recomenda que, em tempos futuros como este, esteja preparado para com bastante antecedência. Desta vez é preciso perceber que o que está a acontecer não é mais do que uma condição temporária e deve tratá-la como um período de descanso e recuperação. Cuide do seu corpo e da sua mente - uma atitude positiva é uma necessidade. A força e o propósito voltarão e a sua visão da vida será renovada."
+            overview: "<b>K'un</b> aparece quando os tempos são difíceis no que diz respeito aos seus esforços. É um momento particularmente perigoso, pois corre o risco de cair em desespero ou de ficar deprimido, por mais que anseie pelo sucesso. Isto pode acontecer em qualquer altura e como as questões são difíceis de tratar em tal altura, <b>K'un</b> recomenda que, em tempos futuros como este, esteja preparado para com bastante antecedência. Desta vez é preciso perceber que o que está a acontecer não é mais do que uma condição temporária e deve tratá-la como um período de descanso e recuperação. Cuide do seu corpo e da sua mente - uma atitude positiva é uma necessidade. A força e o propósito voltarão e a sua visão da vida será renovada."
         },
         {
             id: 48,
@@ -1032,7 +1032,7 @@ about = {
             love: "Alimente a alma para ajudar a sustentar a sua relação.",
             business: "As necessidades básicas e constantes da humanidade devem ser consideradas.",
             personal: "Assegure-se de que as suas necessidades básicas estão bem atendidas e que alimenta o seu espírito.",
-            overview: "Ching é um lembrete de que mesmo que tudo à nossa volta esteja constantemente a mudar, a alma precisa de ser constantemente nutrida e esta necessidade não muda. É o momento de assegurar que a alimentação necessária para o corpo, mente e alma permanece disponível e intacta. Ching enfatiza também que tem a responsabilidade de ajudar a fornecer este alimento para aqueles que não o podem fornecer para si próprios."
+            overview: "<b>Ching</b> é um lembrete de que mesmo que tudo à nossa volta esteja constantemente a mudar, a alma precisa de ser constantemente nutrida e esta necessidade não muda. É o momento de assegurar que a alimentação necessária para o corpo, mente e alma permanece disponível e intacta. <b>Ching</b> enfatiza também que tem a responsabilidade de ajudar a fornecer este alimento para aqueles que não o podem fornecer para si próprios."
         },
         {
             id: 49,
@@ -1041,7 +1041,7 @@ about = {
             love: "A sua relação pode precisar de uma mudança radical, mas primeiro deve planejar para todas as eventualidades.",
             business: "O momento para a mudança radical deve ser escolhido sabiamente para potencializar os resultados.",
             personal: "A meditação é a chave para aproveitar a oportunidade de uma autotransformação radical.",
-            overview: "Ko aparece na altura de uma potencial transformação radical. Embora rápida e decisiva, a ação é muitas vezes a melhor forma de o fazer, não necessariamente quando Ko aparece. O momento é crucial. Qualquer ação precisa de ser completamente desenvolvida e baseada em todas as bases sólidas. A ação só deve ser tomada quando for absolutamente necessária. Resista à tentação de agir impulsivamente, pois isso irá comprometer os seus esforços e muito possivelmente produzirá um efeito negativo.",
+            overview: "<b>Ko</b> aparece na altura de uma potencial transformação radical. Embora rápida e decisiva, a ação é muitas vezes a melhor forma de o fazer, não necessariamente quando Ko aparece. O momento é crucial. Qualquer ação precisa de ser completamente desenvolvida e baseada em todas as bases sólidas. A ação só deve ser tomada quando for absolutamente necessária. Resista à tentação de agir impulsivamente, pois isso irá comprometer os seus esforços e muito possivelmente produzirá um efeito negativo.",
         },
         {
             id: 50,
@@ -1050,7 +1050,7 @@ about = {
             love: "Desfrutar dos aspectos harmoniosos da sua relação ajudará a aprofundar os limites entre você e o seu parceiro.", 
             business: "Concentre-se nos negócios que irão transformar os seus assuntos e certifique-se de que lida com tudo de uma forma sofisticada.", 
             personal: "Fortaleça os limites entre si e aqueles que lhe são mais importantes, organizando uma refeição de algum tipo.", 
-            overview: "Ting trata muito da satisfação das necessidades de uma comunidade para que esta exista harmoniosamente. Ao contrário de Ching, que lida com o básico, Ting é sobre os 'extras'. A partilha de uma refeição bem preparada é o ritual em todo o mundo para o cultivo dos limites entre as pessoas. Além de prover ao corpo Ting lembra que os 'extras' espirituais não devem ser negligenciados.",
+            overview: "<b>Ting</b> trata muito da satisfação das necessidades de uma comunidade para que esta exista harmoniosamente. Ao contrário de Ching, que lida com o básico, <b>Ting</b> é sobre os 'extras'. A partilha de uma refeição bem preparada é o ritual em todo o mundo para o cultivo dos limites entre as pessoas. Além de prover ao corpo <b>Ting</b> lembra que os 'extras' espirituais não devem ser negligenciados.",
         },
         {
             id: 51,
@@ -1059,7 +1059,7 @@ about = {
             love: "Examine o seu comportamento em relação a quaisquer hábitos destrutivos e esteja à altura do desafio de os erradicar.",
             business: "Se o seu negócio estiver a enfrentar um obstáculo alarmante, terá de reforçar a sua determinação para prevalecer.",
             personal: "Você se tornará uma pessoa mais forte ao aprender a enfrentar os seus medos.",
-            overview: "Chên tem a ver com o medo e aparece quando há necessidade de ser sacudido da comodidade. Encoraja-o a examinar todos os aspectos da vida e a ver onde existem falhas ou erros. e a tomar medidas para lidar com eles. Este exame deve ser abordado conscienciosamente, o que o ajudará a passar por este período uma pessoa mais forte e sábia, desde que não volte aos seus velhos hábitos. Chên diz-lhe como reagir a uma crise. Lembre-se, a coragem não é a ausência de medo, mas a determinação de o enfrentar."
+            overview: "<b>Chên</b> tem a ver com o medo e aparece quando há necessidade de ser sacudido da comodidade. Encoraja-o a examinar todos os aspectos da vida e a ver onde existem falhas ou erros. e a tomar medidas para lidar com eles. Este exame deve ser abordado conscienciosamente, o que o ajudará a passar por este período uma pessoa mais forte e sábia, desde que não volte aos seus velhos hábitos. <b>Chên</b> diz-lhe como reagir a uma crise. Lembre-se, a coragem não é a ausência de medo, mas a determinação de o enfrentar."
         },
         {
             id: 52,
@@ -1068,7 +1068,7 @@ about = {
             love: "Para ver claramente as coisas, é preciso deixar de lado o preconceito.",
             business: "Esvazie a sua mente antes de tomar quaisquer decisões comerciais importantes.",
             personal: "Aprenda a meditar para ajudar a alcançar uma mente tranquila.",
-            overview: "Kên lembra que se a sua mente estiver cheia de confusão, não será capaz de ter novos pensamentos e ideias. Ken aparece quando tem de fazer uma pausa e retirar-se do mundo por um momento, a fim de limpar o velho na sua mente para dar lugar ao novo. A meditação é a chave para este processo. Não é simplesmente um momento de descanso. Não é uma tarefa fácil libertar a sua mente das preocupações diárias, mas é necessário fazê-lo, para que possa ver e pensar com mais objetividade do que antes. Os pensamentos antigos impedem as suas ações, obrigando-o a cometer os mesmos erros. Limpa-os - não os permita que te prendam."
+            overview: "<b>Kên</b> lembra que se a sua mente estiver cheia de confusão, não será capaz de ter novos pensamentos e ideias. <b>Ken</b> aparece quando tem de fazer uma pausa e retirar-se do mundo por um momento, a fim de limpar o velho na sua mente para dar lugar ao novo. A meditação é a chave para este processo. Não é simplesmente um momento de descanso. Não é uma tarefa fácil libertar a sua mente das preocupações diárias, mas é necessário fazê-lo, para que possa ver e pensar com mais objetividade do que antes. Os pensamentos antigos impedem as suas ações, obrigando-o a cometer os mesmos erros. Limpa-os - não os permita que te prendam."
         },
         {
             id: 53,
@@ -1077,7 +1077,7 @@ about = {
             love: "Aprofundar a sua relação é mais provável se fizer progressos estáveis e sem preocupações.",
             business: "Deve reservar algum tempo para se concentrar nos grandes e pequenos detalhes do seu negócio.",
             personal: "Concentre-se nos detalhes da sua vida de modo a apreciar a sua plenitude.",
-            overview: "Chien tem tudo a ver com paciência e com a necessidade de examinar as minúcias da vida. O progresso neste momento está assegurado, por isso não esteja ansioso se as coisas não estiverem a ir tão depressa como gostaria. Em vez disso, use este tempo como uma oportunidade para se certificar de que todas as suas bases estão cobertas. Chien diz-lhe que os pequenos detalhes da vida são muito importantes e que o progresso será lento e constante. Pode sobrevoar uma área numa questão de segundos, mas o homem que anda por essa área aprenderá muito mais. Passar tempo nos pormenores mais pequenos da vida trará, sem dúvida, recompensas no futuro.",
+            overview: "<b>Chien</b> tem tudo a ver com paciência e com a necessidade de examinar as minúcias da vida. O progresso neste momento está assegurado, por isso não esteja ansioso se as coisas não estiverem a ir tão depressa como gostaria. Em vez disso, use este tempo como uma oportunidade para se certificar de que todas as suas bases estão cobertas. <b>Chien</b> diz-lhe que os pequenos detalhes da vida são muito importantes e que o progresso será lento e constante. Pode sobrevoar uma área numa questão de segundos, mas o homem que anda por essa área aprenderá muito mais. Passar tempo nos pormenores mais pequenos da vida trará, sem dúvida, recompensas no futuro.",
         },
         {
             id: 54,
@@ -1086,7 +1086,7 @@ about = {
             love: "Há uma diferença entre a paixão e o verdadeiro amor. Não confunda um com o outro.",
             business: "Não tomar decisões empresariais de forma impetuosa.",
             personal: "Se concentre no progresso lento e constante quando confrontado com uma situação difícil ou complexa.",
-            overview: "Kuei Mei é um dos hexagramas mais desafiadores do I Ching. Surge quando as advertências trazidas pelo hexagrama 53 (Chien) foram ignoradas. Este é um momento em que se pode muito bem ter ficado alienado dos que o rodeiam e que se perdeu todo o respeito por si. Kuei Mei traz um aviso muito forte de que quando uma ação impetuosa ou erros de julgamento resultaram nos maus momentos atuais, então seria um erro momentâneo agir impetuosamente mais uma vez. Grande diplomacia e progresso lento são os únicos remédios que serão eficazes. Evite a raiva, evite a pena de si próprio. Aproxime-se desta vez e dos tempos vindouros com coragem. Todas as coisas passam e este período não é exceção."
+            overview: "<b>Kuei Mei</b> é um dos hexagramas mais desafiadores do I Ching. Surge quando as advertências trazidas pelo hexagrama 53 (Chien) foram ignoradas. Este é um momento em que se pode muito bem ter ficado alienado dos que o rodeiam e que se perdeu todo o respeito por si. <b>Kuei Mei</b> traz um aviso muito forte de que quando uma ação impetuosa ou erros de julgamento resultaram nos maus momentos atuais, então seria um erro momentâneo agir impetuosamente mais uma vez. Grande diplomacia e progresso lento são os únicos remédios que serão eficazes. Evite a raiva, evite a pena de si próprio. Aproxime-se desta vez e dos tempos vindouros com coragem. Todas as coisas passam e este período não é exceção."
         },
         {
             id: 55,
@@ -1095,7 +1095,7 @@ about = {
             love: "Aprecie e celebre o sucesso da sua relação.",
             business: "Apesar de ser atualmente muito bem sucedido, certifique-se de fazer planos para o futuro.",
             personal: "Este é um momento de muito sucesso para si. Tire o máximo proveito do seu sucesso para obter benefícios duradouros.",
-            overview: "Fêng aparece quando tudo é atualmente muito bem sucedido. É um lembrete que embora seja bom desfrutar deste período não se deve cometer o erro de pensar que este período vai durar para sempre. Tudo é transitório. O sucesso, tal como a adversidade, é igualmente transitório. Desfrute deste período da vida por todos os meios, mas faça planos para prever o futuro, quando os tempos podem não ser tão benéficos. A celebração é apropriada, mas cuidado para não tomar decisões tolas. Um grande sucesso é demasiado raro para ser tomado de forma leviana.",
+            overview: "<b>Fêng</b> aparece quando tudo é atualmente muito bem sucedido. É um lembrete que embora seja bom desfrutar deste período não se deve cometer o erro de pensar que este período vai durar para sempre. Tudo é transitório. O sucesso, tal como a adversidade, é igualmente transitório. Desfrute deste período da vida por todos os meios, mas faça planos para prever o futuro, quando os tempos podem não ser tão benéficos. A celebração é apropriada, mas cuidado para não tomar decisões tolas. Um grande sucesso é demasiado raro para ser tomado de forma leviana.",
         },
         {
             id: 56,
@@ -1104,7 +1104,7 @@ about = {
             love: "A viagem ajudará a proporcionar algo que falta na sua relação, desde que a viagem não seja usada como um meio de fuga.",
             business: "As viagens são necessárias para ajudar a fornecer algo que falta no seu negócio. É um tempo táctico e diplomático.",
             personal: "As viagens podem ser utilizadas como um meio de adquirir conhecimentos numa área que não tenha.",
-            overview: "Lü representa um momento da sua vida em que sente a necessidade de viajar. Há a sensação de que falta algo e agora é um bom momento para empreender uma busca para descobrir o quê. Lü é também um lembrete de que quando se desloca para um território desconhecido é sensato ser prudente e cortês. Só porque se faz as coisas de forma diferente dos outros, não significa que se esteja certo e eles estão errados. Esteja ciente das diferenças de costumes e comportamento e aja em conformidade. Lü não deve ser visto como um tempo para fazer uma viagem para fugir das dificuldades, mas como um tempo para ganhar conhecimento."
+            overview: "<b>Lü</b> representa um momento da sua vida em que sente a necessidade de viajar. Há a sensação de que falta algo e agora é um bom momento para empreender uma busca para descobrir o quê. <b>Lü</b> é também um lembrete de que quando se desloca para um território desconhecido é sensato ser prudente e cortês. Só porque se faz as coisas de forma diferente dos outros, não significa que se esteja certo e eles estão errados. Esteja ciente das diferenças de costumes e comportamento e aja em conformidade. <b>Lü</b> não deve ser visto como um tempo para fazer uma viagem para fugir das dificuldades, mas como um tempo para ganhar conhecimento."
         },
         {
             id: 57,
@@ -1113,7 +1113,7 @@ about = {
             love: "A melhor forma de desenvolver a confiança na sua relação é através de uma ação paciente, ponderada e profunda.",
             business: "A persistência suave é de longe a melhor forma de promover os seus planos de negócios.",
             personal: "A persistência suave é a chave para alcançar com sucesso os seus planos.",
-            overview: "Sun tem tudo a ver com a necessidade de ser persistente e suave nas suas ações. Isso não significa que os seus planos não serão bem sucedidos porque está a proceder suavemente em vez de forçadamente. A suavidade incessante, não a agressividade é a chave para o progresso e o sucesso. A persuasão e o nascimento da confiança serão muito mais duradouros do que as ameaças e a coerção. É o momento de permitir que os seus pensamentos e ideias penetrem nas mentes daqueles com quem está a lidar à sua própria velocidade. Seja suavemente persistente na sua abordagem e será bem sucedido. Adapte-se a cada situação e conforme necessário. Não confunda suavidade com docilidade e não permita que a suavidade se torne fraqueza."
+            overview: "<b>Sun</b> tem tudo a ver com a necessidade de ser persistente e suave nas suas ações. Isso não significa que os seus planos não serão bem sucedidos porque está a proceder suavemente em vez de forçadamente. A suavidade incessante, não a agressividade é a chave para o progresso e o sucesso. A persuasão e o nascimento da confiança serão muito mais duradouros do que as ameaças e a coerção. É o momento de permitir que os seus pensamentos e ideias penetrem nas mentes daqueles com quem está a lidar à sua própria velocidade. Seja suavemente persistente na sua abordagem e será bem sucedido. Adapte-se a cada situação e conforme necessário. Não confunda suavidade com docilidade e não permita que a suavidade se torne fraqueza."
         },
         {
             id: 58,
@@ -1122,7 +1122,7 @@ about = {
             love: "Vai experimentar uma grande alegria no seu relacionamento.",
             business: "Tudo é possível neste momento, por isso não tenha medo de aproveitar o seu sucesso.",
             personal: "Desfrute da sensação de felicidade na sua vida e use-a como inspiração para avançar.",
-            overview: "Tui indica uma época de grande sucesso e o sentimento de felicidade que a acompanha. Ansiedade e discórdia são atualmente deixadas de lado e há uma sensação de que coisas grandiosas são possíveis. Tui relaciona o passado com este sentimento de bênção e mantém a promessa de que há mais para vir. No entanto, adverte que, embora a celebração seja necessária e adequada neste momento, não se deve deixar que isso se torne uma distração e o impeça de aproveitar o seu sucesso."
+            overview: "<b>Tui</b> indica uma época de grande sucesso e o sentimento de felicidade que a acompanha. Ansiedade e discórdia são atualmente deixadas de lado e há uma sensação de que coisas grandiosas são possíveis. <b>Tui</b> relaciona o passado com este sentimento de bênção e mantém a promessa de que há mais para vir. No entanto, adverte que, embora a celebração seja necessária e adequada neste momento, não se deve deixar que isso se torne uma distração e o impeça de aproveitar o seu sucesso."
         },
         {
             id: 59,
@@ -1131,7 +1131,7 @@ about = {
             love: "as barreiras na sua relação podem ser removidas através do reforço da comunicação.", 
             business: "A comunicação persistente é a chave para o progresso dentro do seu negócio.", 
             personal: "Deve avançar persistentemente em direção à unidade e integração para aliviar os seus preconceitos.", 
-            overview: "Huan tem a ver com a remoção de barreiras que estão actualmente a atrasar qualquer progresso. Será necessário utilizar meios diferentes para ajudar a remover estes bloqueios. Pode não ser possível removê-los todos você mesmo. Pode ser que seja necessário um mediador externo. É necessária uma abordagem calma e persistente. Este é um momento em que é provável que haja algum dano causado pela remoção dos obstáculos e, em caso afirmativo, deverá tentar limitar os danos a áreas não diretamente relacionadas com a causa do conflito. A comunicação e a cooperação são as chaves do sucesso.",
+            overview: "<b>Huan</b> tem a ver com a remoção de barreiras que estão actualmente a atrasar qualquer progresso. Será necessário utilizar meios diferentes para ajudar a remover estes bloqueios. Pode não ser possível removê-los todos você mesmo. Pode ser que seja necessário um mediador externo. É necessária uma abordagem calma e persistente. Este é um momento em que é provável que haja algum dano causado pela remoção dos obstáculos e, em caso afirmativo, deverá tentar limitar os danos a áreas não diretamente relacionadas com a causa do conflito. A comunicação e a cooperação são as chaves do sucesso.",
         },
         {
             id: 60,
@@ -1140,7 +1140,7 @@ about = {
             love: "Não tente mover-se demasiado depressa na sua relação. Comece devagar e construa uma amizade forte e duradoura.",
             business: "Este é um momento de qualidade e não de quantidade. Não exagere nos negócios.",
             personal: "A felicidade a longo prazo é melhor alcançada lentamente.",
-            overview: "Chieh representa a necessidade na sua vida de ter limitações práticas. Enquanto que o seu potencial é ilimitado, a sua capacidade de expansão e de atingir esse potencial não é. Não se pode fazer muito mais do que isso. Só se pode progredir até certo ponto. Quando tenta fazer demasiado, está a ameaçar a sua existência e o seu sucesso. O crescimento ainda é possível, claro, e Chieh não indica que o crescimento irá parar - apenas que o seu crescimento não será exponencial. Com efeito, Chieh aconselha moderação. Gastar para além dos seus recursos, tentar expandir-se para além dos seus limites, não será favorável a uma felicidade futura a longo prazo. É importante compreender que, no entanto, para manter um equilíbrio. Metaforicamente falando, gastar pouco é tão mau quanto gastar muito."
+            overview: "<b>Chieh</b> representa a necessidade na sua vida de ter limitações práticas. Enquanto que o seu potencial é ilimitado, a sua capacidade de expansão e de atingir esse potencial não é. Não se pode fazer muito mais do que isso. Só se pode progredir até certo ponto. Quando tenta fazer demasiado, está a ameaçar a sua existência e o seu sucesso. O crescimento ainda é possível, claro, e <b>Chieh</b> não indica que o crescimento irá parar - apenas que o seu crescimento não será exponencial. Com efeito, <b>Chieh</b> aconselha moderação. Gastar para além dos seus recursos, tentar expandir-se para além dos seus limites, não será favorável a uma felicidade futura a longo prazo. É importante compreender que, no entanto, para manter um equilíbrio. Metaforicamente falando, gastar pouco é tão mau quanto gastar muito."
         },
         {
             id: 61,
