@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.65, user-scalable=no">
     <title>I Ching View</title>
     <link rel="icon" href="images/yinyang.png"/>
 
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Simonetta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Hind:wght@300&family=Kaushan+Script&family=Ma+Shan+Zheng&family=Simonetta&display=swap" rel="stylesheet">
    
 </head>
 <body>
@@ -107,7 +107,7 @@
             </div>
             
             <div class="aboutArea">
-                <div class="closeButton">x</div>
+                <div class="closeButton">✖</div>
                 <blockquote id="aboutQuote"> Peace. The small departs, The great approaches. <br> Good fortune. Success.</blockquote>
 
                 <div id="aboutTrigrams"><p class="about-title">Formed by the trigrams:</p><p class="about-content">Wind over Heaven</p></div>
@@ -132,23 +132,37 @@
             <div class="buttonArea">
                 <div class="changeSelector">
                     <input type="checkbox" name="changeHexagram" id="changeSelector">
-                    <label for="changeSelector">Change Hexagram</label>
+                    <label for="changeSelector">fixed change</label>
                 </div>
                 <hr>
-                <button class="invertButton" onClick="invertLines()">Invert Lines</button>
+                <button class="invertButton" data-op="lines" onClick="invertLines()">Invert Lines</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button class="invertButton" onClick="invertTrigrams()">Invert Trigrams</button>
+                <button class="invertButton" data-op="trigrams" onClick="invertTrigrams()">Invert Trigrams</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             <div class="buttonArea">
-                <button class="invertButton" onClick="invertPositions()">Invert Positions</button>
+                <button class="invertButton" data-op="positions" onClick="invertPositions()">Invert Positions</button>
                 <img class="yinyangIcon" width="30" src="assets/images/yinyang.png">
             </div>
             
             <button class="consultButton"  onClick="showGame()">Consult with coins</button>
         </div>
+    </div>
+
+    <div class="hintArea">
+        Clique ou arraste nas linhas para fazer mutações.
+    </div>
+    <div class="aboutIChing">
+        <p>The I Ching (Book of Changes) is an ancient work of Chinese wisdom based on the Yin/Yang energies.</p>
+        <p>It can be used as an oracle or just as a source for understanding the universe.</p>
+        <p>It consists of a set of 64 six-line figures that can be whole or broken, called hexagrams.</p>
+        <p>The whole line represents yang (masculine, firm) energy, the broken line represents yin (feminine, malleable) energy.</p>
+        <p>Hexagrams are formed by smaller three-line figures called trigrams.</p>
+        <p>There are only eight possible trigrams, which when combined form the 64 hexagrams.</p>
+        <p>The trigrams are: heaven, earth, water, fire, wind/wood, thunder, mountain, and lake.</p>
+        <p>Each trigram carries various symbolisms and meanings, and the hexgrams symbolize the various moments in life.</p>
     </div>
     <div class="consultArea">
         <span class="consultMessage">Pense na sua pergunta e jogue as moedas seis vezes</span>
@@ -172,14 +186,14 @@
         </div>
         <div class="conclusionArea">
             <button class="consultButton"  onClick="showGame()">Consultar novamente</button>
-            <button class="exitButton"  onClick="exitGame()">Sair</button>
+            <button class="exitButton"  onClick="exitGame()"><img  width="35" src="assets/images/exit.png"/></button>
         </div>
     </div>
     </div>
     
     <div class="footer">
-        <div>Texts about the hexagrams taken from the iching free app of Estudio Nemo.</div>
         <div>2022, Yuri Mallak.</div>
+        <div>Texts about the hexagrams taken from the iching free app of Estudio Nemo.</div>
         
     </div>
 

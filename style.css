@@ -1,6 +1,6 @@
 :root {
-    --bg1: #d7aa2e;
-    --bg2: #f3c34e;
+    --bg1: #f5ac27;
+    --bg2: #ffd84b;
     --darkred: #9f0102;
     --red: #ff0114;
     --cleargreen: #9ce0bb;
@@ -9,15 +9,21 @@
     --blue: #1381bf;
     --yellow: #f7c118;
   }
+
+html {
+    font-size: 80%;
+}
 * {
     box-sizing: content-box;
     user-select: none; 
+    touch-action: none;
     margin: 0;
     padding: 0;
 }
 body {
     background-color: var(--bg2);
     overflow: hidden;
+    height: calc(100% - 4.3rem);
 }
 
 @font-face {
@@ -28,63 +34,73 @@ body {
 }
 
 .header {
+    position: fixed;
     display: flex;
     width: 100%;
-    height: 70px;
+    top: 0;
+    height: 4.3rem;
     background: black;
-    border-bottom: 5px solid white;
+    border-bottom: 0.31rem solid white;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .logoArea {
-    margin-left: 50px;
-    padding-top: 5px;
+    margin-left: 3.12rem;
+    padding-top: 0.31rem;
 }
 .logo {
     margin: auto;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--red);
     font-family: Kaushan Script;
     font-weight: bold;
-    text-shadow: 5px 1px 7px;
+    text-shadow: 0.31rem 0.06rem 0.43rem;
 }
 .logo span {
-    font-size: 30px;
+    font-size: 1.87rem;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
-    text-shadow: 1px 1px 2px;
+    text-shadow: 0.06rem 0.06rem 0.12rem;
 }
 
 .flagsArea {
-    margin-right: 50px;
+    margin-right: 3.12rem;
 }
 .flag {
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 1.25rem;
+    margin-right: 0.6rem;
     -webkit-user-drag: none; 
-    width: 45px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 5px;
+    width: 2.8rem;
+    height: 1.8rem;
+    border: 0.12rem solid white;
+    border-radius: 0.31rem;
     cursor: pointer;
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: var(--bg1);
+    width: 100%;
     max-width: 900px;
     height: 100vh;
-    margin: auto;
+    margin: 0;
     padding: 36px;
+    padding-top: 50px;
+    margin: auto;
 }
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 4.37rem;
     background: white;
-    border-top: 5px solid black;
+    border-top: 0.31rem solid black;
     font-weight: bold;
     text-align: center;
-    line-height: 70px;
+    line-height: 4.37rem;
 }
 .footer div {
     padding: 0;
@@ -93,30 +109,34 @@ body {
 
 .frameArea 
 {
-    width: 728px;
-    margin: auto;
+    width: 1000px;
+   margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: -15px;
-    margin-bottom: 15px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 3.12rem;
+    margin-bottom: 0.94rem;
+    margin-left: 600px;
+    margin-right: 10px;
+    
 }
 .frame {
-    margin: auto;
+   margin: auto;
     overflow: hidden;
-    width: 369px;
-    height: 369px;
+    width: 23.06rem;
+    height: 24.06rem;
     background-image: url("assets/images/paperBG.jpg");
-    border: 15px var(--darkred) groove ; 
-    box-shadow: -4px 4px 2px;
-    position: relative;
+    border: 0.93rem var(--darkred) groove ; 
+    box-shadow: -0.25rem 0.25rem 0.25rem 0.12rem;
+   position: relative;
+    margin-right: 0px;
     
     
 }
 
 .slidesArea {
     display: none;
-    width: 800px;
+    width: 50rem;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -126,8 +146,8 @@ body {
 }
 .slide {
     display: inline-block;
-    width: 369px;
-    height: 369px;
+    width: 23.06rem;
+    height: 23.06rem;
     background-color: transparent;
     float: left;
 }
@@ -138,8 +158,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70px;
-    margin-top: 300px
+    height: 4.37rem;
+    margin-top: 18.75rem;
 }
 .nextHexagram,
 .prevHexagram
@@ -147,23 +167,25 @@ body {
     display: block;
     z-index: 9;
     cursor: pointer;
-    font-family: cursive;
-    width: 7000px;
+    font-family: Hind;
+    font-weight: bold;
+    width: 437.5rem;
     background: rgba(255, 255, 255, 0.4);
     text-align: right;
-    font-size: 15px;
-    padding: 10 5px;
+    font-size: 0.87rem;
+    letter-spacing: 1.3px;
+    padding: 0.62rem 0.31rem;
     text-decoration: underline;
-    box-shadow: 0px 0px 5px;
-    margin-right: 7px;
-    padding-right: 7px;
+    box-shadow: 0px 0px 0.80px;
+    margin-right: 0.43rem;
+    padding-right: 0.43rem;
 
 }
 .prevHexagram {
-    left: 20px;
+    left: 1.25rem;
     text-align: left;
-    margin-left: 7px;
-    padding-left: 7px;
+    margin-left: 0.43rem;
+    padding-left: 0.43rem;
 
 }
 .arrow {
@@ -173,10 +195,10 @@ body {
 }
 
 .infoArea {
-    width: 700px;
-    height: 20px;
+    width: 43.75rem;
+    height: 1.25rem;
     display: flex;
-    margin-top: 10px;
+    margin-top: 1%; /* 0.62rem */
     background: transparent;
     gap: 0px;
 }
@@ -201,8 +223,8 @@ body {
 
 .hexagramArea {
     background: transparent;
-    width: 200px;
-    padding: 10px;
+    width: 12.5rem;
+    padding: 0.62rem;
     
 }
 
@@ -235,14 +257,15 @@ body {
 }
 .lineNumber {
     visibility: hidden;
-    font-size: 15px;
+    font-size: 0.93rem;
     color: #333;
+    font-family: Kaushan;
     font-weight: bold;
     float: left;
-    width: 2px;
+    width: 0.125rem;
     font-weight: bold;
-    margin-top: 0px;
-    margin-left: -15px;
+    margin-top: 0px; /* 0px */
+    margin-left: -0.93rem;
 }
 .lineArea:hover .lineNumber {
     visibility: visible;
@@ -250,32 +273,32 @@ body {
 }
 
 .identification {
-    margin-left: 50px;
-    height: 50px;
+    margin-left: 3.12rem;
+    height: 3.12rem;
 }
 .hexagramNumber1,
 .hexagramNumber2 {
     display: inline-block;
     background-color: white;
-    font-size: 15px;
-    margin-left: 80px;
-    margin-top: 20px;
-    width: 20px;
-    height: 20px;
+    font-size: 0.93rem;
+    margin-left: 5rem;
+    margin-top: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
-    border: 2px solid #333;
+    border: 0.12rem solid #333;
     text-align: center;
-    line-height: 18px;
+    line-height: 1.12rem;
 }
 .hexagramTitle1,
 .hexagramTitle2 {
-    margin-bottom: 5px;
-    margin-top: 30px;
+    margin-bottom: 1%; /* 0.31rem */
+    margin-top: 10%; /* 1.9rem */
     background: transparent;
-    height: 50px;
+    height: 3.12rem;
     text-align: center;
-    line-height:  30px;
-    font-size: 20px;
+    line-height:  1.9rem;
+    font-size: 1.25rem;
     font-family: Kaushan Script;
     transition: opacity  ease-in-out 0.8s;
 }
@@ -283,11 +306,11 @@ body {
 .charactere2
  {
     display: inline-block;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Ma Shan Zheng';
     text-align: center;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 5%; /* 10px */
+    margin-left: 15px;
     transition: opacity  ease-in-out 1s;
     height: 40px;
     line-height: 50px;
@@ -299,23 +322,23 @@ body {
 }
 
 .infoArea {
-    margin-top: 0px;
+    margin-top: 0;
 }
 #info {
-    width: 100px;
+    width: 6.2rem;
     padding: 0;
     display: block;
     font-family: Simonetta;
     font-weight: 800;
     text-align: center;
-    margin-top: 37px;
-    margin-left: 10px;
+    margin-top: 2.31rem;
+    margin-left: 0.62rem;
 }
 #info .ut1,
 #info .ut2
 {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
     transition: opacity  ease-in-out 1s;
     text-align: center;
     font-weight: bold;
@@ -323,8 +346,8 @@ body {
 #info .bt1,
 #info .bt2
 {
-    font-size: 20px;
-    margin-top: 16px;
+    font-size: 1.25rem;
+    margin-top: 1rem;
     transition: opacity  ease-in-out 1s;
     text-align: center;
     font-weight: bold;
@@ -335,26 +358,31 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 5px;
-    margin-right: 130px;
+    gap: 0.20rem;
+    margin-right: 470px;
+    margin-left: 10px;
 }
 .changeSelector {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .invertButton {
-    width: 40px;
-    height: 40px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: var(--red);
-    border: 2px outset var(--clearblue);
-    font-size: 10px;
+    border: 0.12rem outset var(--clearblue);
+    text-align: center;
+    font-size: 0.76rem;
     font-weight: bold;
     color: azure;
-    border-radius: 5px;
-    padding: 5px 5px;
+    border-radius: 0.31rem;
+    padding: 0.31rem 0.31rem;
     z-index: 999;
+    margin-top: 5px;
     
 }
+
 .invertButton:hover {
     filter: brightness(120%);
     font-weight: bold;
@@ -371,17 +399,19 @@ body {
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
-
+.yinyangIcon {
+    Transform: translateY(15px);
+}
 .templateArea {
     position: absolute;
     background-color: aliceblue;
     transform: rotate(180deg);
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height: 4rem;
     padding: 5px;
-    margin-top: 5px;
-    margin-left: 20px;
-    box-shadow: 0px 0px 5px;
+    margin-top: 0.31rem;
+    margin-left: 1.25rem;
+    box-shadow: 0 0 0.31rem;
 }
 .templateArea img {
     -webkit-user-drag: none; 
@@ -390,21 +420,29 @@ body {
     margin-bottom: 3px;
 }
 
+.hintArea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 1rem;
+}
+
 .about-button {
     position: absolute;
-    left: 300px;
+    left: 37%;
     top: 30px;
     background-color: var(--blue);
     color: azure;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 .about-button#second {
-    left: 669px;
+    left: 84%; 
 }
 .aboutArea {
     display: none;
@@ -425,7 +463,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: white;
-    font-size: 11px;
+    font-size: 0.63rem;
 }
 .about-title,
 .about-content {
@@ -436,13 +474,13 @@ body {
     margin: 3px;
     
     color: yellow;
-    font-size: 10px;
+    font-size: 0.67rem;
 }
 .about-content {
-    text-indent: -6px;
-    font-size: 9.5px;
+    text-indent: -0.37rem;
+    font-size: 0.63rem;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0.61rem;
 }
 
 .about-content b {
@@ -451,9 +489,9 @@ body {
 
 .closeButton {
     position: absolute;
-    top: 7px;
-    right: 30px;
-    font-size: 15px;
+    top: 3%;
+    right: 10%;
+    font-size: 0.93rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: lightsteelblue;
 }
@@ -462,26 +500,28 @@ body {
     display: none;
     margin: auto;
     height: 150px;
-    margin-right: 300px;
+    margin-right: 230px;
     font-size: 30px;
     text-align: center;
     padding: 5px;
-    max-width: 2000px;
+    width: 500px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #514645;
+    margin-bottom: 200px;
     
 }
 .consultButton {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 0.62rem;
     margin-right: 90px;
     display: flex;
-    width: 70px;
-    height: 50px;
+    width: 4.37rem;
+    height: 3.12rem;
     padding: 10px;
     background-color: var(--green);
     color: white;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
     border: 3px dashed var(--cleargreen);
@@ -496,11 +536,10 @@ body {
     margin: auto;
     margin-top: 20px;
     display: flex;
-    
 }
 .tableArea {
-    width: 900px;
-    height: 80px;
+    width: 56.25rem;
+    height: 5rem;
     /*margin: 0 auto;*/
     
     background-color:burlywood;
@@ -519,24 +558,26 @@ body {
 
 .consultMessage {
     margin: auto;
-    font-size: 14px;
+    font-size: 0.94rem;
     color: white;
 }
 
 .coinsButton {
     width: 240px;
+    height: 30px;
     margin-left: 10px;
     color: #9f0102;
     background-color: gold;
     padding: 15px;
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: bold;
     border: 3px solid  darkgoldenrod;
     border-radius: 10px;
 }
+
 .coin {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
     transform-style: preserve-3d;
 
@@ -567,6 +608,74 @@ body {
     
 }
 
+.exitButton {
+    margin-right: 50px;
+}
+
+.aboutIChing {
+    background-color: #514645;
+    font-family: hind;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    html {
+        font-size: 120%;
+    }
+    .container {
+        padding: 0;
+
+    }
+    .frame {
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+
+    .frameArea {
+        margin-top: 30px;
+        margin-left: 400px;
+    }
+
+    .buttonsArea {
+        margin-right: 320px;
+        margin-top: 200px;
+    }
+    .changeSelector {
+        font-size: 16px;
+    }
+
+    .consultArea {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .consultMessage {
+        font-size: 0.79rem;
+    }
+    .gameArea {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tableArea {
+        width: 290px;
+    }
+    .coinsButton {
+        height: 50px;
+    }
+    .conclusionArea {
+        margin-top: 50px;
+    }
+
+
+
+}
 @keyframes rotation {
     from {
             transform: rotate(0deg);
@@ -575,3 +684,4 @@ body {
             transform: rotate(359deg);
     }
 }
+

@@ -1,0 +1,9 @@
+To Do List:
+
+fix bugs on invert buttons; x
+fix bugs on consult mode; x
+center frame for PC; x
+drag lines for mobile;
+change font on next and prev buttons; x
+
+

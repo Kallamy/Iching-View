@@ -43,10 +43,12 @@ function init() {
     
     document.querySelector('.slidesArea').style.visibility = "hidden";
     document.querySelector('.templateArea').style.visibility = "hidden";
+    
 
     yinyangDuration = 2000;
     hasTwoHexgrams = true;
-    currentHexagram = 0;     
+    currentHexagram = 0; 
+    canInvert = true;    
     
     clickPressed = false;
     canChange = true;
@@ -54,24 +56,38 @@ function init() {
     
     isConsulting = false;
     
+    consultArea = document.querySelector(".consultArea");
     slidesArea = document.querySelector(".slidesArea");
     templateLines = document.querySelectorAll(".templateLine");
     changeSelector = document.querySelector("#changeSelector");
-
     setTimeout(()=>{
         document.querySelector('.slidesArea').style.visibility = "visible";
         document.querySelector('.templateArea').style.visibility = "visible";
 
     }, 1500)
+
 }
 
 
+document.addEventListener('touchstart', () => {
+    
+    clickPressed = true;
+    firstClick = true;
+    lineChange();
+    alert("tocou");
+});
 
+document.addEventListener('touchend', () => {
+    clickPressed = false;
+    canChange = false;
+    firstClick = false;
+    
+})
 
 document.addEventListener('mousedown', () => {
     clickPressed = true;
     firstClick = true;
-    lineChange()
+    lineChange();
     
 })
 
@@ -82,14 +98,15 @@ document.addEventListener('mouseup', () => {
 })
 
 
+
 document.querySelectorAll('.lineArea').forEach(line => {
 
     line.addEventListener('click', lineChange);
-    
-    line.addEventListener('mouseenter', (e) => {
-        
+
+    line.addEventListener('pointerenter', (e) => {
+        e.preventDefault()
         if(clickPressed) {
-           
+            
             if(canChange) {
                 lineChange(e);
                 canChange = false;
@@ -97,7 +114,29 @@ document.querySelectorAll('.lineArea').forEach(line => {
         }
     
     });
-    line.addEventListener('mouseout', (e) => {
+    line.addEventListener('pointerleave', (e) => {
+        e.preventDefault()
+        if(firstClick) {
+            lineChange(e);
+        }
+        canChange = true;
+        firstClick = false;
+    
+    });
+    
+    line.addEventListener('mouseenter', (e) => {
+        e.preventDefault()
+        if(clickPressed) {
+            
+            if(canChange) {
+                lineChange(e);
+                canChange = false;
+            }
+        }
+    
+    });
+    line.addEventListener('mouseleave', (e) => {
+        e.preventDefault()
         if(firstClick) {
             lineChange(e);
         }
@@ -164,7 +203,7 @@ function updateHexagram() {
     if(JSON.stringify(hexagrams[0].lines) == JSON.stringify(hexagrams[1].lines)) {
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-369px"
+            slidesArea.style.marginLeft = "-23.06rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
             slidesArea.style.marginLeft = "0px";
@@ -323,69 +362,82 @@ function getNumber(hexIndex) {
 function invertLines() {
     let inversedLines1 = []
     let inversedLines2 = []
-    if(changeSelector.checked === true) {
-    hexagrams[currentHexagram].lines.forEach(l => {
-         l = !l;
-         inversedLines1.push(l)
-    })
 
-    hexagrams[currentHexagram].lines = inversedLines1;
+    if(canInvert == true) {
+        if(changeSelector.checked === true) {
+            hexagrams[currentHexagram].lines.forEach(l => {
+                l = !l;
+                inversedLines1.push(l)
+            })
+    
+            hexagrams[currentHexagram].lines = inversedLines1;
+    
+        } else {
+            hexagrams[0].lines.forEach(l => {
+                l = !l;
+                inversedLines1.push(l)
+            })
+            
+            hexagrams[1].lines.forEach(l => {
+                l = !l;
+                inversedLines2.push(l)
+            })
+            hexagrams[0].lines = inversedLines1;
+            hexagrams[1].lines = inversedLines2;
+        }
+        YingYangShow();
+        canInvert = false;
 
-    } else {
-        hexagrams[0].lines.forEach(l => {
-            l = !l;
-            inversedLines1.push(l)
-        })
-        
-        hexagrams[1].lines.forEach(l => {
-            l = !l;
-            inversedLines2.push(l)
-        })
-        hexagrams[0].lines = inversedLines1;
-        hexagrams[1].lines = inversedLines2;
+        setTimeout(()=>{
+            updateHexagram();
+            canInvert = true;
+        }, yinyangDuration / 2)
     }
-    YingYangShow();
-
-    setTimeout(()=>{
-        updateHexagram();
-    }, yinyangDuration / 2)
 }
 
 function invertTrigrams() {
-    if(changeSelector.checked === true) {
-    hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
-    hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
-    hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
-    } else {
-        for( let i = 0; i < 2; i++ ) {
-            hexagrams[i].lines.push(hexagrams[i].lines.shift());
-            hexagrams[i].lines.push(hexagrams[i].lines.shift());
-            hexagrams[i].lines.push(hexagrams[i].lines.shift());
+    if(canInvert == true) {
+        if(changeSelector.checked === true) {
+        hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
+        hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
+        hexagrams[currentHexagram].lines.push(hexagrams[currentHexagram].lines.shift());
+        } else {
+            for( let i = 0; i < 2; i++ ) {
+                hexagrams[i].lines.push(hexagrams[i].lines.shift());
+                hexagrams[i].lines.push(hexagrams[i].lines.shift());
+                hexagrams[i].lines.push(hexagrams[i].lines.shift());
+            }
         }
+    
+        YingYangShow();
+        canInvert = false;
+
+        setTimeout(()=>{
+            updateHexagram();
+            canInvert = true;
+        }, (yinyangDuration / 2))
     }
-
-    YingYangShow();
-
-    setTimeout(()=>{
-        updateHexagram();
-    }, (yinyangDuration / 2))
 }
 
 function invertPositions() {
-    if(changeSelector.checked === true) {
-        hexagrams[currentHexagram].lines.reverse();
-    } else {
-        for( let i = 0; i < 2; i++ ) {
-            hexagrams[i].lines.reverse();
+    if(canInvert == true) {
+
+        if(changeSelector.checked === true) {
+            hexagrams[currentHexagram].lines.reverse();
+        } else {
+            for( let i = 0; i < 2; i++ ) {
+                hexagrams[i].lines.reverse();
+            }
         }
+
+        YingYangShow();
+        canInvert = false;
+    
+        setTimeout(()=>{
+            updateHexagram();
+            canInvert = true;
+        }, yinyangDuration / 2)
     }
-
-
-    YingYangShow();
-
-    setTimeout(()=>{
-        updateHexagram();
-    }, yinyangDuration / 2)
 }
 
 // Control Setting
@@ -406,7 +458,7 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-369px";
+    slidesArea.style.marginLeft = "-23.06rem";
     currentHexagram = 1;
     setControlls();
 }
@@ -454,7 +506,7 @@ function drawTemplate() {
 
 function getAbout(hexIndex) {
     aboutArea = document.querySelector(".aboutArea")
-
+    aboutArea.style.visibility = "visible";
 
     sentence = "";
     general = "";
@@ -498,22 +550,50 @@ function getAbout(hexIndex) {
 
 function setLanguage(l) {
     
-    
     lang = l;
     init();
+    document.querySelector(".aboutArea").style.visibility = "hidden";
+    document.querySelector(".consultArea").style.display = "none";
+
 
     infoSpan = document.querySelectorAll("#info span");
+
+    
     if(lang == "en") {
+        document.querySelectorAll(".invertButton").forEach((button)=> {
+            if(button.getAttribute("data-op") == "lines") {
+                button.innerText = "Invert Lines";
+            }
+            if(button.getAttribute("data-op") == "trigrams") {
+                button.innerText = "Invert Trigrams";
+            }
+            if(button.getAttribute("data-op") == "positions") {
+                button.innerText = "Invert Positions";
+            }
+        })
         infoSpan[0].innerText = "over";
         infoSpan[1].innerText = "over";
-        document.querySelector(".changeSelector label").innerText = "Change Hexagram";
+        document.querySelector(".changeSelector label").innerText = "fixed change";
         document.querySelector(".consultButton"). innerText = "Consult with coins";
+        document.querySelector(".aboutIChing").innerHTML = "<p>The I Ching (Book of Changes) is an ancient work of Chinese wisdom based on the Yin/Yang energies.</p>It can be used as an oracle or just as a source for understanding the universe.</p><p>It consists of a set of 64 six-line figures that can be whole or broken, called hexagrams.</p>The whole line represents yang (masculine, firm) energy, the broken line represents yin (feminine, malleable) energy.</p><p>Hexagrams are formed by smaller three-line figures called trigrams.</p><p>There are only eight possible trigrams, which when combined form the 64 hexagrams.</p><p>The trigrams are: heaven, earth, water, fire, wind/wood, thunder, mountain, and lake.</p><p>Each trigram carries various symbolisms and meanings, and the hexgrams symbolize the various moments in life.</p>"
     }
     else if(lang == "pt-br") {
+        document.querySelectorAll(".invertButton").forEach((button)=> {
+            if(button.getAttribute("data-op") == "lines") {
+                button.innerText = "Inverter Linhas";
+            }
+            if(button.getAttribute("data-op") == "trigrams") {
+                button.innerText = "Inverter Trigramas";
+            }
+            if(button.getAttribute("data-op") == "positions") {
+                button.innerText = "Inverter Posições";
+            }
+        })
         infoSpan[0].innerText = "sobre";
         infoSpan[1].innerText = "sobre";
-        document.querySelector(".changeSelector label").innerText = "Mudar Hexagrama";
+        document.querySelector(".changeSelector label").innerText = "mudança fixa";
         document.querySelector(".consultButton"). innerText = "Consultar com moedas";
+        document.querySelector(".aboutIChing").innerHTML = "<p> O I Ching (Livro das mutações) é uma obra milenar da sabedoria chinesa baseado nas energias Yin/Yang.</p><p>Ele pode ser usado como óráculo ou apenas como fonte de entendimento do universo.</p><p>Consiste em um conjunto de 64 figuras de seis linhas que podem ser inteiras ou partidas chamadas de hexagramas.</p><p>A linha inteira representa a energia yang (masculina, firme), a linha partida representa a energia yin (feminina, maleável).</p><p>Os hexagramas são formados por figuras menores de três linhas chamadas de trigramas</p><p>Existem apenas oito trigramas possíveis, que quando combinados formam os 64 hexagramas.</p><p>Os trigramas são: céu, terra, água, fogo, vento/madeira, trovão, montanha e lago.</p><p>Cada trigrama possui vários simbolismos e significados e os hexgramas simbolizam os diversos momentos da vida.</p>"
     }
 
     updateHexagram();

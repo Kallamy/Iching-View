@@ -13,6 +13,9 @@ function showGame() {
     document.querySelector('.aboutArea').style.display = 'none';
     document.querySelector('.about-button').style.display ='none';
     document.querySelector('.about-button#second').style.display ='none';
+    document.querySelector('.hintArea').style.display ='none';
+    document.querySelector('.aboutIChing').style.display ='none';
+    
 
     clearTemplate();
     isConsulting = true;
@@ -41,159 +44,167 @@ function showGame() {
     }
 }
 
+let lastClick = 0;
 function flipCoins() {
-    coinsSound.currentTime = 0;
-    coinsResult = [null, null, null];
-    
-    coinsResult[0] = Math.random() < 0.5 ? 0 :1;
-    coinsResult[1] = Math.random() < 0.5 ? 0 :1;
-    coinsResult[2] = Math.random() < 0.5 ? 0 :1;
-    
-    marginRange = 25;
-    leftM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
-    rightM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
-    topM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
-    bottomM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
-
-    angleValue = [(Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361))];
-
-    resetCoins();
-    for( let i = 0; i < coins.length; i++ ) {
-        if (coinsResult[i] == 0) {
-            coins[i].classList.add('yin');
-            coins[i].style.transform = `rotate(${angleValue[i]}deg) rotateY(180deg)`;
-        } else {
-            coins[i].classList.add('yang');
-            coins[i].style.transform = `rotate(${angleValue[i]}deg)`;
-        }
-        coins[i].style.marginLeft = `${leftM[i]}px`;
-        coins[i].style.marginRight = `${rightM[i]}px`;
-        coins[i].style.marginTop = `${topM[i]}px`;
-        coins[i].style.marginBottom = `${bottomM[i]}px`;
+    let d = new Date();
+    let t = d.getTime();
+    // Check click velocity
+    if(t - lastClick  > 400) {
+        coinsSound.currentTime = 0;
+        coinsResult = [null, null, null];
         
-    }
-    
-    if(playCount <= 6) {
-
+        coinsResult[0] = Math.random() < 0.5 ? 0 :1;
+        coinsResult[1] = Math.random() < 0.5 ? 0 :1;
+        coinsResult[2] = Math.random() < 0.5 ? 0 :1;
         
-        coinsSound.play();
-
+        marginRange = 25;
+        leftM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+        rightM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+        topM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+        bottomM = [Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange), Math.floor(Math.random() * marginRange)];
+    
+        angleValue = [(Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361)), (Math.floor(Math.random() * 361))];
+    
+        resetCoins();
         for( let i = 0; i < coins.length; i++ ) {
-            coins[i].style.opacity = '0';
-        }
-        setTimeout(()=>{
-            for( let i = 0; i < coins.length; i++ ) {
-                coins[i].style.opacity = '1';
+            if (coinsResult[i] == 0) {
+                coins[i].classList.add('yin');
+                coins[i].style.transform = `rotate(${angleValue[i]}deg) rotateY(180deg)`;
+            } else {
+                coins[i].classList.add('yang');
+                coins[i].style.transform = `rotate(${angleValue[i]}deg)`;
             }
-            getResult();
-            playCount ++;
-        }, 400);
-        
-    } else {
-        //alert('Você tirou o hexagrama: '+ hexagrams[0].title)
-    }
-    if(playCount == 6) {
-        setTimeout(()=>{
-            if(lang == "en") {
-                document.querySelector('.coinsButton').innerText = "Reveal";
-            } else if(lang == "pt-br") {
-                document.querySelector('.coinsButton').innerText = "Revelar";
-            }
-        }, 700);
-        
-    } else {
-        if(lang == "en") {
-            document.querySelector('.coinsButton').innerText = "Toss coins";
-        } else if(lang == "pt-br") {
-            document.querySelector('.coinsButton').innerText = "Jogar moedas";
+            coins[i].style.marginLeft = `${leftM[i]}px`;
+            coins[i].style.marginRight = `${rightM[i]}px`;
+            coins[i].style.marginTop = `${topM[i]}px`;
+            coins[i].style.marginBottom = `${bottomM[i]}px`;
+            
         }
-    }
-    if(playCount >= 7) {
         
-        successSound.currentTime = 0;
-        successSound.play();
-        
-        consultButton = document.querySelectorAll(".consultButton");
+        if(playCount <= 6) {
     
-        if(hasTwoHexgrams) {
-            if(lang == "en") {
-                consultMessage.innerHTML = `You get the hexagrams: <em>${hexagrams[0].title}</em> and <em>${hexagrams[1].title}</em>. <br> Good luck!`
-                consultButton[1]. innerText = "Consult Again";
-
-            } else if(lang == "pt-br") {
-                consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em>. <br> Boa sorte na sua caminhada!`
-                consultButton[1]. innerText = "Consultar novamente";
+            
+            coinsSound.play();
+    
+            for( let i = 0; i < coins.length; i++ ) {
+                coins[i].style.opacity = '0';
             }
+            setTimeout(()=>{
+                for( let i = 0; i < coins.length; i++ ) {
+                    coins[i].style.opacity = '1';
+                }
+                getResult();
+                playCount ++;
+            }, 400);
+            
+        } else {
+            //alert('Você tirou o hexagrama: '+ hexagrams[0].title)
+        }
+        if(playCount == 6) {
+            setTimeout(()=>{
+                if(lang == "en") {
+                    document.querySelector('.coinsButton').innerText = "Reveal";
+                } else if(lang == "pt-br") {
+                    document.querySelector('.coinsButton').innerText = "Revelar";
+                }
+            }, 700);
+            
         } else {
             if(lang == "en") {
-                consultMessage.innerHTML = `You get the hexagram: <em>${hexagrams[0].title}</em> <br> Good luck!`
-                consultButton[1]. innerText = "Consult Again";
-
+                document.querySelector('.coinsButton').innerText = "Toss coins";
             } else if(lang == "pt-br") {
-                consultMessage.innerHTML = `Você tirou o hexagrama: <em>${hexagrams[0].title}</em> <br> Boa sorte na sua caminhada!`
-                consultButton[1]. innerText = "Consultar novamente";
+                document.querySelector('.coinsButton').innerText = "Jogar moedas";
             }
-        }   
-        document.querySelector(".gameArea").style.display = "none";
-        document.querySelector(".conclusionArea").style.display = "flex";
-
-        isConsulting = false;
-        document.querySelector('.hexagramTitle1').classList.remove('fade');
-        document.querySelector('.hexagramTitle2').classList.remove('fade');
-        document.querySelector('.charactere1').classList.remove('fade');
-        document.querySelector('.charactere2').classList.remove('fade');
-        document.querySelector('.hexagramNumber1').classList.remove('fade');
-        document.querySelector('.hexagramNumber2').classList.remove('fade');
-
-        document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
-        document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
-
-        document.querySelector('.buttonsArea').style.visibility = 'visible';
-        document.querySelector('.consultButton').style.visibility = 'hidden';
-
-        document.querySelector('.about-button').style.display ='block';
-        document.querySelector('.about-button#second').style.display ='block';
+        }
+        if(playCount >= 7) {
+            
+            successSound.currentTime = 0;
+            successSound.play();
+            
+            consultButton = document.querySelectorAll(".consultButton");
         
-    }
-}
+            if(hasTwoHexgrams) {
+                if(lang == "en") {
+                    consultMessage.innerHTML = `You get the hexagrams: <em>${hexagrams[0].title}</em> and <em>${hexagrams[1].title}</em>. <br> Good luck!`
+                    consultButton[1]. innerText = "Consult Again";
     
+                } else if(lang == "pt-br") {
+                    consultMessage.innerHTML = `Você tirou os hexagramas: <em>${hexagrams[0].title}</em> e <em>${hexagrams[1].title}</em>. <br> Boa sorte na sua caminhada!`
+                    consultButton[1]. innerText = "Consultar novamente";
+                }
+            } else {
+                if(lang == "en") {
+                    consultMessage.innerHTML = `You get the hexagram: <em>${hexagrams[0].title}</em> <br> Good luck!`
+                    consultButton[1]. innerText = "Consult Again";
+    
+                } else if(lang == "pt-br") {
+                    consultMessage.innerHTML = `Você tirou o hexagrama: <em>${hexagrams[0].title}</em> <br> Boa sorte na sua caminhada!`
+                    consultButton[1]. innerText = "Consultar novamente";
+                }
+            }   
+            document.querySelector(".gameArea").style.display = "none";
+            document.querySelector(".conclusionArea").style.display = "flex";
+    
+            isConsulting = false;
+            document.querySelector('.hexagramTitle1').classList.remove('fade');
+            document.querySelector('.hexagramTitle2').classList.remove('fade');
+            document.querySelector('.charactere1').classList.remove('fade');
+            document.querySelector('.charactere2').classList.remove('fade');
+            document.querySelector('.hexagramNumber1').classList.remove('fade');
+            document.querySelector('.hexagramNumber2').classList.remove('fade');
+    
+            document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
+            document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
+    
+            document.querySelector('.buttonsArea').style.visibility = 'visible';
+            document.querySelector('.consultButton').style.visibility = 'hidden';
+    
+            document.querySelector('.about-button').style.display ='block';
+            document.querySelector('.about-button#second').style.display ='block';
 
-
-function getResult() {
-    let resultSum = coinsResult.reduce((a,b)=>a+b);
-    if(resultSum == 1) {
-        result = 'yin';
-    } else if(resultSum == 2) {
-        result = 'yang';
+            
+        }
+        lastClick = t;
     }
-    else if(resultSum == 0) {
-        result = 'o';
+        
+    
+    
+    function getResult() {
+        let resultSum = coinsResult.reduce((a,b)=>a+b);
+        if(resultSum == 1) {
+            result = 'yin';
+        } else if(resultSum == 2) {
+            result = 'yang';
+        }
+        else if(resultSum == 0) {
+            result = 'o';
+        }
+        else if(resultSum == 3) {
+            result = 'x';
+        }
+    
+        if(result == 'yang') {
+            hexagrams[0].lines[playCount -1] = true;
+            hexagrams[1].lines[playCount -1] = true;
+        }
+        else if((result == 'yin')) {
+            hexagrams[0].lines[playCount -1] = false;
+            hexagrams[1].lines[playCount -1] = false;
+        }
+        else if((result == 'x')) {
+            hexagrams[0].lines[playCount -1] = false;
+            hexagrams[1].lines[playCount -1] = true;
+        }
+        else if((result == 'o')) {
+            hexagrams[0].lines[playCount -1] = true;
+            hexagrams[1].lines[playCount -1] = false;
+        }
+    
+    
+        updateHexagram();
+        setControlls();
     }
-    else if(resultSum == 3) {
-        result = 'x';
     }
-
-    if(result == 'yang') {
-        hexagrams[0].lines[playCount -1] = true;
-        hexagrams[1].lines[playCount -1] = true;
-    }
-    else if((result == 'yin')) {
-        hexagrams[0].lines[playCount -1] = false;
-        hexagrams[1].lines[playCount -1] = false;
-    }
-    else if((result == 'x')) {
-        hexagrams[0].lines[playCount -1] = false;
-        hexagrams[1].lines[playCount -1] = true;
-    }
-    else if((result == 'o')) {
-        hexagrams[0].lines[playCount -1] = true;
-        hexagrams[1].lines[playCount -1] = false;
-    }
-
-
-    updateHexagram();
-    setControlls();
-}
 
 function resetCoins() {
     for( let i = 0; i < coins.length; i++ ) {
@@ -218,4 +229,6 @@ function exitGame() {
     document.querySelector('.consultButton').style.visibility = 'visible';
     document.querySelector('.about-button').style.display ='block';
     document.querySelector('.about-button#second').style.display ='block';
+    document.querySelector('.hintArea').style.display ='block';
+    document.querySelector('.aboutIChing').style.display ='block';
 }

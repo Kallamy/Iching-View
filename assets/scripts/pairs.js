@@ -698,7 +698,7 @@ about = {
             love: "A sua relação deve ser tratada com respeito e gentileza.",
             business: "O seu sucesso atual deve ser analisado para que se saiba como surgiu.",
             personal: "Faça uma boa ação.",
-            overview: "<b>T'ai</b> relaciona-se com a harmonia. Tudo deve estar atualmente a correr bem. No entanto, não o tome por garantido. Examine todos os aspectos da sua vida e veja como essa harmonia se realiza. Nada é permanente, claro, e isto não é menos verdade para <b>T'ai<b/>. Desfrute da paz e harmonia que o rodeia. <b>T'ai</b> é um hexagrama muito positivo e indica uma época de sucesso na vida." ,
+            overview: "<b>T'ai</b> relaciona-se com a harmonia. Tudo deve estar atualmente a correr bem. No entanto, não o tome por garantido. Examine todos os aspectos da sua vida e veja como essa harmonia se realiza. Nada é permanente, claro, e isto não é menos verdade para <b>T'ai</b>. Desfrute da paz e harmonia que o rodeia. <b>T'ai</b> é um hexagrama muito positivo e indica uma época de sucesso na vida." ,
         }, 
         {
             id: 12,
