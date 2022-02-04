@@ -203,7 +203,7 @@ function updateHexagram() {
     if(JSON.stringify(hexagrams[0].lines) == JSON.stringify(hexagrams[1].lines)) {
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-23.06rem"
+            slidesArea.style.marginLeft = "-25rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
             slidesArea.style.marginLeft = "0px";
@@ -458,7 +458,7 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-23.06rem";
+    slidesArea.style.marginLeft = "-25rem";
     currentHexagram = 1;
     setControlls();
 }
@@ -576,6 +576,7 @@ function setLanguage(l) {
         document.querySelector(".changeSelector label").innerText = "fixed change";
         document.querySelector(".consultButton"). innerText = "Consult with coins";
         document.querySelector(".aboutIChing").innerHTML = "<p>The I Ching (Book of Changes) is an ancient work of Chinese wisdom based on the Yin/Yang energies.</p>It can be used as an oracle or just as a source for understanding the universe.</p><p>It consists of a set of 64 six-line figures that can be whole or broken, called hexagrams.</p>The whole line represents yang (masculine, firm) energy, the broken line represents yin (feminine, malleable) energy.</p><p>Hexagrams are formed by smaller three-line figures called trigrams.</p><p>There are only eight possible trigrams, which when combined form the 64 hexagrams.</p><p>The trigrams are: heaven, earth, water, fire, wind/wood, thunder, mountain, and lake.</p><p>Each trigram carries various symbolisms and meanings, and the hexgrams symbolize the various moments in life.</p>"
+        document.querySelector(".hintArea").innerHTML = "click or drag on the lines to change the hexagram";
     }
     else if(lang == "pt-br") {
         document.querySelectorAll(".invertButton").forEach((button)=> {
@@ -593,7 +594,8 @@ function setLanguage(l) {
         infoSpan[1].innerText = "sobre";
         document.querySelector(".changeSelector label").innerText = "mudança fixa";
         document.querySelector(".consultButton"). innerText = "Consultar com moedas";
-        document.querySelector(".aboutIChing").innerHTML = "<p> O I Ching (Livro das mutações) é uma obra milenar da sabedoria chinesa baseado nas energias Yin/Yang.</p><p>Ele pode ser usado como óráculo ou apenas como fonte de entendimento do universo.</p><p>Consiste em um conjunto de 64 figuras de seis linhas que podem ser inteiras ou partidas chamadas de hexagramas.</p><p>A linha inteira representa a energia yang (masculina, firme), a linha partida representa a energia yin (feminina, maleável).</p><p>Os hexagramas são formados por figuras menores de três linhas chamadas de trigramas</p><p>Existem apenas oito trigramas possíveis, que quando combinados formam os 64 hexagramas.</p><p>Os trigramas são: céu, terra, água, fogo, vento/madeira, trovão, montanha e lago.</p><p>Cada trigrama possui vários simbolismos e significados e os hexgramas simbolizam os diversos momentos da vida.</p>"
+        document.querySelector(".aboutIChing").innerHTML = "<p> O I Ching (Livro das mutações) é uma obra milenar da sabedoria chinesa baseado nas energias Yin/Yang.</p><p>Ele pode ser usado como óráculo ou apenas como fonte de entendimento do universo.</p><p>Consiste em um conjunto de 64 figuras de seis linhas que podem ser inteiras ou partidas chamadas de hexagramas.</p><p>A linha inteira representa a energia yang (masculina, firme), a linha partida representa a energia yin (feminina, maleável).</p><p>Os hexagramas são formados por figuras menores de três linhas chamadas de trigramas</p><p>Existem apenas oito trigramas possíveis, que quando combinados formam os 64 hexagramas.</p><p>Os trigramas são: céu, terra, água, fogo, vento/madeira, trovão, montanha e lago.</p><p>Cada trigrama possui vários simbolismos e significados e os hexgramas simbolizam os diversos momentos da vida.</p>";
+        document.querySelector(".hintArea").innerHTML = "clique ou arraste nas linhas para fazer mutações";
     }
 
     updateHexagram();
