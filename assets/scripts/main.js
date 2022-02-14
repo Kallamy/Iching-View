@@ -533,12 +533,12 @@ function getAbout(hexIndex) {
     })
 
     document.querySelector("#aboutQuote").innerHTML = sentence;
-    document.querySelector("#aboutTrigrams").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Formado pelos Trigramas") : ((lang == "en") ? ("Formed by the trigrams") : (""))}:</p><p class="about-content">${hexagrams[currentHexagram].upperTrigram + ` ${(lang == "pt-br") ? ("sobre") : ((lang == "en") ? ("over") : (""))} ` + hexagrams[currentHexagram].bottomTrigram}</p>`
-    document.querySelector("#aboutGeneral").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Geral") : ((lang == "en") ? ("General") : (""))}:</p><p class="about-content">${general}</p>`
-    document.querySelector("#aboutLove").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Amor") : ((lang == "en") ? ("Love") : (""))}:</p><p class="about-content">${love}</p>`
-    document.querySelector("#aboutBusiness").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Negócios") : ((lang == "en") ? ("Business") : (""))}:</p><p class="about-content">${business}</p>`
-    document.querySelector("#aboutPersonal").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Pessoal") : ((lang == "en") ? ("General") : (""))}:</p><p class="about-content">${personal}</p>` 
-    document.querySelector("#aboutOverview").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Visão geral") : ((lang == "en") ? ("Overview") : (""))}:</p><p class="about-content">${overview}</p>`
+    document.querySelector("#aboutTrigrams").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Formado pelos Trigramas") : ((lang == "en") ? ("Formed by the trigrams") : (""))}:<span class="about-content">${hexagrams[currentHexagram].upperTrigram + ` ${(lang == "pt-br") ? ("sobre") : ((lang == "en") ? ("over") : (""))} ` + hexagrams[currentHexagram].bottomTrigram}</>`
+    document.querySelector("#aboutGeneral").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Geral") : ((lang == "en") ? ("General") : (""))}:<span class="about-content">${general}</span>`
+    document.querySelector("#aboutLove").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Amor") : ((lang == "en") ? ("Love") : (""))}:<span class="about-content">${love}</span>`
+    document.querySelector("#aboutBusiness").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Negócios") : ((lang == "en") ? ("Business") : (""))}:<span class="about-content">${business}</span>`
+    document.querySelector("#aboutPersonal").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Pessoal") : ((lang == "en") ? ("General") : (""))}:<span class="about-content">${personal}</span>` 
+    document.querySelector("#aboutOverview").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Visão geral") : ((lang == "en") ? ("Overview") : (""))}:<span class="about-content">${overview}</span>`
 
     aboutArea.style.display = 'block';
     aboutArea.addEventListener('click', () => {
