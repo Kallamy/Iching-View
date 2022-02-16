@@ -144,6 +144,14 @@ body {
 .smooth {
     transition: margin-left 1s ease-in-out;
 }
+
+.separator {
+    background: transparent;
+    float: left;
+    width: 3rem;
+    height: 25rem;
+}
+
 .slide {
     display: inline-block;
     width: 25rem;
@@ -325,6 +333,7 @@ body {
 
 .infoArea {
     margin-top: 0;
+    margin-left: 1rem;
 }
 #info {
     width: 6.2rem;
@@ -336,6 +345,9 @@ body {
     margin-top: 2.31rem;
     margin-left: 0.62rem;
 }
+#info span {
+    margin-left: 0.2rem;
+}
 #info .ut1,
 #info .ut2
 {
@@ -344,6 +356,7 @@ body {
     transition: opacity  ease-in-out 1s;
     text-align: center;
     font-weight: bold;
+    margin-left: 0.2rem;
 }
 #info .bt1,
 #info .bt2
@@ -353,6 +366,7 @@ body {
     transition: opacity  ease-in-out 1s;
     text-align: center;
     font-weight: bold;
+    margin-left: 0.2rem;
 }
 
 .buttonsArea {
@@ -443,7 +457,7 @@ body {
 
 }
 .about-button#second {
-    left: 45.7rem; 
+    left: 48.7rem; 
 }
 .aboutArea {
     display: none;
@@ -473,7 +487,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: white;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     margin-bottom: 0.19rem;
 }
 .about-title,
@@ -485,13 +499,13 @@ body {
     margin: 0.19rem;
     
     color: #fee440;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: bold;
     margin-top: 0.33rem;
 }
 .about-content {
     text-indent: -0.37rem;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     margin: 0;
     margin-left: 0.61rem;
     color: #48bfe3;
