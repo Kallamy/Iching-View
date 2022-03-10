@@ -11,7 +11,7 @@
   }
 
 html {
-    font-size: 80%;
+    font-size: 70%;
 }
 * {
     box-sizing: content-box;
@@ -42,7 +42,7 @@ body {
     background: black;
     border-bottom: 0.31rem solid white;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 .logoArea {
     margin-left: 3.12rem;
@@ -114,9 +114,9 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 1.7rem;
-    margin-bottom: 0.94rem;
-    margin-left: 37.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 24rem;
     margin-right: 0.62rem;
     
 }
@@ -233,8 +233,7 @@ body {
 .hexagramArea {
     background: transparent;
     width: 12.5rem;
-    padding: 0.62rem;
-    
+    padding: 0.62rem;    
 }
 
 .linesArea {
@@ -259,6 +258,11 @@ body {
     cursor: pointer;
 }
 
+/*
+.lineArea .line {
+    margin-right: 2.5rem;
+}
+*/
 .emptyLine {
     background: transparent;
     width: 100%;
@@ -334,6 +338,7 @@ body {
 .infoArea {
     margin-top: 0;
     margin-left: 1rem;
+    margin-top: -0.7rem;
 }
 #info {
     width: 6.2rem;
@@ -342,8 +347,8 @@ body {
     font-family: Simonetta;
     font-weight: 800;
     text-align: center;
-    margin-top: 2.31rem;
-    margin-left: 0.62rem;
+    margin-top: 1.9rem;
+    margin-left: 0.1rem;
 }
 #info span {
     margin-left: 0.2rem;
@@ -446,7 +451,7 @@ body {
 
 .about-button {
     position: absolute;
-    left: 21rem;
+    left: 23rem;
     top: 1rem;
     background-color: var(--blue);
     color: azure;
@@ -457,7 +462,7 @@ body {
 
 }
 .about-button#second {
-    left: 48.7rem; 
+    left: 51rem; 
 }
 .aboutArea {
     display: none;
@@ -466,15 +471,15 @@ body {
     text-align: justify;
     background-color: #01497c;
     color: mediumturquoise;
-    padding: 0.31rem;
+    padding: 1rem;
     padding-right: 1.25rem;
     z-index: 100;
-    width: 100%;
+    width: 97%;
     height: 100%;
     
 }
 .aboutContainer {
-    margin-top: -0.31rem;
+    margin-top: -1rem;
     position: absolute;
     top: 50%;
     padding: 0.4rem;
@@ -488,7 +493,7 @@ body {
     font-weight: bold;
     color: white;
     font-size: 0.78rem;
-    margin-bottom: 0.19rem;
+    margin-bottom: 0.7rem;
 }
 .about-title,
 .about-content {
@@ -502,9 +507,10 @@ body {
     font-size: 0.78rem;
     font-weight: bold;
     margin-top: 0.33rem;
+    text-indent: -0.30rem;
 }
 .about-content {
-    text-indent: -0.37rem;
+    text-indent: -0.2rem;
     font-size: 0.78rem;
     margin: 0;
     margin-left: 0.61rem;
@@ -515,6 +521,9 @@ body {
     font-weight: 900;
 }
 
+.trigram-name {
+    color: red;
+}
 .closeButton {
     position: absolute;
     top: 3%;
@@ -560,7 +569,7 @@ body {
 .gameArea {
     
     width: 400px;
-   
+    height: 350px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -594,12 +603,12 @@ body {
     width: 240px;
     height: 30px;
     margin-left: 10px;
-    color: #9f0102;
-    background-color: gold;
+    color: #9e2a2b;
+    background-color: #f1dca7;
     padding: 15px;
     font-size: 1.06rem;
     font-weight: bold;
-    border: 3px solid  darkgoldenrod;
+    border: 3px solid  #ffcb69;
     border-radius: 10px;
 }
 
@@ -645,16 +654,22 @@ body {
     font-family: hind;
     font-weight: bold;
     color: blanchedalmond;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: center;
     padding: 20px;
     line-height: 16px;
 }
 
+@media (max-width: 800px) and (min-aspect-ratio: 13/9) {
+    * {
+        transform: rotate(90deg);
+    }
+}
+
 @media only screen and (max-width: 700px) {
 
     html {
-        font-size: 107%;
+        font-size: 95%;
     }
     .container {
         padding: 0;
@@ -706,7 +721,7 @@ body {
             font-weight: bold;
     }
     .aboutIChing {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         line-height: 1.4rem;
     }
 

@@ -397,7 +397,7 @@ about = {
         love: "Do not be miserly in sharing your love with your partner.",
         business: "This is a time for furthering your business and for rewarding your staff generously.",
         personal: "Take the opportunity to help others and you will achieve great success.",
-        overview: "Whereas <b>Sun</b> related to inequality and the need to redress it, <b>I</b> is the very opposity and relates to the time when the inequalities have been addressed. For the wealthier members of society this may initially mean a loss but in the long-term they will reap the benefits of a strengthened communit. <b>I</b> tells you that this is a time of opportunity and that you should take advange of it. And take advange quickly for no situation is permanent."
+        overview: "Whereas Sun related to inequality and the need to redress it, <b>I</b> is the very opposity and relates to the time when the inequalities have been addressed. For the wealthier members of society this may initially mean a loss but in the long-term they will reap the benefits of a strengthened communit. <b>I</b> tells you that this is a time of opportunity and that you should take advange of it. And take advange quickly for no situation is permanent."
     },
     {
         id: 43,
@@ -878,7 +878,7 @@ about = {
             love: "Se o seu parceiro tem qualidades comuns e complementares, então você está bem acompanhado.",
             business: "Procure um parceiro ou uma parceria que complemente os seus próprios pontos fortes.",
             personal: "Cultive respeito e honra para com aqueles que o cercam.",
-            overview: "<b>Hsien</b> tem a ver com a sua percepção daqueles que o rodeiam, quer sejam familiares, amigos ou parceiros de negócios. Será mais bem sucedido em qualquer área quando as qualidades que possui forem partilhadas e complementares. Se faltar um destes aspectos, a relação será prejudicada. Embora o Hsien apareça mais frequentemente para situações românticas, é também um lembrete de que as mesmas qualidades são necessárias em todos os aspectos da vida para que uma relação funcione."
+            overview: "<b>Hsien</b> tem a ver com a sua percepção daqueles que o rodeiam, quer sejam familiares, amigos ou parceiros de negócios. Será mais bem sucedido em qualquer área quando as qualidades que possui forem partilhadas e complementares. Se faltar um destes aspectos, a relação será prejudicada. Embora o <b>Hsien</b> apareça mais frequentemente para situações românticas, é também um lembrete de que as mesmas qualidades são necessárias em todos os aspectos da vida para que uma relação funcione."
         },
         {
             id: 32,
@@ -977,7 +977,7 @@ about = {
             love: "Não seja mesquinho ao partilhar o seu amor com o seu parceiro.",
             business: "Este é um momento para promover o seu negócio e para recompensar generosamente a sua equipe.",
             personal: "Aproveite a oportunidade para ajudar os outros e alcançará grande sucesso",
-            overview: "Enquanto que <b>Sun</b> se relaciona com a desigualdade e a necessidade de a corrigir, <b>I</b> é o oposto e relaciona-se com o tempo em que as desigualdades foram corrigidas. Para os membros mais ricos da sociedade, isto pode inicialmente significar uma perda, mas a longo prazo eles irão colher os benefícios de uma comunidade reforçada. <b>I</b> diz que este é um momento de oportunidades e que se deve aproveitar. E aproveitar rapidamente, pois nenhuma situação é permanente."
+            overview: "Enquanto que Sun se relaciona com a desigualdade e a necessidade de a corrigir, <b>I</b> é o oposto e relaciona-se com o tempo em que as desigualdades foram corrigidas. Para os membros mais ricos da sociedade, isto pode inicialmente significar uma perda, mas a longo prazo eles irão colher os benefícios de uma comunidade reforçada. <b>I</b> diz que este é um momento de oportunidades e que se deve aproveitar. E aproveitar rapidamente, pois nenhuma situação é permanente."
         },
         {
             id: 43,

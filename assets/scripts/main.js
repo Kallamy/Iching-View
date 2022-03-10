@@ -1,7 +1,7 @@
 //let lang = "pt-br";
 let lang = "en";
 
-console.log()
+screen.orientation.lock("portrait");
 init();
 function init() {
     /* linha yang = true
@@ -68,7 +68,15 @@ function init() {
 
 }
 
-
+window.addEventListener(
+    "touchmove",
+    function(event) {
+        if (event.scale !== 1) {
+            event.preventDefault();
+        }
+    },
+    { passive: false }
+);
 document.addEventListener('touchstart', () => {
     
     clickPressed = true;
@@ -203,10 +211,10 @@ function updateHexagram() {
     if(JSON.stringify(hexagrams[0].lines) == JSON.stringify(hexagrams[1].lines)) {
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-28rem"
+            slidesArea.style.marginLeft = "-27.9rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
-            slidesArea.style.marginLeft = "0px";
+            slidesArea.style.marginLeft = "0.1rem";
             currentHexagram = 0;
         }
         hasTwoHexgrams = false;
@@ -393,6 +401,7 @@ function invertLines() {
             canInvert = true;
         }, yinyangDuration / 2)
     }
+    getInfo();
 }
 
 function invertTrigrams() {
@@ -458,13 +467,13 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-28rem";
+    slidesArea.style.marginLeft = "-27.9rem";
     currentHexagram = 1;
     setControlls();
 }
 
 function goToFirstHexagram() {
-    slidesArea.style.marginLeft = "0px"
+    slidesArea.style.marginLeft = "0.1rem"
     currentHexagram = 0;
     setControlls();
 }
@@ -533,7 +542,7 @@ function getAbout(hexIndex) {
     })
 
     document.querySelector("#aboutQuote").innerHTML = sentence;
-    document.querySelector("#aboutTrigrams").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Formado pelos Trigramas") : ((lang == "en") ? ("Formed by the trigrams") : (""))}:<span class="about-content">${hexagrams[currentHexagram].upperTrigram + ` ${(lang == "pt-br") ? ("sobre") : ((lang == "en") ? ("over") : (""))} ` + hexagrams[currentHexagram].bottomTrigram}` + ".";
+    document.querySelector("#aboutTrigrams").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Formado pelos Trigramas") : ((lang == "en") ? ("Formed by the trigrams") : (""))}:<span class="about-content "><span>${hexagrams[currentHexagram].upperTrigram + ` ${(lang == "pt-br") ? ("sobre") : ((lang == "en") ? ("over") : (""))} ` + hexagrams[currentHexagram].bottomTrigram}` + ".";
     document.querySelector("#aboutGeneral").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Geral") : ((lang == "en") ? ("General") : (""))}:<span class="about-content">${general}</span>`
     document.querySelector("#aboutLove").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Amor") : ((lang == "en") ? ("Love") : (""))}:<span class="about-content">${love}</span>`
     document.querySelector("#aboutBusiness").innerHTML = `<p class="about-title">${(lang == "pt-br") ? ("Negócios") : ((lang == "en") ? ("Business") : (""))}:<span class="about-content">${business}</span>`
