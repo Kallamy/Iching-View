@@ -66,6 +66,7 @@ body {
 
 .flagsArea {
     margin-right: 3.12rem;
+
 }
 .flag {
     margin-top: 1.25rem;
@@ -73,9 +74,15 @@ body {
     -webkit-user-drag: none; 
     width: 2.8rem;
     height: 1.8rem;
-    border: 0.12rem solid white;
     border-radius: 0.31rem;
     cursor: pointer;
+    transition: border linear 0.2s;
+}
+.flag.selected {
+    border: 0.18rem solid var(--red);
+}
+.flag:hover {
+    opacity: 0.9;
 }
 .container {
     display: flex;
@@ -116,12 +123,12 @@ body {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 24rem;
+    margin-left: 23rem;
     margin-right: 0.62rem;
     
 }
 .frame {
-   margin: auto;
+    margin: auto;
     overflow: hidden;
     width: 26.7rem;
     height: 26.7rem;
@@ -136,7 +143,7 @@ body {
 
 .slidesArea {
     display: none;
-    width: 53.4rem;
+    width: 56.4rem;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -154,10 +161,11 @@ body {
 
 .slide {
     display: inline-block;
-    width: 25rem;
-    height: 25rem;
+    width: 26.7rem;
+    height: 26.7rem;
     background-color: transparent;
     float: left;
+
 }
 
 .controllersArea {
@@ -180,7 +188,7 @@ body {
     width: 437.5rem;
     background: rgba(255, 255, 255, 0.4);
     text-align: right;
-    font-size: 0.91rem;
+    font-size: 0.9rem;
     letter-spacing: 1.3px;
     padding: 0.62rem 1rem;
     text-decoration: underline;
@@ -258,11 +266,6 @@ body {
     cursor: pointer;
 }
 
-/*
-.lineArea .line {
-    margin-right: 2.5rem;
-}
-*/
 .emptyLine {
     background: transparent;
     width: 100%;
@@ -308,11 +311,12 @@ body {
 .hexagramTitle2 {
     margin-bottom: 1%; 
     margin-top: 3.7rem; 
+    margin-left: -6px;
     background: transparent;
     height: 3.12rem;
     text-align: center;
     line-height:  1.9rem;
-    font-size: 1.409rem;
+    font-size: 1.52rem;
     font-family: Kaushan Script;
     transition: opacity  ease-in-out 0.8s;
 }
@@ -352,6 +356,7 @@ body {
 }
 #info span {
     margin-left: 0.2rem;
+    font-size: 1.28rem;
 }
 #info .ut1,
 #info .ut2
@@ -387,6 +392,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .invertButton {
     width: 3.5rem;
@@ -394,7 +400,7 @@ body {
     background-color: var(--red);
     border: 0.12rem outset var(--clearblue);
     text-align: center;
-    font-size: 0.76rem;
+    font-size: 0.79rem;
     font-weight: bold;
     color: azure;
     border-radius: 0.31rem;
@@ -451,18 +457,15 @@ body {
 
 .about-button {
     position: absolute;
-    left: 23rem;
+    left: 23.5rem;
     top: 1rem;
     background-color: var(--blue);
     color: azure;
     width: 1.7rem;
     height: 1.7rem;
     font-weight: bold;
-    font-size: 1.25rem;
-
-}
-.about-button#second {
-    left: 51rem; 
+    font-size: 1.4rem;
+    z-index: 9;
 }
 .aboutArea {
     display: none;
@@ -526,9 +529,9 @@ body {
 }
 .closeButton {
     position: absolute;
-    top: 3%;
+    top: 2%;
     right: 10%;
-    font-size: 0.93rem;
+    font-size: 1.6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: lightsteelblue;
 }
@@ -666,6 +669,7 @@ body {
     }
 }
 
+
 @media only screen and (max-width: 700px) {
 
     html {
@@ -724,10 +728,14 @@ body {
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
-
-
-
 }
+@media only screen and (max-width: 600px) {
+    
+    html {
+        font-size: 85%;
+    }
+}
+
 @keyframes rotation {
     from {
             transform: rotate(0deg);
@@ -736,4 +744,3 @@ body {
             transform: rotate(359deg);
     }
 }
-

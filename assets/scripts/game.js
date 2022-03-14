@@ -12,7 +12,6 @@ function showGame() {
     document.querySelector('.consultButton').style.visibility = 'hidden';
     document.querySelector('.aboutArea').style.display = 'none';
     document.querySelector('.about-button').style.display ='none';
-    document.querySelector('.about-button#second').style.display ='none';
     document.querySelector('.hintArea').style.display ='none';
     document.querySelector('.aboutIChing').style.display ='none';
     
@@ -228,7 +227,6 @@ function exitGame() {
     document.querySelector('.buttonsArea').style.visibility = 'visible';
     document.querySelector('.consultButton').style.visibility = 'visible';
     document.querySelector('.about-button').style.display ='block';
-    document.querySelector('.about-button#second').style.display ='block';
     document.querySelector('.hintArea').style.display ='block';
     document.querySelector('.aboutIChing').style.display ='block';
 }

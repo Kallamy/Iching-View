@@ -1,8 +1,8 @@
 //let lang = "pt-br";
 let lang = "en";
 
-screen.orientation.lock("portrait");
 init();
+
 function init() {
     /* linha yang = true
        linha yin = false 
@@ -67,6 +67,15 @@ function init() {
     }, 1500)
 
 }
+flags = document.querySelectorAll(".flag")
+flags.forEach((flag) => {
+    flag.addEventListener("click", () => {
+        for( let i = 0; i < 2; i++ ) {
+            flags[i].classList.remove("selected")
+        }
+        flag.classList.add("selected");
+    })
+}) 
 
 window.addEventListener(
     "touchmove",
@@ -166,7 +175,7 @@ slidesArea.style.display = "block";
 function lineChange(e) {
     const index = e.currentTarget.parentElement.parentElement.getAttribute('data-index');
     pos = (e.currentTarget.getAttribute('data-pos')) - 1;
-    
+
     if(!isConsulting) {
         if(changeSelector.checked === true) {
             if(hexagrams[index].lines[pos] == true) {
@@ -211,7 +220,7 @@ function updateHexagram() {
     if(JSON.stringify(hexagrams[0].lines) == JSON.stringify(hexagrams[1].lines)) {
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-27.9rem"
+            slidesArea.style.marginLeft = "-29.6rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
             slidesArea.style.marginLeft = "0.1rem";
@@ -467,7 +476,7 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-27.9rem";
+    slidesArea.style.marginLeft = "-29.6rem";
     currentHexagram = 1;
     setControlls();
 }
@@ -513,7 +522,7 @@ function drawTemplate() {
     }
 }
 
-function getAbout(hexIndex) {
+function getAbout() {
     aboutArea = document.querySelector(".aboutArea")
     aboutArea.style.visibility = "visible";
 
@@ -531,7 +540,7 @@ function getAbout(hexIndex) {
         aboutLang = about.pt;
     }
     aboutLang.forEach(a => {
-        if(hexagrams[hexIndex].number == a.id) {
+        if(hexagrams[currentHexagram].number == a.id) {
             sentence = a.sentence;
             general = a.general;
             love = a.love;
@@ -612,3 +621,4 @@ function setLanguage(l) {
 
     
 }
+screen.orientation.lock("landscape");

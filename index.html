@@ -20,7 +20,7 @@
             <div class="logo">I Ching<span>view</span></div>
         </div>
         <div class="flagsArea">
-            <img src="./assets/images/us.png" class="flag" onClick="setLanguage('en')">
+            <img src="./assets/images/us.png" class="flag selected" onClick="setLanguage('en')">
             <img src="./assets/images/br.png" class="flag" onClick="setLanguage('pt-br')">
             
         </div>
@@ -29,6 +29,7 @@
     <div class="container">
         <div class="frameArea">
         <div class="frame">
+            <button type="button" onClick="getAbout()" class="about-button">?</button>
             <div class="slidesArea smooth">
                 <div class="slide">
                     <div class="identification">
@@ -36,7 +37,7 @@
                         <div class="charactere1">乾</div>
                     </div>
                     <div class="hexagramTitle1">Nome do hexagrama</div>
-                    <button type="button" onClick="getAbout(0)" class="about-button">?</button>
+                    
                     <div class="infoArea">
                         <div id="info">
                             <div class="ut1">Trigrma 1</div>
@@ -67,7 +68,7 @@
                         <div class="charactere2">乾</div>
                     </div>
                     <div class="hexagramTitle2">Nome do hexagrama</div>
-                    <button type="button"  onClick="getAbout(1)" class="about-button" id="second">?</button>
+                    
                     <div class="infoArea">
                         <div id="info">
                             <div class="ut2">Trigrma 1</div>
