@@ -20,6 +20,7 @@ pairs = [
     
 ];
 
+// Informations about the hexagrams
 about = {
     en: [
     {
