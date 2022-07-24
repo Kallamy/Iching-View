@@ -1,6 +1,10 @@
 :root {
     --bg1: #f5ac27;
     --bg2: #ffd84b;
+    --bg3: #FFEBA5;
+    --bg4: #FAD974;
+    --bg5: #f7bc52;
+
     --darkred: #9f0102;
     --red: #ff0114;
     --cleargreen: #0e9594;
@@ -21,7 +25,7 @@ html {
     padding: 0;
 }
 body {
-    background-color: var(--bg1);
+    background-color:  #495057;
     overflow: hidden;
     height: calc(100% - 4.3rem);
 }
@@ -33,6 +37,7 @@ body {
     src: url(assets/fonts/chinese2.ttf);
 }
 
+/* HEADER  */
 .header {
     position: fixed;
     display: flex;
@@ -84,20 +89,24 @@ body {
 .flag:hover {
     opacity: 0.9;
 }
+
+/* CONTAINER  */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--bg2);
+    background-color: #adb5bd;
     width: 100%;
     max-width: 900px;
     height: 100vh;
     margin: 0;
-    padding: 36px;
+    padding: 0px;
     padding-top: 50px;
     margin: auto;
 }
+
+/* FOOTER  */
 .footer{
     position: fixed;
     bottom: 0;
@@ -114,6 +123,7 @@ body {
     margin: 0;
 }
 
+/* FRAME  */
 .frameArea 
 {
     width: 1000px;
@@ -121,21 +131,29 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
-    margin-left: 23rem;
+    margin-left: 17rem;
     margin-right: 0.62rem;
     
 }
 .frame {
+    box-sizing: content-box;
     margin: auto;
     overflow: hidden;
-    width: 26.7rem;
-    height: 26.7rem;
+    width: 29rem;
+    height: 29rem;
     background-image: url("assets/images/paperBG.jpg");
     background-size: cover;
-    border: 0.93rem var(--darkred) groove ; 
-    box-shadow: -0.25rem 0.25rem 0.25rem 0.12rem;
+
+    border: 0.93rem var(--darkred) groove ;
+    border-image-source: url(assets/images/Chinese_border.png);
+    border-image-slice: 26; 
+    border-image-repeat: stretch;
+    border-image-width: 2;
+    border-image-outset: 1;
+
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.10rem;
     position: relative;
     margin-right: 0px;
     
@@ -143,7 +161,7 @@ body {
 
 .slidesArea {
     display: none;
-    width: 56.4rem;
+    width: 59.7rem;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -168,6 +186,7 @@ body {
 
 }
 
+/* Controllers  */
 .controllersArea {
     display: flex;
     flex-direction: row;
@@ -188,15 +207,15 @@ body {
     width: 437.5rem;
     background: rgba(255, 255, 255, 0.4);
     text-align: right;
-    font-size: 0.99rem;
+    font-size: 1rem;
     letter-spacing: 1.3px;
     padding: 0.62rem 1rem;
     text-decoration: underline;
     box-shadow: 0px 0px 0.80px;
     margin-right: 0.43rem;
     padding-right: 0.43rem;
-    margin-top: 6rem;
-
+    margin-top: 10rem;
+    font-weight: bold;
 }
 .prevHexagram {
     left: 1.25rem;
@@ -211,6 +230,7 @@ body {
     text-decoration: none;
 }
 
+/* Info  */
 .infoArea {
     width: 43.75rem;
     height: 1.25rem;
@@ -220,6 +240,7 @@ body {
     gap: 0px;
 }
 
+/* yin-yang  */
 .yinyangArea1,
 .yinyangArea2{
     display: none;
@@ -238,10 +259,12 @@ body {
     animation: rotation 1s infinite linear;
 }
 
+/* Hexagrams  */
 .hexagramArea {
     background: transparent;
     width: 12.5rem;
-    padding: 0.62rem;    
+    padding: 0.62rem;   
+    margin-left: 1.4rem; 
 }
 
 .linesArea {
@@ -309,16 +332,17 @@ body {
 }
 .hexagramTitle1,
 .hexagramTitle2 {
-    margin-bottom: 1%; 
+    margin-bottom: 2%; 
     margin-top: 3.7rem; 
     margin-left: -6px;
     background: transparent;
     height: 3.12rem;
     text-align: center;
     line-height:  1.9rem;
-    font-size: 1.52rem;
+    font-size: 1.54rem;
     font-family: Kaushan Script;
     transition: opacity  ease-in-out 0.8s;
+    font-weight: bold;
 }
 .charactere1,
 .charactere2
@@ -339,9 +363,10 @@ body {
     opacity: 0;
 }
 
+ /* Info */
 .infoArea {
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 0.0001rem;
     margin-top: -0.7rem;
 }
 #info {
@@ -356,7 +381,8 @@ body {
 }
 #info span {
     margin-left: 0.2rem;
-    font-size: 1.28rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 #info .ut1,
 #info .ut2
@@ -367,26 +393,29 @@ body {
     text-align: center;
     font-weight: bold;
     margin-left: 0.2rem;
+    font-weight: bold;
 }
 #info .bt1,
 #info .bt2
 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     transition: opacity  ease-in-out 1s;
     text-align: center;
     font-weight: bold;
     margin-left: 0.2rem;
+    font-weight: bold;
 }
 
+/* Invert Buttons */
 .buttonsArea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 0.20rem;
+    gap: 0.14rem;
     margin-right: 29.37rem;
-    margin-left: 0.9rem;
+    margin-left: 1.5rem;
 }
 .changeSelector {
     font-family: Arial, Helvetica, sans-serif;
@@ -395,12 +424,12 @@ body {
     margin-bottom: 0.5rem;
 }
 .invertButton {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.9rem;
+    height: 3.9rem;
     background-color: var(--red);
-    border: 0.18rem outset var(--bg2);
+    border: 0.23rem outset var(--bg2);
     text-align: center;
-    font-size: 0.79rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: azure;
     border-radius: 0.5rem;
@@ -428,12 +457,14 @@ body {
 .yinyangIcon {
     Transform: translateY(15px);
 }
+
+/* Template */
 .templateArea {
     position: absolute;
     background-color: aliceblue;
     transform: rotate(180deg);
-    width: 5rem;
-    height: 5rem;
+    width: 5.3rem;
+    height: 5.3rem;
     padding: 5px;
     margin-top: 0.7rem;
     margin-left: 1rem;
@@ -446,17 +477,19 @@ body {
     margin-bottom: 3px;
 }
 
+/* HINT AREA */
 .hintArea {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 25px;
     margin-top: 0.44rem;
     margin-bottom: 0.44rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
+/* ABOUT AREA*/
 .about-button {
     position: absolute;
-    left: 23.5rem;
+    left: 25rem;
     top: 1rem;
     background-color: var(--blue);
     color: azure;
@@ -469,7 +502,6 @@ body {
 .aboutArea {
     display: none;
     position: absolute;
-    
     text-align: justify;
     background-color: #01497c;
     color: mediumturquoise;
@@ -491,10 +523,11 @@ body {
 }
 #aboutQuote {
     margin: 0.4rem;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
     margin-bottom: 0.7rem;
 }
 .about-title,
@@ -505,15 +538,15 @@ body {
 .about-title {
     margin: 0.19rem;
     
-    color: #fee440;
-    font-size: 0.78rem;
+    color: hsl(52, 99%, 62%);
+    font-size: 0.86rem;
     font-weight: bold;
     margin-top: 0.33rem;
     text-indent: -0.30rem;
 }
 .about-content {
     text-indent: -0.2rem;
-    font-size: 0.78rem;
+    font-size: 0.86rem;
     margin: 0;
     margin-left: 0.61rem;
     color: #48bfe3;
@@ -532,21 +565,22 @@ body {
     right: 10%;
     font-size: 1.6rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: lightsteelblue;
+    color: #9f0102;
 }
 
+/* CONSULT AREA */
 .consultArea {
     display: none;
     margin: auto;
     height: 150px;
     margin-right: 230px;
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
     padding: 0.31rem;
-    width: 500px;
+    width: 100%;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #514645;
+    background-color: #343a40;
     margin-bottom: 200px;
     
 }
@@ -568,45 +602,53 @@ body {
 .consultButton:hover {
     filter: brightness(120%)
 }
+
+/* GAME AREA */
 .gameArea {
-    
     width: 400px;
-    height: 350px;
+    height: 100px;
     margin: auto;
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* Table Area */
 .tableArea {
     width: 56.25rem;
-    height: 5rem;
-    /*margin: 0 auto;*/
+    height: 7rem;
     
     background-color:burlywood;
-
-    border: 3px solid sienna;
-
+    background-image: url(assets/images/woodBG.jpg);
+    border: 3px solid saddlebrown;
     display: flex;
 
     justify-content: space-around;
     align-items: center;
 }
 
+/* CONCLUSION AREA */
 .conclusionArea {
     display: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
 .consultMessage {
     margin: auto;
-    font-size: 0.94rem;
+    font-size: 1.2rem;
     color: white;
 }
 
+/* Coins Button */
 .coinsButton {
     width: 240px;
     height: 30px;
     margin-left: 10px;
-    color: #9e2a2b;
-    background-color: #f1dca7;
+    color: #283618;
+    background-color: #ccd5ae;
     padding: 15px;
     font-size: 1.06rem;
     font-weight: bold;
@@ -651,37 +693,104 @@ body {
 }
 
 .exitButton {
-    margin-right: 50px;
+    margin-right: 300px;
 }
 
+/* ABOUT ICHING AREA */
 .aboutIChing {
     background-color: #514645;
     font-family: hind;
     font-weight: bold;
     color: blanchedalmond;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     text-align: center;
     padding: 20px;
     line-height: 16px;
 }
 
 
-
+/* RESPONSE */
 @media (max-width: 800px) and (min-aspect-ratio: 13/9) {
     * {
         transform: rotate(90deg);
     }
 }
 
-
 @media only screen and (max-width: 700px) {
-
     html {
-        font-size: 95%;
+        font-size: 57%;
     }
     .container {
         padding: 0;
+        
+    }
+    .frame {
+        margin-left: 0.62rem;
+        margin-top: 1.25rem;
+    }
+    .frameArea {
+        margin-top: 5rem;
+        margin-left: 42rem;
+    }
+    .buttonsArea {
+        margin-right: 320px;
+        margin-top: 0px;
+    }
+    .changeSelector {
+        font-size: 1.1rem;
+        
+    }
 
+    .consultArea {
+        width: 100%;
+        height: 20rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    .consultMessage {
+        font-size: 1rem;
+        margin-left: -60px;
+    }
+
+    .gameArea {
+        margin-top: 3.5rem;
+        flex-direction: column;
+        gap: 0.62rem;
+        display: flex;
+        align-items: center;
+        margin-left: -4rem;
+    }
+    .tableArea {
+        width: 20rem;
+    }
+    .coinsButton {
+        height: 3.12rem;
+        width: 18rem;
+    }
+
+    .conclusionArea {
+        margin-top: 50px;
+        margin-top: 50px;
+    }
+    .hintArea {
+            font-size: 1.3rem;
+            font-weight: bold;
+    }
+    .aboutIChing {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    
+}
+/*
+@media only screen and (max-width: 700px) {
+
+    html {
+        font-size: 10%;
+    }
+    .container {
+        padding: 0;
+        
     }
     .frame {
         margin-left: 10px;
@@ -733,13 +842,36 @@ body {
         line-height: 1.4rem;
     }
 }
-@media only screen and (max-width: 600px) {
+*/
+@media only screen and (min-width: 600px) {
     
     html {
-        font-size: 85%;
+        font-size: 60%;
+    }
+    
+}
+
+/* Fix iOS bugs */
+@supports (-webkit-touch-callout: none) {
+    * {
+        touch-action: manipulation;
+    }
+    html {
+        font-size: 70%;
+    }
+    .line:not(:last-child) {
+        margin-right: 2.6rem;
+    }
+    .frameArea {
+        width: 150%;
+        margin-top: 100px;
+    }
+    .consultArea {
+        margin-top: 30px;
     }
 }
 
+/* ANIMATIONS */
 @keyframes rotation {
     from {
             transform: rotate(0deg);

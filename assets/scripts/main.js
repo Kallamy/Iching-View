@@ -232,10 +232,10 @@ function updateHexagram() {
         // remove smooth class and show only one hexagram
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-29.6rem"
+            slidesArea.style.marginLeft = "-28.3rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
-            slidesArea.style.marginLeft = "0.1rem";
+            slidesArea.style.marginLeft = "1.4rem";
             currentHexagram = 0;
         }
         hasTwoHexgrams = false;
@@ -334,8 +334,8 @@ function getInfo() {
         }
         // fill next and prev controllers
         if(isConsulting) {
-            document.querySelector('.nextHexagram').innerHTML = "undefined >";
-            document.querySelector('.prevHexagram').innerHTML = "< undefined";
+            document.querySelector('.nextHexagram').innerHTML = ">";
+            document.querySelector('.prevHexagram').innerHTML = "<";
         } else {
             document.querySelector('.nextHexagram').innerHTML = cutTitle(hexagrams[1].title) + "  >";
             document.querySelector('.prevHexagram').innerHTML = "<  " + cutTitle(hexagrams[0].title);
@@ -507,13 +507,13 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-29.6rem";
+    slidesArea.style.marginLeft = "-28.3rem";
     currentHexagram = 1;
     setControlls();
 }
 
 function goToFirstHexagram() {
-    slidesArea.style.marginLeft = "0.1rem"
+    slidesArea.style.marginLeft = "1.4rem"
     currentHexagram = 0;
     setControlls();
 }
@@ -662,4 +662,4 @@ function setLanguage(l) {
     
 }
 
-screen.orientation.lock("landscape");
+//screen.orientation.lock("landscape");
