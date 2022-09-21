@@ -232,10 +232,10 @@ function updateHexagram() {
         // remove smooth class and show only one hexagram
         slidesArea.classList.remove('smooth');
         if(currentHexagram == 0) {
-            slidesArea.style.marginLeft = "-28.3rem"
+            slidesArea.style.marginLeft = "-36rem"
             currentHexagram = 1;
         } else if(currentHexagram == 1) {
-            slidesArea.style.marginLeft = "1.4rem";
+            slidesArea.style.marginLeft = ".07rem";
             currentHexagram = 0;
         }
         hasTwoHexgrams = false;
@@ -507,13 +507,13 @@ function YingYangShow() {
 }
 
 function goToSecondHexagram() {
-    slidesArea.style.marginLeft = "-28.3rem";
+    slidesArea.style.marginLeft = "-36rem";
     currentHexagram = 1;
     setControlls();
 }
 
 function goToFirstHexagram() {
-    slidesArea.style.marginLeft = "1.4rem"
+    slidesArea.style.marginLeft = ".07rem"
     currentHexagram = 0;
     setControlls();
 }

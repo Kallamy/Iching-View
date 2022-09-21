@@ -1,4 +1,6 @@
 :root {
+    font-size: 62.5%; /* 10px */
+    
     --bg1: #f5ac27;
     --bg2: #ffd84b;
     --bg3: #FFEBA5;
@@ -15,7 +17,7 @@
   }
 
 html {
-    font-size: 70%;
+   /* font-size: 20%*/
 }
 * {
     box-sizing: content-box;
@@ -24,7 +26,13 @@ html {
     margin: 0;
     padding: 0;
 }
+
+body, input, button {
+    /**font-size: 1.6rem;*/
+}
+
 body {
+    font-size: 1.6rem;
     background-color:  #495057;
     overflow: hidden;
     height: calc(100% - 4.3rem);
@@ -43,7 +51,7 @@ body {
     display: flex;
     width: 100%;
     top: 0;
-    height: 4.3rem;
+    height: 6.8rem;
     background: black;
     border-bottom: 0.31rem solid white;
     justify-content: space-between;
@@ -96,7 +104,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #adb5bd;
+    background-color: #ADB5BD;
+    background-image: URL(./assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
     width: 100%;
     max-width: 900px;
     height: 100vh;
@@ -141,8 +153,8 @@ body {
     box-sizing: content-box;
     margin: auto;
     overflow: hidden;
-    width: 29rem;
-    height: 29rem;
+    width: 30rem;
+    height: 30rem;
     background-image: url("assets/images/paperBG.jpg");
     background-size: cover;
 
@@ -161,7 +173,7 @@ body {
 
 .slidesArea {
     display: none;
-    width: 59.7rem;
+    width: 69rem;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -179,11 +191,10 @@ body {
 
 .slide {
     display: inline-block;
-    width: 26.7rem;
-    height: 26.7rem;
+    width: 33rem;
+    height: 33rem;
     background-color: transparent;
     float: left;
-
 }
 
 /* Controllers  */
@@ -194,7 +205,7 @@ body {
     align-items: center;
     width: 100%;
     height: 4.37rem;
-    margin-top: 18.75rem;
+    margin-top: 20.75rem;
 }
 .nextHexagram,
 .prevHexagram
@@ -332,14 +343,15 @@ body {
 }
 .hexagramTitle1,
 .hexagramTitle2 {
-    margin-bottom: 2%; 
+    width: 100%;
+    margin-bottom: 7%; 
+    margin-left: -17px;
     margin-top: 3.7rem; 
-    margin-left: -6px;
     background: transparent;
     height: 3.12rem;
     text-align: center;
     line-height:  1.9rem;
-    font-size: 1.54rem;
+    font-size: 1.75rem;
     font-family: Kaushan Script;
     transition: opacity  ease-in-out 0.8s;
     font-weight: bold;
@@ -352,7 +364,7 @@ body {
     font-family: 'Ma Shan Zheng';
     text-align: center;
     margin-top: 2rem;
-    margin-left: 0.8rem;
+    margin-left: 3rem;
     transition: opacity  ease-in-out 1s;
     height: 2.5rem;
     line-height: 3.12rem;
@@ -366,7 +378,7 @@ body {
  /* Info */
 .infoArea {
     margin-top: 0;
-    margin-left: 0.0001rem;
+    margin-left: 1.6rem;
     margin-top: -0.7rem;
 }
 #info {
@@ -527,7 +539,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 0.86rem;
+    font-size: .92rem;
     margin-bottom: 0.7rem;
 }
 .about-title,
@@ -539,14 +551,14 @@ body {
     margin: 0.19rem;
     
     color: hsl(52, 99%, 62%);
-    font-size: 0.86rem;
+    font-size: .92rem;
     font-weight: bold;
     margin-top: 0.33rem;
     text-indent: -0.30rem;
 }
 .about-content {
     text-indent: -0.2rem;
-    font-size: 0.86rem;
+    font-size: .92rem;
     margin: 0;
     margin-left: 0.61rem;
     color: #48bfe3;
@@ -717,8 +729,8 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-    html {
-        font-size: 57%;
+    :root {
+        font-size: 56%;
     }
     .container {
         padding: 0;
@@ -729,8 +741,8 @@ body {
         margin-top: 1.25rem;
     }
     .frameArea {
-        margin-top: 5rem;
-        margin-left: 42rem;
+        margin-top: 8rem;
+        margin-left: 45rem;
     }
     .buttonsArea {
         margin-right: 320px;
